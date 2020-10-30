@@ -1,0 +1,13 @@
+1604090042a:1:{s:25:"testovaci-static-page.htm";a:7:{s:8:"fileName";s:25:"testovaci-static-page.htm";s:7:"content";s:333:"[viewBag]
+title = "Testovaci Static Page"
+url = "/testovaci-static-page"
+is_hidden = 0
+navigation_hidden = 0
+==
+<h2>TECHNO Vyškov spol. s r. o.</h2>
+
+<p>česká společnost působící na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby</p>";s:5:"mtime";i:1604088047;s:6:"markup";s:215:"<h2>TECHNO Vyškov spol. s r. o.</h2>
+
+<p>česká společnost působící na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby</p>";s:4:"code";N;s:7:"viewBag";a:4:{s:5:"title";s:21:"Testovaci Static Page";s:3:"url";s:22:"/testovaci-static-page";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:215:"<h2>TECHNO Vyškov spol. s r. o.</h2>
+
+<p>česká společnost působící na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby</p>";}}

@@ -1,0 +1,82 @@
+1604090335a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1354:"description = "Default layout"
+
+[localePicker]
+forceUrl = 0
+==
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    
+    <link rel="icon" href="{{ 'assets/images/favicon-16x16.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/favicon-32x32.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/apple-touch-icon.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/android-chrome-72x72.png'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | theme }}">
+    
+    <title>{{ this.page.title }}</title>
+
+    <meta property="og:title" content="{{ this.page.meta_title }}" />
+    <meta property="og:description" content="{{ this.page.meta_description }}" />
+    <meta property="og:url" content="{{ url_current() }}" />
+    <meta property="og:image" content="{{ 'assets/images/theme-preview.png'|theme }}"/>
+    
+  </head>
+  <body>
+  {% partial 'navbar' %}
+    {% page %}
+    
+     
+  {% partial 'footer' %}    
+
+ 
+
+  <script src="{{ 'assets/js/scripts.js' | theme }}"></script>
+
+  {% framework extras %}
+  {% scripts %}
+
+    
+  </body>
+</html>";s:5:"mtime";i:1604089033;s:6:"markup";s:1286:"<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    
+    <link rel="icon" href="{{ 'assets/images/favicon-16x16.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/favicon-32x32.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/apple-touch-icon.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/android-chrome-72x72.png'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | theme }}">
+    
+    <title>{{ this.page.title }}</title>
+
+    <meta property="og:title" content="{{ this.page.meta_title }}" />
+    <meta property="og:description" content="{{ this.page.meta_description }}" />
+    <meta property="og:url" content="{{ url_current() }}" />
+    <meta property="og:image" content="{{ 'assets/images/theme-preview.png'|theme }}"/>
+    
+  </head>
+  <body>
+  {% partial 'navbar' %}
+    {% page %}
+    
+     
+  {% partial 'footer' %}    
+
+ 
+
+  <script src="{{ 'assets/js/scripts.js' | theme }}"></script>
+
+  {% framework extras %}
+  {% scripts %}
+
+    
+  </body>
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";s:12:"localePicker";a:1:{s:8:"forceUrl";s:1:"0";}}}

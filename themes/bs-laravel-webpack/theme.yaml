@@ -1,0 +1,29 @@
+name: BS-laravel-webpack
+description: ''
+author: zs
+homepage: ''
+code: ''
+
+form:
+    fields:
+        site_title:
+            tab: General
+            label: Název webu
+            type: text
+            size: tiny
+            span: left
+            default: 
+        site_subtitle:
+            tab: General
+            label: Hlavní nadpis
+            type: text
+            size: tiny
+            span: right
+            default: 
+        test_description: 
+            tab: General
+            label: Podnadpis
+            type: richeditor
+            size: tiny
+            span: left
+            default: 

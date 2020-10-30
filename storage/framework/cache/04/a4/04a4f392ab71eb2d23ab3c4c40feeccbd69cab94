@@ -1,0 +1,80 @@
+1604090042a:1:{s:10:"navbar.htm";a:6:{s:8:"fileName";s:10:"navbar.htm";s:7:"content";s:2115:"[localePicker]
+forceUrl = 0
+==
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ 'home'|page }}">
+		<img src="{{ 'assets/images/Techno-Vyskov-logo.svg'|theme }}" alt="Techno Vyškov logo">
+	  </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" id="menu">
+          <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'tooling' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'molding' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'molding'|page }}">{{ 'lisovna'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'products' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'products'|page }}">{{ 'produkty'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'quality' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'quality'|page }}">{{ 'kvalita'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'career' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'career'|page }}">{{ 'kariéra'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'contact' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'contact'|page }}">{{ 'kontakt'|_ }}</a>
+          </li>
+          
+        </ul>
+            
+        {% component 'localePicker' %}
+      </div>
+    </div>
+  </nav>";s:5:"mtime";i:1604085914;s:6:"markup";s:2081:"<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ 'home'|page }}">
+		<img src="{{ 'assets/images/Techno-Vyskov-logo.svg'|theme }}" alt="Techno Vyškov logo">
+	  </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" id="menu">
+          <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'tooling' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'molding' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'molding'|page }}">{{ 'lisovna'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'products' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'products'|page }}">{{ 'produkty'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'quality' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'quality'|page }}">{{ 'kvalita'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'career' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'career'|page }}">{{ 'kariéra'|_ }}</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'contact' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'contact'|page }}">{{ 'kontakt'|_ }}</a>
+          </li>
+          
+        </ul>
+            
+        {% component 'localePicker' %}
+      </div>
+    </div>
+  </nav>";s:4:"code";N;s:12:"localePicker";a:1:{s:8:"forceUrl";s:1:"0";}}}

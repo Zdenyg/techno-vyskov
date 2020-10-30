@@ -1,0 +1,48 @@
+1604090326a:1:{s:8:"typo.htm";a:6:{s:8:"fileName";s:8:"typo.htm";s:7:"content";s:616:"==
+<br>
+<hr>
+
+<h1>Lorem ipsum dolor sit amet.</h1>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<h3>Lorem ipsum dolor sit amet.</h3>
+<h4>Lorem ipsum dolor sit amet.</h4>
+<h5>Lorem ipsum dolor sit amet.</h5>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<ul>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Lorem, ipsum dolor.</li>
+</ul>
+
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+{{ 'Vítejte na me stránce'|_ }}";s:5:"mtime";i:1604082083;s:6:"markup";s:612:"<br>
+<hr>
+
+<h1>Lorem ipsum dolor sit amet.</h1>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<h3>Lorem ipsum dolor sit amet.</h3>
+<h4>Lorem ipsum dolor sit amet.</h4>
+<h5>Lorem ipsum dolor sit amet.</h5>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<ul>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Lorem, ipsum dolor.</li>
+</ul>
+
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+{{ 'Vítejte na me stránce'|_ }}";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}
