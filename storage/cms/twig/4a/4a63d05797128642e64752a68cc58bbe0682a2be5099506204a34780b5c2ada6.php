@@ -78,6 +78,13 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         // line 8
         echo "        </div>
     </div>
+    <div class=\"row\">
+        <div class=\"col\">
+            <div class=\"gradient\">
+                
+            </div>
+        </div>
+    </div>
 </div>";
     }
 
@@ -105,6 +112,13 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         </div>
         <div class=\"col-md-6\">
             {% partial 'typo' %}
+        </div>
+    </div>
+    <div class=\"row\">
+        <div class=\"col\">
+            <div class=\"gradient\">
+                
+            </div>
         </div>
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");

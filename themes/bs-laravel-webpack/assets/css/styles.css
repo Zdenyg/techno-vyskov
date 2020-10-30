@@ -8409,6 +8409,18 @@ h1, h2, h3 {
   letter-spacing: 3px;
 }
 
+hr {
+  border-top: 1px solid #004f9e;
+}
+
+.gradient {
+  height: 50vh;
+  background: #d6d6d6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6d6d6), color-stop(83%, #ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, #d6d6d6 0%, #ffffff 83%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#d6d6d6", endColorstr="#ffffff",GradientType=0 );
+}
+
 body[data-aos-duration="50"] [data-aos], [data-aos][data-aos][data-aos-duration="50"] {
   -webkit-transition-duration: 50ms;
           transition-duration: 50ms;

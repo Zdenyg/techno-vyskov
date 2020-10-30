@@ -24,3 +24,16 @@ h1, h2, h3  {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
+hr {
+    border-top: 1px solid $primary;
+}
+
+.gradient {
+    height: 50vh;
+    background: #d6d6d6;
+    background: -moz-linear-gradient(top, #d6d6d6 0%, #ffffff 83%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #d6d6d6 0%,#ffffff 83%,#ffffff 100%);
+    background: linear-gradient(to bottom, #d6d6d6 0%,#ffffff 83%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#ffffff',GradientType=0 );
+}
