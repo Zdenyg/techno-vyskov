@@ -30,13 +30,13 @@ class __TwigTemplate_358ff7da5fe7ce5fb1890affd84409d90cceff7489fd759adb28fe63d00
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("_" => 24);
+        $filters = array("page" => 4, "_" => 35);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['_'],
+                ['page', '_'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,7 +59,19 @@ class __TwigTemplate_358ff7da5fe7ce5fb1890affd84409d90cceff7489fd759adb28fe63d00
     {
         $macros = $this->macros;
         // line 1
-        echo "<br>
+        echo "<div class=\"container\">
+    <div class=\"row\">
+        <div class=\"col-xs-12\">
+            <a href=\"";
+        // line 4
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
+        echo "\" class=\"btn btn-primary\" role=\"button\">nástrojárna</a>
+        </div>
+    </div>
+</div>
+
+
+
 <hr>
 
 <h1>Lorem ipsum dolor sit amet.</h1>
@@ -80,10 +92,12 @@ class __TwigTemplate_358ff7da5fe7ce5fb1890affd84409d90cceff7489fd759adb28fe63d00
 <h1 class=\"display-3\">Display 3</h1>
 <h1 class=\"display-4\">Display 4</h1>
 
-<button type=\"button\" class=\"btn btn-primary\">Primary</button>
+
+
+
 
 ";
-        // line 24
+        // line 35
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Vítejte na me stránce"]);
     }
 
@@ -99,12 +113,21 @@ class __TwigTemplate_358ff7da5fe7ce5fb1890affd84409d90cceff7489fd759adb28fe63d00
 
     public function getDebugInfo()
     {
-        return array (  87 => 24,  62 => 1,);
+        return array (  101 => 35,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<br>
+        return new Source("<div class=\"container\">
+    <div class=\"row\">
+        <div class=\"col-xs-12\">
+            <a href=\"{{ 'tooling'|page }}\" class=\"btn btn-primary\" role=\"button\">nástrojárna</a>
+        </div>
+    </div>
+</div>
+
+
+
 <hr>
 
 <h1>Lorem ipsum dolor sit amet.</h1>
@@ -125,7 +148,9 @@ class __TwigTemplate_358ff7da5fe7ce5fb1890affd84409d90cceff7489fd759adb28fe63d00
 <h1 class=\"display-3\">Display 3</h1>
 <h1 class=\"display-4\">Display 4</h1>
 
-<button type=\"button\" class=\"btn btn-primary\">Primary</button>
+
+
+
 
 {{ 'Vítejte na me stránce'|_ }}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/typo.htm", "");
     }

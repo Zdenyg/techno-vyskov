@@ -29,7 +29,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("content" => 1, "partial" => 3);
+        $tags = array("content" => 4, "partial" => 7);
         $filters = array();
         $functions = array();
 
@@ -59,16 +59,26 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
     {
         $macros = $this->macros;
         // line 1
+        echo "<div class=\"container my-5\">
+    <div class=\"row\">
+        <div class=\"col-md-6\">
+            ";
+        // line 4
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("nastrojarna-text"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 2
-        echo "
-";
-        // line 3
+        // line 5
+        echo "        </div>
+        <div class=\"col-md-6\">
+            ";
+        // line 7
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("typo"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
+        // line 8
+        echo "        </div>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -83,13 +93,20 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  69 => 3,  66 => 2,  62 => 1,);
+        return array (  79 => 8,  75 => 7,  71 => 5,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% content 'nastrojarna-text' %}
-
-{% partial 'typo' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
+        return new Source("<div class=\"container my-5\">
+    <div class=\"row\">
+        <div class=\"col-md-6\">
+            {% content 'nastrojarna-text' %}
+        </div>
+        <div class=\"col-md-6\">
+            {% partial 'typo' %}
+        </div>
+    </div>
+</div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
     }
 }

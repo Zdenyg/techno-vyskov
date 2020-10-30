@@ -1,5 +1,15 @@
-1604090326a:1:{s:8:"typo.htm";a:6:{s:8:"fileName";s:8:"typo.htm";s:7:"content";s:616:"==
-<br>
+1604093661a:1:{s:8:"typo.htm";a:6:{s:8:"fileName";s:8:"typo.htm";s:7:"content";s:786:"[viewBag]
+==
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">nástrojárna</a>
+        </div>
+    </div>
+</div>
+
+
+
 <hr>
 
 <h1>Lorem ipsum dolor sit amet.</h1>
@@ -20,9 +30,20 @@
 <h1 class="display-3">Display 3</h1>
 <h1 class="display-4">Display 4</h1>
 
-<button type="button" class="btn btn-primary">Primary</button>
 
-{{ 'Vítejte na me stránce'|_ }}";s:5:"mtime";i:1604082083;s:6:"markup";s:612:"<br>
+
+
+
+{{ 'Vítejte na me stránce'|_ }}";s:5:"mtime";i:1604093041;s:6:"markup";s:771:"<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">nástrojárna</a>
+        </div>
+    </div>
+</div>
+
+
+
 <hr>
 
 <h1>Lorem ipsum dolor sit amet.</h1>
@@ -43,6 +64,8 @@
 <h1 class="display-3">Display 3</h1>
 <h1 class="display-4">Display 4</h1>
 
-<button type="button" class="btn btn-primary">Primary</button>
 
-{{ 'Vítejte na me stránce'|_ }}";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}
+
+
+
+{{ 'Vítejte na me stránce'|_ }}";s:4:"code";N;s:7:"viewBag";a:0:{}}}
