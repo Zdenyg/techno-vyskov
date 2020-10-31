@@ -1,48 +1,55 @@
-1604094717a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:759:"title = "Techno - Vyškov úvod"
+1604139157a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:998:"title = "Techno - Vyškov úvod"
 url = "/"
 layout = "default"
-meta_title = "SKYWORX - letecké snímkování pomocí dronu"
-meta_description = "Provádíme letecké snímkování pomocí dronu - propagační a reklamní foto a video - výškové inspekce - 3D modelace"
+meta_title = "Techno - Vyškov"
+meta_description = "působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby"
 is_hidden = 0
 
 [viewBag]
 localeTitle[en] = "Techno - Vyškov home"
 ==
+{% partial 'uvod' %}
 
-<div class="container my-5">
+
+<div class="container my-5" id="uvod">
     <div class="row">
-        <div class="col-md-6">
-            {% content 'nastrojarna-text' %}
-        </div>
-        <div class="col-md-6">
-            {% partial 'typo' %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="gradient">
-                
+        <div class="col-md-8">
+            {% content 'uvod' %}
+            <div class="row">
+                <div class="col-md-8 text-primary">
+                    {% content 'uvod2' %}
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 150px;" alt="">
+                </div>
             </div>
+        </div>
+        <div class="col-md-4">
+            <h5>Aktuální volné pozice</h5>
         </div>
     </div>
 </div>
 
+{% partial 'nase-vyrobky' %}";s:5:"mtime";i:1604138535;s:6:"markup";s:656:"{% partial 'uvod' %}
 
 
-";s:5:"mtime";i:1604094096;s:6:"markup";s:399:"<div class="container my-5">
+<div class="container my-5" id="uvod">
     <div class="row">
-        <div class="col-md-6">
-            {% content 'nastrojarna-text' %}
-        </div>
-        <div class="col-md-6">
-            {% partial 'typo' %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="gradient">
-                
+        <div class="col-md-8">
+            {% content 'uvod' %}
+            <div class="row">
+                <div class="col-md-8 text-primary">
+                    {% content 'uvod2' %}
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 150px;" alt="">
+                </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <h5>Aktuální volné pozice</h5>
+        </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:46:"SKYWORX - letecké snímkování pomocí dronu";s:16:"meta_description";s:124:"Provádíme letecké snímkování pomocí dronu - propagační a reklamní foto a video - výškové inspekce - 3D modelace";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}}}
+</div>
+
+{% partial 'nase-vyrobky' %}";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}}}

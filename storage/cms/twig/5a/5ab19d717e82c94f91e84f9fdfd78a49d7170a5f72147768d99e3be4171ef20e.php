@@ -169,14 +169,15 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
           </li>
           
         </ul>
-            
-        ";
+        <div class=\"lang_switch\">
+            ";
         // line 36
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("localePicker"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 37
-        echo "      </div>
+        echo "        </div>    
+      </div>
     </div>
   </nav>";
     }
@@ -232,8 +233,9 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
           </li>
           
         </ul>
-            
-        {% component 'localePicker' %}
+        <div class=\"lang_switch\">
+            {% component 'localePicker' %}
+        </div>    
       </div>
     </div>
   </nav>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/navbar.htm", "");

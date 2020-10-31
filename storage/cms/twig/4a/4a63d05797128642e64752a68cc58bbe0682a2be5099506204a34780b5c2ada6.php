@@ -29,14 +29,14 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("content" => 4, "partial" => 7);
-        $filters = array();
+        $tags = array("partial" => 1, "content" => 7);
+        $filters = array("theme" => 13);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['content', 'partial'],
-                [],
+                ['partial', 'content'],
+                ['theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,33 +59,49 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"container my-5\">
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("uvod"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 2
+        echo "
+
+<div class=\"container my-5\" id=\"uvod\">
     <div class=\"row\">
-        <div class=\"col-md-6\">
-            ";
-        // line 4
-        $context['__cms_content_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("nastrojarna-text"        , $context['__cms_content_params']        );
-        unset($context['__cms_content_params']);
-        // line 5
-        echo "        </div>
-        <div class=\"col-md-6\">
+        <div class=\"col-md-8\">
             ";
         // line 7
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("typo"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("uvod"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
         // line 8
-        echo "        </div>
-    </div>
-    <div class=\"row\">
-        <div class=\"col\">
-            <div class=\"gradient\">
-                
+        echo "            <div class=\"row\">
+                <div class=\"col-md-8 text-primary\">
+                    ";
+        // line 10
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("uvod2"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 11
+        echo "                </div>
+                <div class=\"col-md-4\">
+                    <img src=\"";
+        // line 13
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo-TUV.jpg");
+        echo "\" style=\"width: 150px;\" alt=\"\">
+                </div>
             </div>
         </div>
+        <div class=\"col-md-4\">
+            <h5>Aktuální volné pozice</h5>
+        </div>
     </div>
-</div>";
+</div>
+
+";
+        // line 23
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("nase-vyrobky"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -100,27 +116,33 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  79 => 8,  75 => 7,  71 => 5,  67 => 4,  62 => 1,);
+        return array (  102 => 23,  89 => 13,  85 => 11,  81 => 10,  77 => 8,  73 => 7,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"container my-5\">
+        return new Source("{% partial 'uvod' %}
+
+
+<div class=\"container my-5\" id=\"uvod\">
     <div class=\"row\">
-        <div class=\"col-md-6\">
-            {% content 'nastrojarna-text' %}
-        </div>
-        <div class=\"col-md-6\">
-            {% partial 'typo' %}
-        </div>
-    </div>
-    <div class=\"row\">
-        <div class=\"col\">
-            <div class=\"gradient\">
-                
+        <div class=\"col-md-8\">
+            {% content 'uvod' %}
+            <div class=\"row\">
+                <div class=\"col-md-8 text-primary\">
+                    {% content 'uvod2' %}
+                </div>
+                <div class=\"col-md-4\">
+                    <img src=\"{{ 'assets/images/logo-TUV.jpg' | theme }}\" style=\"width: 150px;\" alt=\"\">
+                </div>
             </div>
         </div>
+        <div class=\"col-md-4\">
+            <h5>Aktuální volné pozice</h5>
+        </div>
     </div>
-</div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
+</div>
+
+{% partial 'nase-vyrobky' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
     }
 }

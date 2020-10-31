@@ -1,31 +1,33 @@
 title = "Techno - Vyškov úvod"
 url = "/"
 layout = "default"
-meta_title = "SKYWORX - letecké snímkování pomocí dronu"
-meta_description = "Provádíme letecké snímkování pomocí dronu - propagační a reklamní foto a video - výškové inspekce - 3D modelace"
+meta_title = "Techno - Vyškov"
+meta_description = "působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby"
 is_hidden = 0
 
 [viewBag]
 localeTitle[en] = "Techno - Vyškov home"
 ==
+{% partial 'uvod' %}
 
-<div class="container my-5">
+
+<div class="container my-5" id="uvod">
     <div class="row">
-        <div class="col-md-6">
-            {% content 'nastrojarna-text' %}
-        </div>
-        <div class="col-md-6">
-            {% partial 'typo' %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="gradient">
-                
+        <div class="col-md-8">
+            {% content 'uvod' %}
+            <div class="row">
+                <div class="col-md-8 text-primary">
+                    {% content 'uvod2' %}
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 150px;" alt="">
+                </div>
             </div>
+        </div>
+        <div class="col-md-4">
+            <h5>Aktuální volné pozice</h5>
         </div>
     </div>
 </div>
 
-
-
+{% partial 'nase-vyrobky' %}
