@@ -10,24 +10,94 @@ localeTitle[en] = "Techno - Vyškov home"
 ==
 {% partial 'uvod' %}
 
-
-<div class="container my-5" id="uvod">
+<!-- O firme -->
+<div class="container pt-5" id="uvod">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7 mb-5">
             {% content 'uvod' %}
             <div class="row">
                 <div class="col-md-8 text-primary">
                     {% content 'uvod2' %}
                 </div>
-                <div class="col-md-4">
-                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 150px;" alt="">
+                <div class="col-md-4 text-center">
+                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 100px;" alt="">
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <h5>Aktuální volné pozice</h5>
+        <!-- Career -->
+        <div class="col-md-5 mb-3">
+            <div class="card border p-3">
+                <div class="card-body">
+                  <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">aktuálně nehledáme </h6>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            
         </div>
     </div>
 </div>
 
 {% partial 'nase-vyrobky' %}
+
+<!-- Nastrojarna -->
+
+<section class="gradient">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>{{ 'NAŠE SLUŽBY' |_}}</h2>
+                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
+                <img src="{{ 'assets/images/forma_01.png' | theme }}" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        {% partial 'nastrojarna-iconbox' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lisovna -->
+
+<section class="gradient">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>{{ 'LISOVNA' |_ }}</h1>
+                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5" alt="">
+            </div>
+        </div>
+
+        {% partial 'lisovna-iconbox' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'molding'|page }}" class="btn btn-primary" role="button">{{ 'lisovna' |_ }}</a>
+            </div>
+        </div>
+    </div>
+ </section>
+
+ <!-- Produkty -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            </div>
+        </div>
+
+        {% partial 'produkty' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'produkty' |_ }}</a>
+            </div>
+        </div>
+    </div>

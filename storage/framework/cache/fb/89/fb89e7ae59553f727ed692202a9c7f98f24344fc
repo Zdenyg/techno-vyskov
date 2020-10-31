@@ -1,45 +1,73 @@
-1604139198a:1:{s:16:"nase-vyrobky.htm";a:6:{s:8:"fileName";s:16:"nase-vyrobky.htm";s:7:"content";s:588:"[viewBag]
+1604185367a:1:{s:16:"nase-vyrobky.htm";a:6:{s:8:"fileName";s:16:"nase-vyrobky.htm";s:7:"content";s:1321:"[viewBag]
 ==
-<div class="container-fluid my-5 bg-primary text-white">
-    <div class="row">
-        <div class="col-sm-2">
-            Lorem ipsum dolor
+<section class="bg-primary py-5">
+    <div class="container text-white text-center">
+        <div class="row">
+            <div class="col pb-3">
+                <h4>Naše výrobky jsou zastoupeny v mnoha odvětvích</h4>
+            </div>
         </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-    </div>
-</div>";s:5:"mtime";i:1604138596;s:6:"markup";s:573:"<div class="container-fluid my-5 bg-primary text-white">
-    <div class="row">
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
-        </div>
-        <div class="col-sm-2">
-            Lorem ipsum dolor
+        <div class="row d-flex justify-content-around">
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-01.svg' | theme }}" alt="">
+                <p>{{ 'automobilový průmysl' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-02.svg' | theme }}" alt="">
+                <p>{{ 'telekomunikace' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-03.svg' | theme }}" alt="">
+                <p>{{ 'tepelná regulace' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-04.svg' | theme }}" alt="">
+                <p>{{ 'stavebnictví' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-05.svg' | theme }}" alt="">
+                <p>{{ 'hračky pro děti' |_ }}</p>
+            </div>
         </div>
     </div>
-</div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
+</section>
+
+
+
+
+
+
+
+
+
+";s:5:"mtime";i:1604172089;s:6:"markup";s:1286:"<section class="bg-primary py-5">
+    <div class="container text-white text-center">
+        <div class="row">
+            <div class="col pb-3">
+                <h4>Naše výrobky jsou zastoupeny v mnoha odvětvích</h4>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-01.svg' | theme }}" alt="">
+                <p>{{ 'automobilový průmysl' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-02.svg' | theme }}" alt="">
+                <p>{{ 'telekomunikace' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-03.svg' | theme }}" alt="">
+                <p>{{ 'tepelná regulace' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-04.svg' | theme }}" alt="">
+                <p>{{ 'stavebnictví' |_ }}</p>
+            </div>
+            <div class="iconbox">
+                <img src="{{ 'assets/images/icon-05.svg' | theme }}" alt="">
+                <p>{{ 'hračky pro děti' |_ }}</p>
+            </div>
+        </div>
+    </div>
+</section>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

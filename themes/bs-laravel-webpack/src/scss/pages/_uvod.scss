@@ -46,3 +46,49 @@ header {
       display: none;
     }
   }  
+
+
+  .iconbox {
+    margin: 1rem;
+  img {
+    padding: 1rem;
+  }
+}
+
+
+.gradient {
+  h1 {
+    color:$gray-600;
+    margin: 2rem 0;
+  }
+}
+
+.shortdesc {
+  margin-top: -200px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) { 
+  
+  .py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .iconbox {
+    width: 15%;
+  }
+
+ }

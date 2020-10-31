@@ -1,0 +1,8 @@
+<div id="lightgallery">
+    <h3>galerie</h3>
+    {% for image in this.theme.product_images %}
+        <a href="{{ image.path }}">
+            <img src="{{ image.thumb(200, 100, {'mode':'crop' }) }}" alt="">
+        </a>
+    {% endfor %}
+</div>

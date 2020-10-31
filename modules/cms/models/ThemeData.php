@@ -46,6 +46,7 @@ class ThemeData extends Model
      * @var array Relations
      */
     public $attachOne = [];
+    public $attachMany = [];
 
     /**
      * @var ThemeData Cached array of objects
@@ -126,6 +127,11 @@ class ThemeData extends Model
             }
             elseif ($field['type'] === 'fileupload') {
                 $this->attachOne[$id] = File::class;
+                if (in_array($field['mode'], ['file-multi', 'image-multi'])) {
+                    $this->attachMany[$id] = File::class;
+                } else {
+                    $this->attachOne[$id] = File::class;
+                }
                 unset($data[$id]);
             }
         }

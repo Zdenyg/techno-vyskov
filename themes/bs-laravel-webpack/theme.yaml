@@ -13,17 +13,11 @@ form:
             size: tiny
             span: left
             default: 
-        site_subtitle:
-            tab: General
-            label: Hlavní nadpis
-            type: text
-            size: tiny
-            span: right
-            default: 
-        test_description: 
-            tab: General
-            label: Podnadpis
-            type: richeditor
-            size: tiny
+
+        product_images:
+            tab: Fotky
+            label: Galerie
+            mode: image-multi
+            imageWidth: '100'
             span: left
-            default: 
+            type: fileupload  

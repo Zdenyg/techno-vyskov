@@ -1,4 +1,4 @@
-1604139157a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1354:"description = "Default layout"
+1604185367a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1325:"description = "Default layout"
 
 [localePicker]
 forceUrl = 0
@@ -27,12 +27,11 @@ forceUrl = 0
   </head>
   <body>
   {% partial 'navbar' %}
-    {% page %}
+    
+  {% page %}
     
      
-  {% partial 'footer' %}    
 
- 
 
   <script src="{{ 'assets/js/scripts.js' | theme }}"></script>
 
@@ -41,7 +40,7 @@ forceUrl = 0
 
     
   </body>
-</html>";s:5:"mtime";i:1604089033;s:6:"markup";s:1286:"<!doctype html>
+</html>";s:5:"mtime";i:1604173756;s:6:"markup";s:1257:"<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -65,12 +64,11 @@ forceUrl = 0
   </head>
   <body>
   {% partial 'navbar' %}
-    {% page %}
+    
+  {% page %}
     
      
-  {% partial 'footer' %}    
 
- 
 
   <script src="{{ 'assets/js/scripts.js' | theme }}"></script>
 

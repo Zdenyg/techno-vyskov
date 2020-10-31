@@ -11,12 +11,17 @@ body {
 h1, h2, h3  {
     font-weight: 800;
 }
+h1 {
+    text-transform: uppercase;
+}
 
 h2 {
     font-size: 1.6rem;
     color: $primary;
 }
-
+h4 {
+    font-size: 1.2rem;
+}
 
 .btn {
     font-weight: 400;
@@ -38,12 +43,12 @@ hr {
 }
 
 .gradient {
-    height: 50vh;
+    height: auto;
     background: #d6d6d6;
-    background: -moz-linear-gradient(top, #d6d6d6 0%, #ffffff 83%, #ffffff 100%);
-    background: -webkit-linear-gradient(top, #d6d6d6 0%,#ffffff 83%,#ffffff 100%);
-    background: linear-gradient(to bottom, #d6d6d6 0%,#ffffff 83%,#ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#ffffff',GradientType=0 );
+    background: -moz-linear-gradient(top, #c7c7c7 0%, #ffffff 83%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #c7c7c7 0%,#ffffff 83%,#ffffff 100%);
+    background: linear-gradient(to bottom, #c7c7c7 0%,#ffffff 83%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#ffffff',GradientType=0 );
 }
 
 .lang_switch {

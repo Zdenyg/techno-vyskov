@@ -30,13 +30,13 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array();
+        $filters = array("theme" => 10, "_" => 11);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                [],
+                ['theme', '_'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,28 +59,67 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"container-fluid my-5 bg-primary text-white\">
-    <div class=\"row\">
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
+        echo "<section class=\"bg-primary py-5\">
+    <div class=\"container text-white text-center\">
+        <div class=\"row\">
+            <div class=\"col pb-3\">
+                <h4>Naše výrobky jsou zastoupeny v mnoha odvětvích</h4>
+            </div>
         </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
+        <div class=\"row d-flex justify-content-around\">
+            <div class=\"iconbox\">
+                <img src=\"";
+        // line 10
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-01.svg");
+        echo "\" alt=\"\">
+                <p>";
+        // line 11
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["automobilový průmysl"]);
+        echo "</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"";
+        // line 14
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-02.svg");
+        echo "\" alt=\"\">
+                <p>";
+        // line 15
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["telekomunikace"]);
+        echo "</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"";
+        // line 18
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-03.svg");
+        echo "\" alt=\"\">
+                <p>";
+        // line 19
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["tepelná regulace"]);
+        echo "</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"";
+        // line 22
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-04.svg");
+        echo "\" alt=\"\">
+                <p>";
+        // line 23
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["stavebnictví"]);
+        echo "</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"";
+        // line 26
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-05.svg");
+        echo "\" alt=\"\">
+                <p>";
+        // line 27
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["hračky pro děti"]);
+        echo "</p>
+            </div>
         </div>
     </div>
-</div>";
+</section>";
     }
 
     public function getTemplateName()
@@ -88,34 +127,48 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
         return "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/nase-vyrobky.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  62 => 1,);
+        return array (  117 => 27,  113 => 26,  107 => 23,  103 => 22,  97 => 19,  93 => 18,  87 => 15,  83 => 14,  77 => 11,  73 => 10,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"container-fluid my-5 bg-primary text-white\">
-    <div class=\"row\">
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
+        return new Source("<section class=\"bg-primary py-5\">
+    <div class=\"container text-white text-center\">
+        <div class=\"row\">
+            <div class=\"col pb-3\">
+                <h4>Naše výrobky jsou zastoupeny v mnoha odvětvích</h4>
+            </div>
         </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
-        </div>
-        <div class=\"col-sm-2\">
-            Lorem ipsum dolor
+        <div class=\"row d-flex justify-content-around\">
+            <div class=\"iconbox\">
+                <img src=\"{{ 'assets/images/icon-01.svg' | theme }}\" alt=\"\">
+                <p>{{ 'automobilový průmysl' |_ }}</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"{{ 'assets/images/icon-02.svg' | theme }}\" alt=\"\">
+                <p>{{ 'telekomunikace' |_ }}</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"{{ 'assets/images/icon-03.svg' | theme }}\" alt=\"\">
+                <p>{{ 'tepelná regulace' |_ }}</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"{{ 'assets/images/icon-04.svg' | theme }}\" alt=\"\">
+                <p>{{ 'stavebnictví' |_ }}</p>
+            </div>
+            <div class=\"iconbox\">
+                <img src=\"{{ 'assets/images/icon-05.svg' | theme }}\" alt=\"\">
+                <p>{{ 'hračky pro děti' |_ }}</p>
+            </div>
         </div>
     </div>
-</div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/nase-vyrobky.htm", "");
+</section>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/nase-vyrobky.htm", "");
     }
 }
