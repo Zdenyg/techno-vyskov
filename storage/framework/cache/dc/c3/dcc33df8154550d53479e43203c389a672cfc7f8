@@ -1,4 +1,4 @@
-1604231647a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:481:" <div id="lightgallery" class="text-center">
+1604253371a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:481:" <div id="lightgallery" class="text-center">
     {% for image in this.theme.product_images  | slice(0, 3) %}
         <a href="{{ image.path }}">
             <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">

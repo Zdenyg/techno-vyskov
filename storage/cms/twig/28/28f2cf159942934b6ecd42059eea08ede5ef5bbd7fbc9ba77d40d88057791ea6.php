@@ -99,7 +99,8 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contactForm"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 30
-        echo "        </div>
+        echo "            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
+        </div>
     </div>
 </div>";
     }
@@ -150,6 +151,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         </div>
         <div class=\"col-md-6 my-5\">
             {% component 'contactForm' %}
+            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
         </div>
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/kontakt.htm", "");

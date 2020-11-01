@@ -30,13 +30,13 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 4);
+        $filters = array("theme" => 4, "_" => 12);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['theme'],
+                ['theme', '_'],
                 []
             );
         } catch (SecurityError $e) {
@@ -68,12 +68,37 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
         echo "\" type=\"video/mp4\">
     </video>
     <div class=\"container h-100\">
-      <div class=\"d-flex h-100 text-center align-items-center\">
-        <div class=\"w-100 text-white\">
-          <h1 class=\"display-3\">Video Header</h1>
-          <p class=\"lead mb-0\">With HTML5 Video and Bootstrap 4</p>
-        </div>
-      </div>
+
+          
+          <div class=\"row h-100 align-items-center justify-content-end\">
+            <div class=\"col-md-4 col-sm-6 bg-primary text-white p-3 desc\">
+              <ul>
+                <li>";
+        // line 12
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["konstrukce nástrojů"]);
+        echo "</li>
+                <li>";
+        // line 13
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["výroba forem"]);
+        echo "</li>
+                <li>";
+        // line 14
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["vzorování"]);
+        echo "</li>
+                <li>";
+        // line 15
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["měření"]);
+        echo "</li>
+                <li>";
+        // line 16
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["výroba sériových dílů"]);
+        echo "</li>
+              </ul>
+            </div>
+
+
+          
+
     </div>
   </header>";
     }
@@ -90,7 +115,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
 
     public function getDebugInfo()
     {
-        return array (  67 => 4,  62 => 1,);
+        return array (  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -101,12 +126,22 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
       <source src=\"{{ 'assets/video/techno.mp4' | theme }}\" type=\"video/mp4\">
     </video>
     <div class=\"container h-100\">
-      <div class=\"d-flex h-100 text-center align-items-center\">
-        <div class=\"w-100 text-white\">
-          <h1 class=\"display-3\">Video Header</h1>
-          <p class=\"lead mb-0\">With HTML5 Video and Bootstrap 4</p>
-        </div>
-      </div>
+
+          
+          <div class=\"row h-100 align-items-center justify-content-end\">
+            <div class=\"col-md-4 col-sm-6 bg-primary text-white p-3 desc\">
+              <ul>
+                <li>{{ 'konstrukce nástrojů' |_}}</li>
+                <li>{{ 'výroba forem' |_}}</li>
+                <li>{{ 'vzorování' |_}}</li>
+                <li>{{ 'měření' |_}}</li>
+                <li>{{ 'výroba sériových dílů' |_}}</li>
+              </ul>
+            </div>
+
+
+          
+
     </div>
   </header>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/uvod.htm", "");
     }

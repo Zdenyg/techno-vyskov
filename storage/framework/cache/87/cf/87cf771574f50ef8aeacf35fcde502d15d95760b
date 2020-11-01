@@ -1,4 +1,4 @@
-1604231137a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1196:"[viewBag]
+1604253371a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1298:"[viewBag]
 
 [contactForm]
 ==
@@ -31,9 +31,10 @@
         </div>
         <div class="col-md-6 my-5">
             {% component 'contactForm' %}
+            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
         </div>
     </div>
-</div>";s:5:"mtime";i:1604230534;s:6:"markup";s:1164:"<div class="container py-5" id="contact">
+</div>";s:5:"mtime";i:1604248087;s:6:"markup";s:1266:"<div class="container py-5" id="contact">
     <div class="row">
         <div class="col-12 text-center">
             <h2 class="text-uppercase">{{ 'KONTAKT' |_ }}</h2>
@@ -62,6 +63,7 @@
         </div>
         <div class="col-md-6 my-5">
             {% component 'contactForm' %}
+            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
         </div>
     </div>
 </div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"contactForm";a:0:{}}}
