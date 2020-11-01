@@ -47,7 +47,6 @@ class ThemeData extends Model
      */
     public $attachOne = [];
     public $attachMany = [];
-
     /**
      * @var ThemeData Cached array of objects
      */
@@ -126,13 +125,12 @@ class ThemeData extends Model
                 $this->jsonable[] = $id;
             }
             elseif ($field['type'] === 'fileupload') {
-                $this->attachOne[$id] = File::class;
-                if (in_array($field['mode'], ['file-multi', 'image-multi'])) {
-                    $this->attachMany[$id] = File::class;
+                 if (in_array($field['mode'], ['file-multi', 'image-multi'])) {
+                 $this->attachMany[$id] = File::class;
                 } else {
                     $this->attachOne[$id] = File::class;
                 }
-                unset($data[$id]);
+                unset($data[$id]);                  unset($data[$id]);
             }
         }
 

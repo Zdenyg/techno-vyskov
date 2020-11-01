@@ -195,11 +195,11 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
  <!-- Produkty -->
     <div class=\"container py-5\">
         <div class=\"row\">
-            <div class=\"col-12 text-center\">
-                <h1>";
+            <div class=\"col-12 text-center mb-5\">
+                <h2 class=\"text-uppercase\">";
         // line 82
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["PRODUKTY"]);
-        echo "</h1>
+        echo "</h2>
             </div>
         </div>
 
@@ -220,7 +220,69 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         echo "</a>
             </div>
         </div>
-    </div>";
+    </div>
+
+<!-- Kvalita -->
+<section class=\"bg-success\">
+<div class=\"container py-5\">
+    <div class=\"row\">
+        <div class=\"col-12 text-center mb-5\">
+            <h2 class=\"text-uppercase mb-5\">";
+        // line 100
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KVALITA"]);
+        echo "</h2>
+        </div>
+    </div>
+
+    <div class=\"row\">
+        <div class=\"col-lg-2 col-md-12 text-center\">
+            <div class=\"blue-iconbox\">
+                <img src=\"";
+        // line 107
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-07.svg");
+        echo "\" alt=\"\">
+                    <h4 class=\"mt-3\">";
+        // line 108
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["3D MĚŘENÍ"]);
+        echo "</h4>
+                        
+            </div> 
+        </div>
+        <div class=\"col-lg-6 col-md-12 text-center\">
+            <img src=\"";
+        // line 113
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/3d-mereni.jpg");
+        echo "\" class=\"img-fluid shadow\" alt=\"\">
+        </div>
+        <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
+            ";
+        // line 116
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("3d-mereni"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 117
+        echo "        </div>
+    </div>
+
+    <div class=\"row text-center pt-5\">
+        <div class=\"col\">
+            <a href=\"";
+        // line 122
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
+        echo "\" class=\"btn btn-primary\" role=\"button\">";
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kvalita"]);
+        echo "</a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+";
+        // line 129
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("kontakt"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -235,7 +297,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  217 => 90,  212 => 87,  208 => 86,  201 => 82,  186 => 72,  181 => 69,  177 => 68,  170 => 64,  166 => 63,  149 => 51,  144 => 48,  140 => 47,  133 => 43,  129 => 42,  125 => 41,  116 => 34,  112 => 33,  89 => 13,  85 => 11,  81 => 10,  77 => 8,  73 => 7,  66 => 2,  62 => 1,);
+        return array (  283 => 129,  271 => 122,  264 => 117,  260 => 116,  254 => 113,  246 => 108,  242 => 107,  232 => 100,  217 => 90,  212 => 87,  208 => 86,  201 => 82,  186 => 72,  181 => 69,  177 => 68,  170 => 64,  166 => 63,  149 => 51,  144 => 48,  140 => 47,  133 => 43,  129 => 42,  125 => 41,  116 => 34,  112 => 33,  89 => 13,  85 => 11,  81 => 10,  77 => 8,  73 => 7,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -320,8 +382,8 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
  <!-- Produkty -->
     <div class=\"container py-5\">
         <div class=\"row\">
-            <div class=\"col-12 text-center\">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            <div class=\"col-12 text-center mb-5\">
+                <h2 class=\"text-uppercase\">{{ 'PRODUKTY' |_ }}</h2>
             </div>
         </div>
 
@@ -332,6 +394,42 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
                 <a href=\"{{ 'products'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'produkty' |_ }}</a>
             </div>
         </div>
-    </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
+    </div>
+
+<!-- Kvalita -->
+<section class=\"bg-success\">
+<div class=\"container py-5\">
+    <div class=\"row\">
+        <div class=\"col-12 text-center mb-5\">
+            <h2 class=\"text-uppercase mb-5\">{{ 'KVALITA'|_ }}</h2>
+        </div>
+    </div>
+
+    <div class=\"row\">
+        <div class=\"col-lg-2 col-md-12 text-center\">
+            <div class=\"blue-iconbox\">
+                <img src=\"{{ 'assets/images/icon-tool-07.svg' | theme }}\" alt=\"\">
+                    <h4 class=\"mt-3\">{{ '3D MĚŘENÍ' |_ }}</h4>
+                        
+            </div> 
+        </div>
+        <div class=\"col-lg-6 col-md-12 text-center\">
+            <img src=\"{{ 'assets/images/3d-mereni.jpg' | theme }}\" class=\"img-fluid shadow\" alt=\"\">
+        </div>
+        <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
+            {% content '3d-mereni' %}
+        </div>
+    </div>
+
+    <div class=\"row text-center pt-5\">
+        <div class=\"col\">
+            <a href=\"{{ 'quality'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'kvalita' |_ }}</a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+{% partial 'kontakt' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
     }
 }

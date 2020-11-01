@@ -56,19 +56,22 @@ header {
 }
 
 
-.gradient {
-  h1 {
-    color:$gray-600;
-    margin: 2rem 0;
-  }
-}
-
 .shortdesc {
   margin-top: -200px;
   position: relative;
 }
 
-
+.blue-iconbox {
+  background: #004f9e;
+  width: 220px;
+  height: 220px;
+  text-align: center;
+  padding-top: 55px;
+  color: white;
+  z-index: 1;
+  position: relative;
+  margin-top: -40px;
+}
 
 
 

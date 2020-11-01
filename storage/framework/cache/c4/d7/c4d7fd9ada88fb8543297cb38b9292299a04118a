@@ -1,4 +1,4 @@
-1604185367a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:3303:"title = "Techno - Vyškov úvod"
+1604231647a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:4468:"title = "Techno - Vyškov úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno - Vyškov"
@@ -88,8 +88,8 @@ localeTitle[en] = "Techno - Vyškov home"
  <!-- Produkty -->
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            <div class="col-12 text-center mb-5">
+                <h2 class="text-uppercase">{{ 'PRODUKTY' |_ }}</h2>
             </div>
         </div>
 
@@ -101,7 +101,42 @@ localeTitle[en] = "Techno - Vyškov home"
             </div>
         </div>
     </div>
-";s:5:"mtime";i:1604183724;s:6:"markup";s:2959:"{% partial 'uvod' %}
+
+<!-- Kvalita -->
+<section class="bg-success">
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h2 class="text-uppercase mb-5">{{ 'KVALITA'|_ }}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-12 text-center">
+            <div class="blue-iconbox">
+                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
+                    <h4 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h4>
+                        
+            </div> 
+        </div>
+        <div class="col-lg-6 col-md-12 text-center">
+            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+            {% content '3d-mereni' %}
+        </div>
+    </div>
+
+    <div class="row text-center pt-5">
+        <div class="col">
+            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'kvalita' |_ }}</a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+{% partial 'kontakt' %}";s:5:"mtime";i:1604228814;s:6:"markup";s:4126:"{% partial 'uvod' %}
 
 <!-- O firme -->
 <div class="container pt-5" id="uvod">
@@ -181,8 +216,8 @@ localeTitle[en] = "Techno - Vyškov home"
  <!-- Produkty -->
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            <div class="col-12 text-center mb-5">
+                <h2 class="text-uppercase">{{ 'PRODUKTY' |_ }}</h2>
             </div>
         </div>
 
@@ -193,4 +228,40 @@ localeTitle[en] = "Techno - Vyškov home"
                 <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'produkty' |_ }}</a>
             </div>
         </div>
-    </div>";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}}}
+    </div>
+
+<!-- Kvalita -->
+<section class="bg-success">
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h2 class="text-uppercase mb-5">{{ 'KVALITA'|_ }}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-12 text-center">
+            <div class="blue-iconbox">
+                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
+                    <h4 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h4>
+                        
+            </div> 
+        </div>
+        <div class="col-lg-6 col-md-12 text-center">
+            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+            {% content '3d-mereni' %}
+        </div>
+    </div>
+
+    <div class="row text-center pt-5">
+        <div class="col">
+            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'kvalita' |_ }}</a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}}}

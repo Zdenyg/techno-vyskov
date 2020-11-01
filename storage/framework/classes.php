@@ -53,4 +53,12 @@
   'RainLab\\Pages\\Components\\StaticMenu' => 'plugins\\rainlab\\pages\\components\\StaticMenu.php',
   'RainLab\\Pages\\Components\\StaticBreadcrumbs' => 'plugins\\rainlab\\pages\\components\\StaticBreadcrumbs.php',
   'RainLab\\Pages\\Classes\\Controller' => 'plugins\\rainlab\\pages\\classes\\Controller.php',
+  'RainLab\\Builder\\Models\\Settings' => 'plugins\\rainlab\\builder\\models\\Settings.php',
+  'romanov\\clearcachewidget\\Plugin' => 'plugins\\romanov\\clearcachewidget\\Plugin.php',
+  'Romanov\\ClearCacheWidget\\ReportWidgets\\ClearCache' => 'plugins\\romanov\\clearcachewidget\\reportwidgets\\ClearCache.php',
+  'Rainlab\\Translate\\Console\\ScanCommand' => 'plugins\\rainlab\\translate\\console\\ScanCommand.php',
+  'janvince\\smallcontactform\\Plugin' => 'plugins\\janvince\\smallcontactform\\Plugin.php',
+  'JanVince\\SmallContactForm\\Models\\Settings' => 'plugins\\janvince\\smallcontactform\\models\\Settings.php',
+  'RainLab\\Translate\\FormWidgets\\MLRepeater' => 'plugins\\rainlab\\translate\\formwidgets\\MLRepeater.php',
+  'JanVince\\SmallContactForm\\Components\\SmallContactForm' => 'plugins\\janvince\\smallcontactform\\components\\SmallContactForm.php',
 );

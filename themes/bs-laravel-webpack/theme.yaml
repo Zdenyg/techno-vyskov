@@ -14,10 +14,24 @@ form:
             span: left
             default: 
 
+
+####################################################
+    # Tab: Galleries
+####################################################
+    tabs:
+      fields:
         product_images:
-            tab: Fotky
-            label: Galerie
+            tab: Galleries
+            label: Galerie - lisovna
             mode: image-multi
             imageWidth: '100'
-            span: left
+            span: auto
+            type: fileupload     
+        tooling_images:
+            tab: Galleries
+            label: Galerie - nástrojárna
+            mode: image-multi
+            imageWidth: '100'
+            span: auto
             type: fileupload  
+

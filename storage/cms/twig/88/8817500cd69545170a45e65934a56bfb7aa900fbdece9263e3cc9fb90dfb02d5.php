@@ -30,13 +30,13 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 10, "_" => 11);
+        $filters = array("_" => 5, "theme" => 10);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['theme', '_'],
+                ['_', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -63,7 +63,10 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
     <div class=\"container text-white text-center\">
         <div class=\"row\">
             <div class=\"col pb-3\">
-                <h4>Naše výrobky jsou zastoupeny v mnoha odvětvích</h4>
+                <h4>";
+        // line 5
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Naše výrobky jsou zastoupeny v mnoha odvětvích"]);
+        echo "</h4>
             </div>
         </div>
         <div class=\"row d-flex justify-content-around\">
@@ -134,7 +137,7 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
 
     public function getDebugInfo()
     {
-        return array (  117 => 27,  113 => 26,  107 => 23,  103 => 22,  97 => 19,  93 => 18,  87 => 15,  83 => 14,  77 => 11,  73 => 10,  62 => 1,);
+        return array (  120 => 27,  116 => 26,  110 => 23,  106 => 22,  100 => 19,  96 => 18,  90 => 15,  86 => 14,  80 => 11,  76 => 10,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -143,7 +146,7 @@ class __TwigTemplate_e3159d669bfc2c5f68cfd5c331a7073663c41f2cdfaf117f7f2289da472
     <div class=\"container text-white text-center\">
         <div class=\"row\">
             <div class=\"col pb-3\">
-                <h4>Naše výrobky jsou zastoupeny v mnoha odvětvích</h4>
+                <h4>{{ 'Naše výrobky jsou zastoupeny v mnoha odvětvích' |_ }}</h4>
             </div>
         </div>
         <div class=\"row d-flex justify-content-around\">

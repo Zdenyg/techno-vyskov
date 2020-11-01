@@ -1,15 +1,29 @@
-1604185367a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:250:"<div id="lightgallery">
-    <h3>galerie</h3>
-    {% for image in this.theme.product_images %}
+1604231647a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:481:" <div id="lightgallery" class="text-center">
+    {% for image in this.theme.product_images  | slice(0, 3) %}
         <a href="{{ image.path }}">
-            <img src="{{ image.thumb(200, 100, {'mode':'crop' }) }}" alt="">
+            <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
         </a>
     {% endfor %}
-</div>";s:5:"mtime";i:1604184763;s:6:"markup";s:250:"<div id="lightgallery">
-    <h3>galerie</h3>
-    {% for image in this.theme.product_images %}
+
+
+
+    {% for image in this.theme.tooling_images | slice(0, 3) %}
         <a href="{{ image.path }}">
-            <img src="{{ image.thumb(200, 100, {'mode':'crop' }) }}" alt="">
+            <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+        </a>
+    {% endfor %}
+</div>";s:5:"mtime";i:1604222220;s:6:"markup";s:480:"<div id="lightgallery" class="text-center">
+    {% for image in this.theme.product_images  | slice(0, 3) %}
+        <a href="{{ image.path }}">
+            <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+        </a>
+    {% endfor %}
+
+
+
+    {% for image in this.theme.tooling_images | slice(0, 3) %}
+        <a href="{{ image.path }}">
+            <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
         </a>
     {% endfor %}
 </div>";s:4:"code";N;}}

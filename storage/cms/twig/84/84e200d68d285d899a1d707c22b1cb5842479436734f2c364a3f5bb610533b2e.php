@@ -70,7 +70,10 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KONSTRUKCE"]);
         echo "</h4>
-                        <p>forem pro vstřikování plastů</p>
+                        <p>";
+        // line 6
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["forem pro vstřikování plastů"]);
+        echo "</p>
                 </div>
                 <div class=\"iconbox\">
                     <img src=\"";
@@ -81,7 +84,10 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
         // line 10
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["VÝROBA"]);
         echo "</h4>
-                        <p>forem pro vstřikování plastů</p>
+                    <p>";
+        // line 11
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["forem pro vstřikování plastů"]);
+        echo "</p>
                 </div>
                 <div class=\"iconbox\">
                     <img src=\"";
@@ -92,7 +98,10 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
         // line 15
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["OPRAVY"]);
         echo "</h4>
-                        <p>forem pro vstřikování plastů</p>
+                    <p>";
+        // line 16
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["forem pro vstřikování plastů"]);
+        echo "</p>
                 </div>
             </div>
         </div>";
@@ -110,7 +119,7 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
 
     public function getDebugInfo()
     {
-        return array (  93 => 15,  89 => 14,  82 => 10,  78 => 9,  71 => 5,  67 => 4,  62 => 1,);
+        return array (  103 => 16,  99 => 15,  95 => 14,  89 => 11,  85 => 10,  81 => 9,  75 => 6,  71 => 5,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -120,17 +129,17 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
                 <div class=\"iconbox\">
                     <img src=\"{{ 'assets/images/icon-tool-01.svg' | theme }}\" alt=\"\">
                     <h4>{{ 'KONSTRUKCE' |_ }}</h4>
-                        <p>forem pro vstřikování plastů</p>
+                        <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class=\"iconbox\">
                     <img src=\"{{ 'assets/images/icon-tool-02.svg' | theme }}\" alt=\"\">
                     <h4>{{ 'VÝROBA' |_ }}</h4>
-                        <p>forem pro vstřikování plastů</p>
+                    <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class=\"iconbox\">
                     <img src=\"{{ 'assets/images/icon-tool-03.svg' | theme }}\" alt=\"\">
                     <h4>{{ 'OPRAVY' |_ }}</h4>
-                        <p>forem pro vstřikování plastů</p>
+                    <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
             </div>
         </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/nastrojarna-iconbox.htm", "");

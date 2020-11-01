@@ -1,0 +1,67 @@
+1604231137a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1196:"[viewBag]
+
+[contactForm]
+==
+<div class="container py-5" id="contact">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="text-uppercase">{{ 'KONTAKT' |_ }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 my-5">
+            <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" class="mb-3" alt="">
+            <h3 class="text-primary">TECHNO Vyškov spol. s r. o.</h3>
+            <ul>
+                <li>Joklova 9</li>
+                <li>682 01 Vyškov</li>
+                <li>Czech Republic</li>
+            </ul>
+            <ul class="text-primary">
+                <li>Tel.: +420 517 341 681</li>
+                <li>Fax: +420 517 341 682</li>
+                <li>Výroba: +420 602 568 307</li>
+                <li>Nástrojárna: +420 721 269 930</li>
+                <li>E-mail: info@techno-vyskov.cz</li>
+            </ul>
+            <ul>
+                <li>IČO: 25 58 51 77</li>
+                <li>DIČ: CZ 25 58 51 77</li>
+            </ul>
+        </div>
+        <div class="col-md-6 my-5">
+            {% component 'contactForm' %}
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1604230534;s:6:"markup";s:1164:"<div class="container py-5" id="contact">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="text-uppercase">{{ 'KONTAKT' |_ }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 my-5">
+            <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" class="mb-3" alt="">
+            <h3 class="text-primary">TECHNO Vyškov spol. s r. o.</h3>
+            <ul>
+                <li>Joklova 9</li>
+                <li>682 01 Vyškov</li>
+                <li>Czech Republic</li>
+            </ul>
+            <ul class="text-primary">
+                <li>Tel.: +420 517 341 681</li>
+                <li>Fax: +420 517 341 682</li>
+                <li>Výroba: +420 602 568 307</li>
+                <li>Nástrojárna: +420 721 269 930</li>
+                <li>E-mail: info@techno-vyskov.cz</li>
+            </ul>
+            <ul>
+                <li>IČO: 25 58 51 77</li>
+                <li>DIČ: CZ 25 58 51 77</li>
+            </ul>
+        </div>
+        <div class="col-md-6 my-5">
+            {% component 'contactForm' %}
+        </div>
+    </div>
+</div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"contactForm";a:0:{}}}
