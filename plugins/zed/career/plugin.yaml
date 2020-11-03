@@ -1,0 +1,11 @@
+plugin:
+    name: 'zed.career::lang.plugin.name'
+    description: 'zed.career::lang.plugin.description'
+    author: Zed
+    icon: oc-icon-hand-o-right
+    homepage: ''
+navigation:
+    button:
+        label: Kariéra
+        url: zed/career/career
+        icon: icon-hand-o-right

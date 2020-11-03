@@ -1,15 +1,20 @@
- <div id="lightgallery" class="text-center">
+ <div class="gallery text-center">
+    
     {% for image in this.theme.product_images  | slice(0, 3) %}
+    <div class="image-wrapper">
         <a href="{{ image.path }}">
             <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
         </a>
+    </div>
     {% endfor %}
-
-
-
+    
+    
     {% for image in this.theme.tooling_images | slice(0, 3) %}
+    <div class="image-wrapper">
         <a href="{{ image.path }}">
             <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
         </a>
+    </div>
     {% endfor %}
-</div>
+    
+ </div>

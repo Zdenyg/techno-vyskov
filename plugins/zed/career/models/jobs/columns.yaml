@@ -1,0 +1,9 @@
+columns:
+    job_name:
+        label: job_name
+        type: text
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        sortable: true

@@ -1,0 +1,26 @@
+fields:
+    job_name:
+        label: 'Název pozice'
+        span: auto
+        type: text
+    job_description:
+        label: 'Pracovní náplň'
+        size: ''
+        span: auto
+        type: richeditor
+    require:
+        label: Požadujeme
+        size: ''
+        span: auto
+        type: richeditor
+    offer:
+        label: Nabízíme
+        size: ''
+        span: auto
+        type: richeditor
+    created_at:
+        label: 'Vytvořeno dne'
+        mode: date
+        format: Y-d-m
+        span: auto
+        type: datepicker

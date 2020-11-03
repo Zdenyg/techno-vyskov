@@ -5,16 +5,18 @@ body {
 
 * {
     outline: none;
+
 }
 
 
-h1, h2, h3  {
+h1, h2  {
     font-weight: 800;
 }
 h1 {
     text-transform: uppercase;
     color:$gray-600;
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     
 }
 
@@ -42,7 +44,7 @@ h4 {
 }
 
 hr {
-    border-top: 1px solid $primary;
+    border-top: 1px solid lighten(black, 70%);
 }
 
 .gradient {

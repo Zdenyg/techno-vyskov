@@ -45,7 +45,15 @@ import "../../node_modules/bootstrap/js/dist/scrollspy.js";
 //import "../../node_modules/bootstrap/js/dist/tooltip.js";
 //import "../../node_modules/bootstrap/js/dist/util.js";
 
-import "../../node_modules/lightgallery/dist/js/lightgallery.min";
+//import "../../node_modules/lightgallery/dist/js/lightgallery.min";
+
+import SimpleLightbox from "simplelightbox";
+
+let gallery = new SimpleLightbox('.gallery a');
+gallery.on('show.simplelightbox', function () {
+	// do something…
+});
+
 
 import AOS from 'aos'
 
@@ -68,9 +76,10 @@ $(function() {
 
 //  LIGHTGALLERY
 
-
+/* 
   $("#lightgallery").lightGallery({
     pager: true,
     thumbMargin: 10,
   });
 
+ */

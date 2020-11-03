@@ -80,11 +80,14 @@
 
 @import "base/global";   
 
-@import "aos/src/sass/aos";
+//@import "aos/src/sass/aos";
+@import "vendors/simplelightbox";
 
-@import "lightgallery/src/sass/lightgallery";
 
 @import "base/navbar";
 
 @import "pages/uvod";
 @import "pages/contact";
+
+
+

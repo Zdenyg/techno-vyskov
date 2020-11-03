@@ -1,4 +1,11 @@
 /*!
+	By André Rinas, www.andrerinas.de
+	Documentation, www.simplelightbox.de
+	Available for use under the MIT License
+	Version 2.6.0
+*/
+
+/*!
   * Bootstrap collapse.js v4.5.0 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -46,10 +53,6 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-
-/*! lightgallery - v1.9.0 - 2020-10-14
-* http://sachinchoolur.github.io/lightGallery/
-* Copyright (c) 2020 Sachin N; Licensed GPLv3 */
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.

@@ -29,8 +29,8 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("for" => 2);
-        $filters = array("slice" => 2, "escape" => 3);
+        $tags = array("for" => 3);
+        $filters = array("slice" => 3, "escape" => 5);
         $functions = array();
 
         try {
@@ -59,51 +59,58 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
     {
         $macros = $this->macros;
         // line 1
-        echo "<div id=\"lightgallery\" class=\"text-center\">
+        echo "<div class=\"gallery text-center\">
+    
     ";
-        // line 2
+        // line 3
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 2), "product_images", [], "any", false, false, true, 2), 0, 3));
+        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 3), "product_images", [], "any", false, false, true, 3), 0, 3));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 3
-            echo "        <a href=\"";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 3), 3, $this->source), "html", null, true);
-            echo "\">
-            <img src=\"";
             // line 4
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "thumb", [0 => 300, 1 => 200, 2 => ["mode" => "crop"]], "method", false, false, true, 4), 4, $this->source), "html", null, true);
-            echo "\" alt=\"\">
-        </a>
-    ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 7
-        echo "
-
-
-    ";
-        // line 10
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 10), "tooling_images", [], "any", false, false, true, 10), 0, 3));
-        foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 11
-            echo "        <a href=\"";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 11), 11, $this->source), "html", null, true);
+            echo "    <div class=\"image-wrapper\">
+        <a href=\"";
+            // line 5
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
             echo "\">
             <img src=\"";
-            // line 12
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "thumb", [0 => 300, 1 => 200, 2 => ["mode" => "crop"]], "method", false, false, true, 12), 12, $this->source), "html", null, true);
+            // line 6
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "thumb", [0 => 300, 1 => 200, 2 => ["mode" => "crop"]], "method", false, false, true, 6), 6, $this->source), "html", null, true);
             echo "\" alt=\"\">
         </a>
+    </div>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 15
-        echo "</div>";
+        // line 10
+        echo "    
+    
+    ";
+        // line 12
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 12), "tooling_images", [], "any", false, false, true, 12), 0, 3));
+        foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
+            // line 13
+            echo "    <div class=\"image-wrapper\">
+        <a href=\"";
+            // line 14
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 14), 14, $this->source), "html", null, true);
+            echo "\">
+            <img src=\"";
+            // line 15
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "thumb", [0 => 300, 1 => 200, 2 => ["mode" => "crop"]], "method", false, false, true, 15), 15, $this->source), "html", null, true);
+            echo "\" alt=\"\">
+        </a>
+    </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 19
+        echo "    
+ </div>";
     }
 
     public function getTemplateName()
@@ -118,25 +125,30 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
 
     public function getDebugInfo()
     {
-        return array (  106 => 15,  97 => 12,  92 => 11,  88 => 10,  83 => 7,  74 => 4,  69 => 3,  65 => 2,  62 => 1,);
+        return array (  112 => 19,  102 => 15,  98 => 14,  95 => 13,  91 => 12,  87 => 10,  77 => 6,  73 => 5,  70 => 4,  66 => 3,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div id=\"lightgallery\" class=\"text-center\">
+        return new Source("<div class=\"gallery text-center\">
+    
     {% for image in this.theme.product_images  | slice(0, 3) %}
+    <div class=\"image-wrapper\">
         <a href=\"{{ image.path }}\">
             <img src=\"{{ image.thumb(300, 200, {'mode':'crop' }) }}\" alt=\"\">
         </a>
+    </div>
     {% endfor %}
-
-
-
+    
+    
     {% for image in this.theme.tooling_images | slice(0, 3) %}
+    <div class=\"image-wrapper\">
         <a href=\"{{ image.path }}\">
             <img src=\"{{ image.thumb(300, 200, {'mode':'crop' }) }}\" alt=\"\">
         </a>
+    </div>
     {% endfor %}
-</div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/produkty.htm", "");
+    
+ </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/produkty.htm", "");
     }
 }

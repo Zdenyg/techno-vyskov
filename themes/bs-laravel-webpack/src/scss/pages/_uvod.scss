@@ -59,8 +59,17 @@ header {
   }  
 
 
+.career {
+  li {
+    margin: 1rem 0;
+  }
+}
+
+
+
   .iconbox {
     margin: 1rem;
+
   img {
     padding: 1rem;
   }
@@ -85,7 +94,12 @@ header {
 }
 
 
-
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
 
 
 

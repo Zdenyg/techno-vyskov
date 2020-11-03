@@ -1,4 +1,4 @@
-1604253367a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:4468:"title = "Techno - Vyškov úvod"
+1604438345a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:4960:"title = "Techno - Vyškov úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno - Vyškov"
@@ -7,11 +7,22 @@ is_hidden = 0
 
 [viewBag]
 localeTitle[en] = "Techno - Vyškov home"
+
+[builderList]
+modelClass = "Zed\Career\Models\Jobs"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "job_name"
+noRecordsMessage = "aktuálně není žádná pozice volná"
+detailsPage = "career"
+detailsKeyColumn = "job_name"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 {% partial 'uvod' %}
 
 <!-- O firme -->
-<div class="container pt-5" id="uvod">
+<div class="container py-5" id="uvod">
     <div class="row">
         <div class="col-md-7 mb-5">
             {% content 'uvod' %}
@@ -25,13 +36,20 @@ localeTitle[en] = "Techno - Vyškov home"
             </div>
         </div>
         <!-- Career -->
-        <div class="col-md-5 mb-3">
-            <div class="card border p-3">
+        <div class="col-md-5 mb-3 career">
+            <div class="card border">
                 <div class="card-body">
                   <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">aktuálně nehledáme </h6>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                    
+
+                        {% component 'builderList' %}
+
+                        <div class="row text-center pb-2 pt-5">
+                            <div class="col">
+                                <a href="{{ 'career'|page }}" class="btn btn-primary" role="button">{{ 'kariéra' |_ }}</a>
+                            </div>
+                        </div>
+                    
                 </div>
               </div>
             </div>
@@ -136,10 +154,10 @@ localeTitle[en] = "Techno - Vyškov home"
 </section>
 
 
-{% partial 'kontakt' %}";s:5:"mtime";i:1604228814;s:6:"markup";s:4126:"{% partial 'uvod' %}
+{% partial 'kontakt' %}";s:5:"mtime";i:1604436509;s:6:"markup";s:4319:"{% partial 'uvod' %}
 
 <!-- O firme -->
-<div class="container pt-5" id="uvod">
+<div class="container py-5" id="uvod">
     <div class="row">
         <div class="col-md-7 mb-5">
             {% content 'uvod' %}
@@ -153,13 +171,20 @@ localeTitle[en] = "Techno - Vyškov home"
             </div>
         </div>
         <!-- Career -->
-        <div class="col-md-5 mb-3">
-            <div class="card border p-3">
+        <div class="col-md-5 mb-3 career">
+            <div class="card border">
                 <div class="card-body">
                   <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">aktuálně nehledáme </h6>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                    
+
+                        {% component 'builderList' %}
+
+                        <div class="row text-center pb-2 pt-5">
+                            <div class="col">
+                                <a href="{{ 'career'|page }}" class="btn btn-primary" role="button">{{ 'kariéra' |_ }}</a>
+                            </div>
+                        </div>
+                    
                 </div>
               </div>
             </div>
@@ -264,4 +289,4 @@ localeTitle[en] = "Techno - Vyškov home"
 </section>
 
 
-{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}}}
+{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:39:"aktuálně není žádná pozice volná";s:11:"detailsPage";s:6:"career";s:16:"detailsKeyColumn";s:8:"job_name";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

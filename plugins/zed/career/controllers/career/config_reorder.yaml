@@ -1,0 +1,4 @@
+title: Career
+modelClass: Zed\Career\Models\Jobs
+toolbar:
+    buttons: reorder_toolbar

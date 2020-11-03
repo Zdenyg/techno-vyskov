@@ -1,0 +1,10 @@
+name: Career
+form: $/zed/career/models/jobs/fields.yaml
+modelClass: Zed\Career\Models\Jobs
+defaultRedirect: zed/career/career
+create:
+    redirect: 'zed/career/career/update/:id'
+    redirectClose: zed/career/career
+update:
+    redirect: zed/career/career
+    redirectClose: zed/career/career
