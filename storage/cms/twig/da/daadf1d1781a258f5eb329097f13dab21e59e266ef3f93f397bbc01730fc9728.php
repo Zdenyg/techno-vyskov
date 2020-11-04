@@ -29,7 +29,7 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("partial" => 24, "page" => 26, "framework" => 33, "scripts" => 34);
+        $tags = array("partial" => 24, "page" => 26, "framework" => 37, "scripts" => 38);
         $filters = array("escape" => 6, "theme" => 9);
         $functions = array("url_current" => 19);
 
@@ -131,15 +131,19 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
         // line 27
         echo "    
      
-
+  <a id=\"back-to-top\" href=\"#\" class=\"btn btn-primary back-to-top\" role=\"button\">
+    <svg width=\"2em\" height=\"2em\" viewBox=\"0 0 16 16\" class=\"bi bi-chevron-up\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">
+      <path fill-rule=\"evenodd\" d=\"M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z\"/>
+    </svg>
+  </a>
 
   <script src=\"";
-        // line 31
+        // line 35
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/scripts.js");
         echo "\"></script>
 
   ";
-        // line 33
+        // line 37
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -150,11 +154,11 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 34
+        // line 38
         echo "  ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 35
+        // line 39
         echo "
     
   </body>
@@ -173,7 +177,7 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
 
     public function getDebugInfo()
     {
-        return array (  158 => 35,  154 => 34,  143 => 33,  138 => 31,  132 => 27,  130 => 26,  127 => 25,  123 => 24,  116 => 20,  112 => 19,  108 => 18,  104 => 17,  99 => 15,  94 => 13,  90 => 12,  86 => 11,  82 => 10,  78 => 9,  73 => 7,  69 => 6,  62 => 1,);
+        return array (  162 => 39,  158 => 38,  147 => 37,  142 => 35,  132 => 27,  130 => 26,  127 => 25,  123 => 24,  116 => 20,  112 => 19,  108 => 18,  104 => 17,  99 => 15,  94 => 13,  90 => 12,  86 => 11,  82 => 10,  78 => 9,  73 => 7,  69 => 6,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -206,7 +210,11 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
   {% page %}
     
      
-
+  <a id=\"back-to-top\" href=\"#\" class=\"btn btn-primary back-to-top\" role=\"button\">
+    <svg width=\"2em\" height=\"2em\" viewBox=\"0 0 16 16\" class=\"bi bi-chevron-up\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">
+      <path fill-rule=\"evenodd\" d=\"M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z\"/>
+    </svg>
+  </a>
 
   <script src=\"{{ 'assets/js/scripts.js' | theme }}\"></script>
 

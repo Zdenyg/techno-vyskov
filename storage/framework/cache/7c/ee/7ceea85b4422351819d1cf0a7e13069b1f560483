@@ -1,8 +1,8 @@
-1604438635a:1:{s:8:"uvod.htm";a:6:{s:8:"fileName";s:8:"uvod.htm";s:7:"content";s:797:"==
+1604518515a:1:{s:8:"uvod.htm";a:6:{s:8:"fileName";s:8:"uvod.htm";s:7:"content";s:806:"==
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="{{ 'assets/video/techno.mp4' | theme }}" type="video/mp4">
+      <source src="{{ 'assets/video/Techno-video-01.mp4' | theme }}" type="video/mp4">
     </video>
     <div class="container h-100">
 
@@ -25,10 +25,10 @@
   </header>
 
 
-";s:5:"mtime";i:1604251001;s:6:"markup";s:787:"<header>
+";s:5:"mtime";i:1604507841;s:6:"markup";s:796:"<header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="{{ 'assets/video/techno.mp4' | theme }}" type="video/mp4">
+      <source src="{{ 'assets/video/Techno-video-01.mp4' | theme }}" type="video/mp4">
     </video>
     <div class="container h-100">
 

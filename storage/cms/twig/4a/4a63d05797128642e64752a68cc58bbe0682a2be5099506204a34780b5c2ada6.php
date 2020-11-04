@@ -137,10 +137,10 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
     <div class=\"container py-5\">
         <div class=\"row\">
             <div class=\"col-12 text-center\">
-                <h2>";
+                <h4>";
         // line 48
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NAŠE SLUŽBY"]);
-        echo "</h2>
+        echo "</h4>
                 <h1>";
         // line 49
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NÁSTROJÁRNA"]);
@@ -213,10 +213,10 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
     <div class=\"container py-5\">
         <div class=\"row\">
             <div class=\"col-12 text-center mb-5\">
-                <h2 class=\"text-uppercase\">";
+                <h1>";
         // line 89
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["PRODUKTY"]);
-        echo "</h2>
+        echo "</h1>
             </div>
         </div>
 
@@ -233,7 +233,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         // line 97
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("products");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["produkty"]);
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více foto"]);
         echo "</a>
             </div>
         </div>
@@ -244,10 +244,10 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 <div class=\"container py-5\">
     <div class=\"row\">
         <div class=\"col-12 text-center mb-5\">
-            <h2 class=\"text-uppercase mb-5\">";
+            <h1>";
         // line 107
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KVALITA"]);
-        echo "</h2>
+        echo "</h1>
         </div>
     </div>
 
@@ -258,10 +258,10 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         // line 114
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-07.svg");
         echo "\" alt=\"\">
-                    <h4 class=\"mt-3\">";
+                    <h5 class=\"mt-3\">";
         // line 115
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["3D MĚŘENÍ"]);
-        echo "</h4>
+        echo "</h5>
                         
             </div> 
         </div>
@@ -366,7 +366,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
     <div class=\"container py-5\">
         <div class=\"row\">
             <div class=\"col-12 text-center\">
-                <h2>{{ 'NAŠE SLUŽBY' |_}}</h2>
+                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
                 <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
                 <img src=\"{{ 'assets/images/forma_01.png' | theme }}\" class=\"img-fluid\" alt=\"\">
             </div>
@@ -407,7 +407,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
     <div class=\"container py-5\">
         <div class=\"row\">
             <div class=\"col-12 text-center mb-5\">
-                <h2 class=\"text-uppercase\">{{ 'PRODUKTY' |_ }}</h2>
+                <h1>{{ 'PRODUKTY' |_ }}</h1>
             </div>
         </div>
 
@@ -415,7 +415,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
         <div class=\"row text-center pt-5\">
             <div class=\"col\">
-                <a href=\"{{ 'products'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'produkty' |_ }}</a>
+                <a href=\"{{ 'products'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'více foto' |_ }}</a>
             </div>
         </div>
     </div>
@@ -425,7 +425,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 <div class=\"container py-5\">
     <div class=\"row\">
         <div class=\"col-12 text-center mb-5\">
-            <h2 class=\"text-uppercase mb-5\">{{ 'KVALITA'|_ }}</h2>
+            <h1>{{ 'KVALITA'|_ }}</h1>
         </div>
     </div>
 
@@ -433,7 +433,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         <div class=\"col-lg-2 col-md-12 text-center\">
             <div class=\"blue-iconbox\">
                 <img src=\"{{ 'assets/images/icon-tool-07.svg' | theme }}\" alt=\"\">
-                    <h4 class=\"mt-3\">{{ '3D MĚŘENÍ' |_ }}</h4>
+                    <h5 class=\"mt-3\">{{ '3D MĚŘENÍ' |_ }}</h5>
                         
             </div> 
         </div>

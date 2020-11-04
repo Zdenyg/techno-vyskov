@@ -1,17 +1,17 @@
-1604438635a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1298:"[viewBag]
+1604518516a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1305:"[viewBag]
 
 [contactForm]
 ==
 <div class="container py-5" id="contact">
     <div class="row">
         <div class="col-12 text-center">
-            <h2 class="text-uppercase">{{ 'KONTAKT' |_ }}</h2>
+            <h1>{{ 'KONTAKT' |_ }}</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 my-5">
-            <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" class="mb-3" alt="">
-            <h3 class="text-primary">TECHNO Vyškov spol. s r. o.</h3>
+            <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230px" class="mb-3" alt="">
+            <h3 class="text-primary">TECHNO Vyškov <small> spol. s r. o.</small></h3>
             <ul>
                 <li>Joklova 9</li>
                 <li>682 01 Vyškov</li>
@@ -34,16 +34,16 @@
             <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
         </div>
     </div>
-</div>";s:5:"mtime";i:1604248087;s:6:"markup";s:1266:"<div class="container py-5" id="contact">
+</div>";s:5:"mtime";i:1604510346;s:6:"markup";s:1273:"<div class="container py-5" id="contact">
     <div class="row">
         <div class="col-12 text-center">
-            <h2 class="text-uppercase">{{ 'KONTAKT' |_ }}</h2>
+            <h1>{{ 'KONTAKT' |_ }}</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 my-5">
-            <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" class="mb-3" alt="">
-            <h3 class="text-primary">TECHNO Vyškov spol. s r. o.</h3>
+            <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230px" class="mb-3" alt="">
+            <h3 class="text-primary">TECHNO Vyškov <small> spol. s r. o.</small></h3>
             <ul>
                 <li>Joklova 9</li>
                 <li>682 01 Vyškov</li>

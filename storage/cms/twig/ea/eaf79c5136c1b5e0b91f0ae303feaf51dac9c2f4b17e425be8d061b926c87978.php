@@ -64,10 +64,10 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
     ";
         // line 3
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 3), "product_images", [], "any", false, false, true, 3), 0, 3));
+        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 3), "product_images", [], "any", false, false, true, 3), 7, 3));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 4
-            echo "    <div class=\"image-wrapper\">
+            echo " 
+    <div class=\"image-wrapper img-hover-zoom\">
         <a href=\"";
             // line 5
             echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
@@ -89,10 +89,10 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
     ";
         // line 12
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 12), "tooling_images", [], "any", false, false, true, 12), 0, 3));
+        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 12), "tooling_images", [], "any", false, false, true, 12), 1, 3));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
             // line 13
-            echo "    <div class=\"image-wrapper\">
+            echo "    <div class=\"image-wrapper img-hover-zoom\">
         <a href=\"";
             // line 14
             echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 14), 14, $this->source), "html", null, true);
@@ -125,15 +125,15 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
 
     public function getDebugInfo()
     {
-        return array (  112 => 19,  102 => 15,  98 => 14,  95 => 13,  91 => 12,  87 => 10,  77 => 6,  73 => 5,  70 => 4,  66 => 3,  62 => 1,);
+        return array (  112 => 19,  102 => 15,  98 => 14,  95 => 13,  91 => 12,  87 => 10,  77 => 6,  73 => 5,  66 => 3,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"gallery text-center\">
     
-    {% for image in this.theme.product_images  | slice(0, 3) %}
-    <div class=\"image-wrapper\">
+    {% for image in this.theme.product_images  | slice(7,3) %} 
+    <div class=\"image-wrapper img-hover-zoom\">
         <a href=\"{{ image.path }}\">
             <img src=\"{{ image.thumb(300, 200, {'mode':'crop' }) }}\" alt=\"\">
         </a>
@@ -141,8 +141,8 @@ class __TwigTemplate_5f8e5491ef973467aa844365b62e7172e5dd857a07a620f3818d59171e6
     {% endfor %}
     
     
-    {% for image in this.theme.tooling_images | slice(0, 3) %}
-    <div class=\"image-wrapper\">
+    {% for image in this.theme.tooling_images | slice(1,3) %}
+    <div class=\"image-wrapper img-hover-zoom\">
         <a href=\"{{ image.path }}\">
             <img src=\"{{ image.thumb(300, 200, {'mode':'crop' }) }}\" alt=\"\">
         </a>

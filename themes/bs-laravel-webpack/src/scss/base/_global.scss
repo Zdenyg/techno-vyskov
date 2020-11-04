@@ -3,30 +3,22 @@ body {
     font-weight: 400;
 }
 
-* {
-    outline: none;
-
-}
-
 
 h1, h2  {
     font-weight: 800;
 }
 h1 {
     text-transform: uppercase;
-    color:$gray-600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    
 }
 
-h2 {
-    font-size: 1.6rem;
-    color: $primary;
-}
-h4 {
-    font-size: 1.2rem;
-}
+@media only screen and (max-width: 380px) {
+    h1 { font-size: 1.7rem }
+    h3 { font-size: 1.3rem }
+    h4 { font-size: 1.2rem }
+  }
+
+
+
 
 .btn {
     font-weight: 400;
@@ -58,10 +50,10 @@ hr {
 
 .lang_switch {
     padding-left: 10px;
-    border-left: 1px solid $primary;
+    border-left: 2px solid $primary;
     .form-control {
         border: 0;
-        font-size: 12px;
+        font-size: 14px;
         padding: 0;
        
         :focus,.btn:active {
@@ -77,3 +69,5 @@ hr {
     
     box-shadow: none;
 }
+
+

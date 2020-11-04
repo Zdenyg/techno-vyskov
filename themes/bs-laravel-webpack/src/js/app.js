@@ -51,7 +51,7 @@ import SimpleLightbox from "simplelightbox";
 
 let gallery = new SimpleLightbox('.gallery a');
 gallery.on('show.simplelightbox', function () {
-	// do something…
+
 });
 
 
@@ -66,20 +66,25 @@ import AOS from 'aos'
 
 // LAZY loading
 
-
 $(function() {
   $('.lazy').Lazy();
   
 });
 
+// Scroll on top button
 
 
-//  LIGHTGALLERY
-
-/* 
-  $("#lightgallery").lightGallery({
-    pager: true,
-    thumbMargin: 10,
-  });
-
- */
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 800) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1000);
+			return false;
+		});

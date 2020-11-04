@@ -66,30 +66,30 @@ class __TwigTemplate_311154f92549d3888955cc38529e2ab727be2affb22eb74168c4a09485e
         // line 4
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-04.svg");
         echo "\" alt=\"\">
-            <h4>";
+            <h5>";
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ"]);
-        echo "</h4>
+        echo "</h5>
         </div>
         <div class=\"iconbox\">
             <img src=\"";
         // line 8
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-05.svg");
         echo "\" alt=\"\">
-            <h4>";
+            <h5>";
         // line 9
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["MONTÁŽ A KOMPLETACE"]);
-        echo "</h4>
+        echo "</h5>
         </div>
         <div class=\"iconbox\">
             <img src=\"";
         // line 12
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-06.svg");
         echo "\" alt=\"\">
-            <h4>";
+            <h5>";
         // line 13
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["POTISK VÝROBKŮ"]);
-        echo "</h4>
+        echo "</h5>
         </div>
     </div>
 </div>";
@@ -116,15 +116,15 @@ class __TwigTemplate_311154f92549d3888955cc38529e2ab727be2affb22eb74168c4a09485e
     <div class=\"col text-center d-md-flex justify-content-around\">
         <div class=\"iconbox\">
             <img src=\"{{ 'assets/images/icon-tool-04.svg' | theme }}\" alt=\"\">
-            <h4>{{ 'VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ' |_ }}</h4>
+            <h5>{{ 'VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ' |_ }}</h5>
         </div>
         <div class=\"iconbox\">
             <img src=\"{{ 'assets/images/icon-tool-05.svg' | theme }}\" alt=\"\">
-            <h4>{{ 'MONTÁŽ A KOMPLETACE' |_ }}</h4>
+            <h5>{{ 'MONTÁŽ A KOMPLETACE' |_ }}</h5>
         </div>
         <div class=\"iconbox\">
             <img src=\"{{ 'assets/images/icon-tool-06.svg' | theme }}\" alt=\"\">
-            <h4>{{ 'POTISK VÝROBKŮ' |_ }}</h4>
+            <h5>{{ 'POTISK VÝROBKŮ' |_ }}</h5>
         </div>
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/lisovna-iconbox.htm", "");

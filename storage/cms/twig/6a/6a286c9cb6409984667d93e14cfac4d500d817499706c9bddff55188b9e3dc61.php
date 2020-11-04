@@ -64,7 +64,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
     <video playsinline=\"playsinline\" autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\">
       <source src=\"";
         // line 4
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/video/techno.mp4");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/video/Techno-video-01.mp4");
         echo "\" type=\"video/mp4\">
     </video>
     <div class=\"container h-100\">
@@ -123,7 +123,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
         return new Source("<header>
     <div class=\"overlay\"></div>
     <video playsinline=\"playsinline\" autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\">
-      <source src=\"{{ 'assets/video/techno.mp4' | theme }}\" type=\"video/mp4\">
+      <source src=\"{{ 'assets/video/Techno-video-01.mp4' | theme }}\" type=\"video/mp4\">
     </video>
     <div class=\"container h-100\">
 

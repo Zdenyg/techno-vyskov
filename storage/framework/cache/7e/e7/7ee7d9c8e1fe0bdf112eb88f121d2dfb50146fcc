@@ -1,0 +1,6 @@
+1604518515a:1:{s:9:"testy.htm";a:9:{s:8:"fileName";s:9:"testy.htm";s:7:"content";s:92:"title = "testy"
+url = "/testy"
+layout = "default"
+is_hidden = 0
+==
+{% partial 'typo' %}";s:5:"mtime";i:1604439907;s:6:"markup";s:20:"{% partial 'typo' %}";s:4:"code";N;s:5:"title";s:5:"testy";s:3:"url";s:6:"/testy";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

@@ -1,31 +1,31 @@
-1604438635a:1:{s:19:"lisovna-iconbox.htm";a:5:{s:8:"fileName";s:19:"lisovna-iconbox.htm";s:7:"content";s:674:"<div class="row bg-white shadow">
+1604518516a:1:{s:19:"lisovna-iconbox.htm";a:5:{s:8:"fileName";s:19:"lisovna-iconbox.htm";s:7:"content";s:674:"<div class="row bg-white shadow">
     <div class="col text-center d-md-flex justify-content-around">
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-04.svg' | theme }}" alt="">
-            <h4>{{ 'VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ' |_ }}</h4>
+            <h5>{{ 'VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ' |_ }}</h5>
         </div>
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-05.svg' | theme }}" alt="">
-            <h4>{{ 'MONTÁŽ A KOMPLETACE' |_ }}</h4>
+            <h5>{{ 'MONTÁŽ A KOMPLETACE' |_ }}</h5>
         </div>
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-06.svg' | theme }}" alt="">
-            <h4>{{ 'POTISK VÝROBKŮ' |_ }}</h4>
+            <h5>{{ 'POTISK VÝROBKŮ' |_ }}</h5>
         </div>
     </div>
-</div>";s:5:"mtime";i:1604179555;s:6:"markup";s:674:"<div class="row bg-white shadow">
+</div>";s:5:"mtime";i:1604441323;s:6:"markup";s:674:"<div class="row bg-white shadow">
     <div class="col text-center d-md-flex justify-content-around">
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-04.svg' | theme }}" alt="">
-            <h4>{{ 'VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ' |_ }}</h4>
+            <h5>{{ 'VSTŘIKOVÁNÍ PLASTOVÝCH VÝLISKŮ' |_ }}</h5>
         </div>
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-05.svg' | theme }}" alt="">
-            <h4>{{ 'MONTÁŽ A KOMPLETACE' |_ }}</h4>
+            <h5>{{ 'MONTÁŽ A KOMPLETACE' |_ }}</h5>
         </div>
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-06.svg' | theme }}" alt="">
-            <h4>{{ 'POTISK VÝROBKŮ' |_ }}</h4>
+            <h5>{{ 'POTISK VÝROBKŮ' |_ }}</h5>
         </div>
     </div>
 </div>";s:4:"code";N;}}

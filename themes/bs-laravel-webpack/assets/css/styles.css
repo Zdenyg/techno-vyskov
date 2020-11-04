@@ -8390,30 +8390,27 @@ body {
   font-weight: 400;
 }
 
-* {
-  outline: none;
-}
-
 h1, h2 {
   font-weight: 800;
 }
 
 h1 {
   text-transform: uppercase;
-  color: #6c757d;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 
-h2 {
-  font-size: 1.6rem;
-  color: #004f9e;
-}
+@media only screen and (max-width: 380px) {
+  h1 {
+    font-size: 1.7rem;
+  }
 
-h4 {
-  font-size: 1.2rem;
-}
+  h3 {
+    font-size: 1.3rem;
+  }
 
+  h4 {
+    font-size: 1.2rem;
+  }
+}
 .btn {
   font-weight: 400;
   border: 0;
@@ -8443,11 +8440,11 @@ hr {
 
 .lang_switch {
   padding-left: 10px;
-  border-left: 1px solid #004f9e;
+  border-left: 2px solid #004f9e;
 }
 .lang_switch .form-control {
   border: 0;
-  font-size: 12px;
+  font-size: 14px;
   padding: 0;
 }
 .lang_switch .form-control :focus, .lang_switch .form-control .btn:active {
@@ -8711,7 +8708,7 @@ body.hidden-scroll {
   }
 }
 .navbar-brand img {
-  width: 216px;
+  width: 207px;
 }
 
 .navbar-light .navbar-toggler {
@@ -8779,7 +8776,7 @@ header ul {
   margin-bottom: 10px;
 }
 header li {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 header .desc {
   opacity: 0.7;
@@ -8787,19 +8784,32 @@ header .desc {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
+    background: url("../images/Techno-mobile-header.jpg") black no-repeat center center;
+    background-size: cover;
+  }
+  header li {
+    font-size: 1.1rem;
   }
 
   header video {
     display: none;
   }
 }
+#uvod h2 {
+  color: #004f9e;
+  font-size: 1.2rem;
+}
+
 .career li {
   margin: 1rem 0;
 }
 
 .iconbox {
-  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 .iconbox img {
   padding: 1rem;
@@ -8833,6 +8843,28 @@ header .desc {
           justify-content: center;
 }
 
+.img-hover-zoom {
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.img-hover-zoom img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.back-to-top {
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+}
+
 @media (min-width: 992px) {
   .py-5 {
     padding-top: 4rem !important;
@@ -8840,7 +8872,7 @@ header .desc {
   }
 
   .iconbox {
-    width: 15%;
+    width: 176px;
   }
 }
 #contact ul {

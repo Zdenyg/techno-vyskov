@@ -1,36 +1,36 @@
-1604438635a:1:{s:23:"nastrojarna-iconbox.htm";a:5:{s:8:"fileName";s:23:"nastrojarna-iconbox.htm";s:7:"content";s:982:"        <div class="row bg-white shadow shortdesc">
+1604518516a:1:{s:23:"nastrojarna-iconbox.htm";a:5:{s:8:"fileName";s:23:"nastrojarna-iconbox.htm";s:7:"content";s:982:"        <div class="row bg-white shadow shortdesc">
             <div class="col text-center d-md-flex justify-content-around">
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-01.svg' | theme }}" alt="">
-                    <h4>{{ 'KONSTRUKCE' |_ }}</h4>
+                    <h5>{{ 'KONSTRUKCE' |_ }}</h5>
                         <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-02.svg' | theme }}" alt="">
-                    <h4>{{ 'VÝROBA' |_ }}</h4>
+                    <h5>{{ 'VÝROBA' |_ }}</h5>
                     <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-03.svg' | theme }}" alt="">
-                    <h4>{{ 'OPRAVY' |_ }}</h4>
+                    <h5>{{ 'OPRAVY' |_ }}</h5>
                     <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
             </div>
-        </div>";s:5:"mtime";i:1604228026;s:6:"markup";s:974:"<div class="row bg-white shadow shortdesc">
+        </div>";s:5:"mtime";i:1604441313;s:6:"markup";s:974:"<div class="row bg-white shadow shortdesc">
             <div class="col text-center d-md-flex justify-content-around">
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-01.svg' | theme }}" alt="">
-                    <h4>{{ 'KONSTRUKCE' |_ }}</h4>
+                    <h5>{{ 'KONSTRUKCE' |_ }}</h5>
                         <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-02.svg' | theme }}" alt="">
-                    <h4>{{ 'VÝROBA' |_ }}</h4>
+                    <h5>{{ 'VÝROBA' |_ }}</h5>
                     <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-03.svg' | theme }}" alt="">
-                    <h4>{{ 'OPRAVY' |_ }}</h4>
+                    <h5>{{ 'OPRAVY' |_ }}</h5>
                     <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
             </div>

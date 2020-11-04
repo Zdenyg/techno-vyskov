@@ -62,10 +62,10 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         echo "<div class=\"container py-5\" id=\"contact\">
     <div class=\"row\">
         <div class=\"col-12 text-center\">
-            <h2 class=\"text-uppercase\">";
+            <h1>";
         // line 4
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KONTAKT"]);
-        echo "</h2>
+        echo "</h1>
         </div>
     </div>
     <div class=\"row\">
@@ -73,8 +73,8 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
             <img src=\"";
         // line 9
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Techno-Vyskov-logo.svg");
-        echo "\" class=\"mb-3\" alt=\"\">
-            <h3 class=\"text-primary\">TECHNO Vyškov spol. s r. o.</h3>
+        echo "\" width=\"230px\" class=\"mb-3\" alt=\"\">
+            <h3 class=\"text-primary\">TECHNO Vyškov <small> spol. s r. o.</small></h3>
             <ul>
                 <li>Joklova 9</li>
                 <li>682 01 Vyškov</li>
@@ -125,13 +125,13 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         return new Source("<div class=\"container py-5\" id=\"contact\">
     <div class=\"row\">
         <div class=\"col-12 text-center\">
-            <h2 class=\"text-uppercase\">{{ 'KONTAKT' |_ }}</h2>
+            <h1>{{ 'KONTAKT' |_ }}</h1>
         </div>
     </div>
     <div class=\"row\">
         <div class=\"col-md-6 my-5\">
-            <img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}\" class=\"mb-3\" alt=\"\">
-            <h3 class=\"text-primary\">TECHNO Vyškov spol. s r. o.</h3>
+            <img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}\" width=\"230px\" class=\"mb-3\" alt=\"\">
+            <h3 class=\"text-primary\">TECHNO Vyškov <small> spol. s r. o.</small></h3>
             <ul>
                 <li>Joklova 9</li>
                 <li>682 01 Vyškov</li>

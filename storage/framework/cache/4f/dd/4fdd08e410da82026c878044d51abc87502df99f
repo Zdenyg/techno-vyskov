@@ -1,4 +1,4 @@
-1604438492a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1325:"description = "Default layout"
+1604518515a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1703:"description = "Default layout"
 
 [localePicker]
 forceUrl = 0
@@ -31,7 +31,11 @@ forceUrl = 0
   {% page %}
     
      
-
+  <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button">
+    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+  </a>
 
   <script src="{{ 'assets/js/scripts.js' | theme }}"></script>
 
@@ -40,7 +44,7 @@ forceUrl = 0
 
     
   </body>
-</html>";s:5:"mtime";i:1604173756;s:6:"markup";s:1257:"<!doctype html>
+</html>";s:5:"mtime";i:1604515689;s:6:"markup";s:1635:"<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -68,7 +72,11 @@ forceUrl = 0
   {% page %}
     
      
-
+  <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button">
+    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+  </a>
 
   <script src="{{ 'assets/js/scripts.js' | theme }}"></script>
 

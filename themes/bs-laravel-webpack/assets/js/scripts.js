@@ -17948,8 +17948,7 @@ try {
 
 
 var gallery = new simplelightbox__WEBPACK_IMPORTED_MODULE_3___default.a('.gallery a');
-gallery.on('show.simplelightbox', function () {// do something…
-});
+gallery.on('show.simplelightbox', function () {});
  // AOS Animation on scroll
 
 /* AOS.init({
@@ -17960,15 +17959,22 @@ gallery.on('show.simplelightbox', function () {// do something…
 
 $(function () {
   $('.lazy').Lazy();
-}); //  LIGHTGALLERY
+}); // Scroll on top button
 
-/* 
-  $("#lightgallery").lightGallery({
-    pager: true,
-    thumbMargin: 10,
-  });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 800) {
+    $('#back-to-top').fadeIn();
+  } else {
+    $('#back-to-top').fadeOut();
+  }
+}); // scroll body to 0px on click
 
- */
+$('#back-to-top').click(function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
+});
 
 /***/ }),
 

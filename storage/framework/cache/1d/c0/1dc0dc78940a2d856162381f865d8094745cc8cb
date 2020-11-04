@@ -1,4 +1,4 @@
-1604438492a:1:{s:11:"molding.htm";a:10:{s:8:"fileName";s:11:"molding.htm";s:7:"content";s:162:"title = "lisovna"
+1604518515a:1:{s:11:"molding.htm";a:10:{s:8:"fileName";s:11:"molding.htm";s:7:"content";s:326:"title = "lisovna"
 url = "/lisovna"
 layout = "default"
 is_hidden = 0
@@ -7,4 +7,18 @@ is_hidden = 0
 localeUrl[en] = "/molding"
 localeTitle[en] = "Molding"
 ==
-<h1>Lisovna</h1>";s:5:"mtime";i:1604085770;s:6:"markup";s:16:"<h1>Lisovna</h1>";s:4:"code";N;s:5:"title";s:7:"lisovna";s:3:"url";s:8:"/lisovna";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:9:"localeUrl";a:1:{s:2:"en";s:8:"/molding";}s:11:"localeTitle";a:1:{s:2:"en";s:7:"Molding";}}}}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>{{ 'Lisovna' |_}}</h1>
+               
+        </div>    
+    </div>
+</div>";s:5:"mtime";i:1604513887;s:6:"markup";s:180:"<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>{{ 'Lisovna' |_}}</h1>
+               
+        </div>    
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:7:"lisovna";s:3:"url";s:8:"/lisovna";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:9:"localeUrl";a:1:{s:2:"en";s:8:"/molding";}s:11:"localeTitle";a:1:{s:2:"en";s:7:"Molding";}}}}

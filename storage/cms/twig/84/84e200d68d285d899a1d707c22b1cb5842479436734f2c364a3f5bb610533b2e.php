@@ -66,10 +66,10 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
         // line 4
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-01.svg");
         echo "\" alt=\"\">
-                    <h4>";
+                    <h5>";
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KONSTRUKCE"]);
-        echo "</h4>
+        echo "</h5>
                         <p>";
         // line 6
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["forem pro vstřikování plastů"]);
@@ -80,10 +80,10 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
         // line 9
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-02.svg");
         echo "\" alt=\"\">
-                    <h4>";
+                    <h5>";
         // line 10
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["VÝROBA"]);
-        echo "</h4>
+        echo "</h5>
                     <p>";
         // line 11
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["forem pro vstřikování plastů"]);
@@ -94,10 +94,10 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
         // line 14
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-03.svg");
         echo "\" alt=\"\">
-                    <h4>";
+                    <h5>";
         // line 15
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["OPRAVY"]);
-        echo "</h4>
+        echo "</h5>
                     <p>";
         // line 16
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["forem pro vstřikování plastů"]);
@@ -128,17 +128,17 @@ class __TwigTemplate_f357f5b6d51c9ba813eb3849dcd481a0d4deb8398fbc89a2bdf89030577
             <div class=\"col text-center d-md-flex justify-content-around\">
                 <div class=\"iconbox\">
                     <img src=\"{{ 'assets/images/icon-tool-01.svg' | theme }}\" alt=\"\">
-                    <h4>{{ 'KONSTRUKCE' |_ }}</h4>
+                    <h5>{{ 'KONSTRUKCE' |_ }}</h5>
                         <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class=\"iconbox\">
                     <img src=\"{{ 'assets/images/icon-tool-02.svg' | theme }}\" alt=\"\">
-                    <h4>{{ 'VÝROBA' |_ }}</h4>
+                    <h5>{{ 'VÝROBA' |_ }}</h5>
                     <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
                 <div class=\"iconbox\">
                     <img src=\"{{ 'assets/images/icon-tool-03.svg' | theme }}\" alt=\"\">
-                    <h4>{{ 'OPRAVY' |_ }}</h4>
+                    <h5>{{ 'OPRAVY' |_ }}</h5>
                     <p>{{ 'forem pro vstřikování plastů' |_ }}</p>
                 </div>
             </div>

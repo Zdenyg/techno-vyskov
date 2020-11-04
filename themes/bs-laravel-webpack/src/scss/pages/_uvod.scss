@@ -43,7 +43,7 @@ header {
       margin-bottom: 10px;
     }
     li {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
     .desc {
       opacity: 0.7;
@@ -51,7 +51,11 @@ header {
   }
   @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      background: url('../images/Techno-mobile-header.jpg') black no-repeat center center;
+      background-size: cover;
+      li {
+        font-size: 1.1rem;
+      }
     }
     header video {
       display: none;
@@ -59,22 +63,30 @@ header {
   }  
 
 
-.career {
-  li {
-    margin: 1rem 0;
+  #uvod {
+    h2 {
+      color: $primary;
+      font-size: 1.2rem;
+    }
   }
-}
 
-
+  .career {
+    li {
+      margin: 1rem 0;
+    }
+  }
 
   .iconbox {
-    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
 
   img {
     padding: 1rem;
   }
 }
-
 
 .shortdesc {
   margin-top: -200px;
@@ -82,7 +94,7 @@ header {
 }
 
 .blue-iconbox {
-  background: #004f9e;
+  background: $primary;
   width: 220px;
   height: 220px;
   text-align: center;
@@ -102,6 +114,26 @@ header {
 }
 
 
+.img-hover-zoom {
+  overflow: hidden;
+  img {
+    transition: transform .5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+
+.back-to-top {
+    padding: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+  
+}
 
 
 
@@ -116,7 +148,7 @@ header {
     padding-bottom: 4rem !important;
   }
   .iconbox {
-    width: 15%;
+    width: 176px;
   }
 
  }

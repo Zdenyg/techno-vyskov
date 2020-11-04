@@ -1,4 +1,4 @@
-1604438492a:1:{s:10:"career.htm";a:11:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:2671:"title = "Kariéra"
+1604518515a:1:{s:10:"career.htm";a:11:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:2767:"title = "Kariéra"
 url = "/kariera"
 layout = "default"
 is_hidden = 0
@@ -27,8 +27,8 @@ pageNumber = "{{ :page }}"
 {% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
 
-<div class="container mt-3">
-   <div class="row">
+<div class="container py-5">
+   <div class="row py-5">
        <div class="col">
             <h1>Kariéra</h1>
             <h5>Volné pracovní pozice ve společnosti Techno Vyškov.</h5>
@@ -41,7 +41,8 @@ pageNumber = "{{ :page }}"
         {% endif %}
    <div class="row my-3">
        <div class="col">
-            <h2>{{ record.job_name }}</h2>
+            <h3>{{ record.job_name }}</h3>
+            <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>
        </div>
    </div>
    <div class="row">
@@ -86,7 +87,7 @@ pageNumber = "{{ :page }}"
     </ul>
 {% endif %}
 
-</div>";s:5:"mtime";i:1604435143;s:6:"markup";s:2241:"{% set records = builderList.records %}
+</div>";s:5:"mtime";i:1604508879;s:6:"markup";s:2337:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -94,8 +95,8 @@ pageNumber = "{{ :page }}"
 {% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
 
-<div class="container mt-3">
-   <div class="row">
+<div class="container py-5">
+   <div class="row py-5">
        <div class="col">
             <h1>Kariéra</h1>
             <h5>Volné pracovní pozice ve společnosti Techno Vyškov.</h5>
@@ -108,7 +109,8 @@ pageNumber = "{{ :page }}"
         {% endif %}
    <div class="row my-3">
        <div class="col">
-            <h2>{{ record.job_name }}</h2>
+            <h3>{{ record.job_name }}</h3>
+            <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>
        </div>
    </div>
    <div class="row">

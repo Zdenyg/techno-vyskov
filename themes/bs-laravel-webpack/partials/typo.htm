@@ -9,6 +9,16 @@
 </div>
 
 
+<div class="gallery text-center">
+{% for image in this.theme.product_images  | slice(7,3) %} <!-- Zacinas od 7. fotky a ukazujes 3 -->
+<div class="image-wrapper">
+    <a href="{{ image.path }}">
+        <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+    </a>
+</div>
+{% endfor %}
+</div>
+
 
 <hr>
 
@@ -42,3 +52,5 @@
 
 
 {{ 'Vítejte na me stránce'|_ }}
+
+<h5>KONSTRUKCE <span>forem pro vstřikování plastů</span></h5>
