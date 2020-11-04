@@ -29,9 +29,8 @@ nbproject
 .vscode
 _ide_helper.php
 
-# Other ignores
-package-lock.json
-**/node_modules
-**node_modules
-*/node_modules/*
-node_modules
+
+#octoberCMS 
+*/storage/
+*/vendor/
+*/node_modules/
