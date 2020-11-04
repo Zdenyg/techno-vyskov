@@ -33,4 +33,4 @@ _ide_helper.php
 #octoberCMS 
 */storage/
 */vendor/
-*/node_modules/
+**/node_modules/
