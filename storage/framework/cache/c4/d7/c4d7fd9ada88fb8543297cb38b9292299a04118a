@@ -1,4 +1,4 @@
-1604518515a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:4911:"title = "Techno - Vyškov úvod"
+1604519908a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:892:"title = "Techno - Vyškov | úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno - Vyškov"
@@ -6,7 +6,8 @@ meta_description = "působíme na trhu více jak 20 let, v oboru konstrukce a v�
 is_hidden = 0
 
 [viewBag]
-localeTitle[en] = "Techno - Vyškov home"
+localeTitle[en] = "Techno - Vyškov | home"
+localeUrl[en] = "/techno-vyskov-home"
 
 [builderList]
 modelClass = "Zed\Career\Models\Jobs"
@@ -21,272 +22,26 @@ pageNumber = "{{ :page }}"
 ==
 {% partial 'uvod' %}
 
-<!-- O firme -->
-<div class="container py-5" id="uvod">
-    <div class="row">
-        <div class="col-md-7 mb-5">
-            {% content 'uvod' %}
-            <div class="row">
-                <div class="col-md-8 text-primary">
-                    {% content 'uvod2' %}
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 100px;" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- Career -->
-        <div class="col-md-5 mb-3 career">
-            <div class="card border">
-                <div class="card-body">
-                  <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
-                    
-
-                        {% component 'builderList' %}
-
-                        <div class="row text-center pb-2 pt-5">
-                            <div class="col">
-                                <a href="{{ 'career'|page }}" class="btn btn-primary" role="button">{{ 'kariéra' |_ }}</a>
-                            </div>
-                        </div>
-                    
-                </div>
-              </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
+{% partial 'about-us' %}
 
 {% partial 'nase-vyrobky' %}
 
-<!-- Nastrojarna -->
+{% partial 'nastrojarna-uvod' %}
 
-<section class="gradient">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
-                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
-                <img src="{{ 'assets/images/forma_01.png' | theme }}" class="img-fluid" alt="">
-            </div>
-        </div>
+{% partial 'lisovna-uvod' %}
 
-        {% partial 'nastrojarna-iconbox' %}
+{% partial 'produkty-uvod' %}
 
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
-            </div>
-        </div>
-    </div>
-</section>
+{% partial 'kontakt' %}";s:5:"mtime";i:1604519235;s:6:"markup";s:208:"{% partial 'uvod' %}
 
-<!-- Lisovna -->
-
-<section class="gradient">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5" alt="">
-            </div>
-        </div>
-
-        {% partial 'lisovna-iconbox' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'molding'|page }}" class="btn btn-primary" role="button">{{ 'lisovna' |_ }}</a>
-            </div>
-        </div>
-    </div>
- </section>
-
- <!-- Produkty -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
-            </div>
-        </div>
-
-        {% partial 'produkty' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'více foto' |_ }}</a>
-            </div>
-        </div>
-    </div>
-
-<!-- Kvalita -->
-<section class="bg-success">
-<div class="container py-5">
-    <div class="row">
-        <div class="col-12 text-center mb-5">
-            <h1>{{ 'KVALITA'|_ }}</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-2 col-md-12 text-center">
-            <div class="blue-iconbox">
-                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
-                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
-                        
-            </div> 
-        </div>
-        <div class="col-lg-6 col-md-12 text-center">
-            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
-        </div>
-        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
-            {% content '3d-mereni' %}
-        </div>
-    </div>
-
-    <div class="row text-center pt-5">
-        <div class="col">
-            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'kvalita' |_ }}</a>
-        </div>
-    </div>
-</div>
-</section>
-
-
-{% partial 'kontakt' %}";s:5:"mtime";i:1604508580;s:6:"markup";s:4270:"{% partial 'uvod' %}
-
-<!-- O firme -->
-<div class="container py-5" id="uvod">
-    <div class="row">
-        <div class="col-md-7 mb-5">
-            {% content 'uvod' %}
-            <div class="row">
-                <div class="col-md-8 text-primary">
-                    {% content 'uvod2' %}
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 100px;" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- Career -->
-        <div class="col-md-5 mb-3 career">
-            <div class="card border">
-                <div class="card-body">
-                  <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
-                    
-
-                        {% component 'builderList' %}
-
-                        <div class="row text-center pb-2 pt-5">
-                            <div class="col">
-                                <a href="{{ 'career'|page }}" class="btn btn-primary" role="button">{{ 'kariéra' |_ }}</a>
-                            </div>
-                        </div>
-                    
-                </div>
-              </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
+{% partial 'about-us' %}
 
 {% partial 'nase-vyrobky' %}
 
-<!-- Nastrojarna -->
+{% partial 'nastrojarna-uvod' %}
 
-<section class="gradient">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
-                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
-                <img src="{{ 'assets/images/forma_01.png' | theme }}" class="img-fluid" alt="">
-            </div>
-        </div>
+{% partial 'lisovna-uvod' %}
 
-        {% partial 'nastrojarna-iconbox' %}
+{% partial 'produkty-uvod' %}
 
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Lisovna -->
-
-<section class="gradient">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5" alt="">
-            </div>
-        </div>
-
-        {% partial 'lisovna-iconbox' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'molding'|page }}" class="btn btn-primary" role="button">{{ 'lisovna' |_ }}</a>
-            </div>
-        </div>
-    </div>
- </section>
-
- <!-- Produkty -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
-            </div>
-        </div>
-
-        {% partial 'produkty' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'více foto' |_ }}</a>
-            </div>
-        </div>
-    </div>
-
-<!-- Kvalita -->
-<section class="bg-success">
-<div class="container py-5">
-    <div class="row">
-        <div class="col-12 text-center mb-5">
-            <h1>{{ 'KVALITA'|_ }}</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-2 col-md-12 text-center">
-            <div class="blue-iconbox">
-                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
-                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
-                        
-            </div> 
-        </div>
-        <div class="col-lg-6 col-md-12 text-center">
-            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
-        </div>
-        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
-            {% content '3d-mereni' %}
-        </div>
-    </div>
-
-    <div class="row text-center pt-5">
-        <div class="col">
-            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'kvalita' |_ }}</a>
-        </div>
-    </div>
-</div>
-</section>
-
-
-{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:22:"Techno - Vyškov úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:11:"localeTitle";a:1:{s:2:"en";s:21:"Techno - Vyškov home";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:39:"aktuálně není žádná pozice volná";s:11:"detailsPage";s:6:"career";s:16:"detailsKeyColumn";s:8:"job_name";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:39:"aktuálně není žádná pozice volná";s:11:"detailsPage";s:6:"career";s:16:"detailsKeyColumn";s:8:"job_name";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -1,0 +1,17 @@
+[viewBag]
+==
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            </div>
+        </div>
+
+        {% partial 'produkty' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'více foto' |_ }}</a>
+            </div>
+        </div>
+    </div>

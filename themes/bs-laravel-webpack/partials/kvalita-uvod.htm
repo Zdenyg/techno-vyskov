@@ -1,0 +1,33 @@
+[viewBag]
+==
+<section class="bg-success">
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1>{{ 'KVALITA'|_ }}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-12 text-center">
+            <div class="blue-iconbox">
+                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
+                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
+                        
+            </div> 
+        </div>
+        <div class="col-lg-6 col-md-12 text-center">
+            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+            {% content '3d-mereni' %}
+        </div>
+    </div>
+
+    <div class="row text-center pt-5">
+        <div class="col">
+            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'kvalita' |_ }}</a>
+        </div>
+    </div>
+</div>
+</section>

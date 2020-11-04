@@ -1,0 +1,36 @@
+[viewBag]
+==
+
+<div class="container py-5" id="uvod">
+    <div class="row">
+        <div class="col-md-7 mb-5">
+            {% content 'uvod' %}
+            <div class="row">
+                <div class="col-md-8 text-primary">
+                    {% content 'uvod2' %}
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 100px;" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 mb-3 career">
+            <div class="card border">
+                <div class="card-body">
+                  <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
+                    
+
+                        {% component 'builderList' %}
+
+                        <div class="row text-center pb-2 pt-5">
+                            <div class="col">
+                                <a href="{{ 'career'|page }}" class="btn btn-primary" role="button">{{ 'kariéra' |_ }}</a>
+                            </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

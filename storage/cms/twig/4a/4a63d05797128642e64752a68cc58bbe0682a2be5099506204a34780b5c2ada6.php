@@ -29,14 +29,14 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("partial" => 1, "content" => 7, "component" => 24);
-        $filters = array("theme" => 13, "page" => 28, "_" => 28);
+        $tags = array("partial" => 1);
+        $filters = array();
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['partial', 'content', 'component'],
-                ['theme', 'page', '_'],
+                ['partial'],
+                [],
                 []
             );
         } catch (SecurityError $e) {
@@ -64,239 +64,43 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         unset($context['__cms_partial_params']);
         // line 2
         echo "
-<!-- O firme -->
-<div class=\"container py-5\" id=\"uvod\">
-    <div class=\"row\">
-        <div class=\"col-md-7 mb-5\">
-            ";
-        // line 7
-        $context['__cms_content_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("uvod"        , $context['__cms_content_params']        );
-        unset($context['__cms_content_params']);
-        // line 8
-        echo "            <div class=\"row\">
-                <div class=\"col-md-8 text-primary\">
-                    ";
-        // line 10
-        $context['__cms_content_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("uvod2"        , $context['__cms_content_params']        );
-        unset($context['__cms_content_params']);
-        // line 11
-        echo "                </div>
-                <div class=\"col-md-4 text-center\">
-                    <img src=\"";
-        // line 13
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo-TUV.jpg");
-        echo "\" style=\"width: 100px;\" alt=\"\">
-                </div>
-            </div>
-        </div>
-        <!-- Career -->
-        <div class=\"col-md-5 mb-3 career\">
-            <div class=\"card border\">
-                <div class=\"card-body\">
-                  <h6 class=\"card-title bg-primary text-white p-2\">Volné pracovní pozice</h6>
-                    
-
-                        ";
-        // line 24
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("builderList"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 25
-        echo "
-                        <div class=\"row text-center pb-2 pt-5\">
-                            <div class=\"col\">
-                                <a href=\"";
-        // line 28
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("career");
-        echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kariéra"]);
-        echo "</a>
-                            </div>
-                        </div>
-                    
-                </div>
-              </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
-
 ";
-        // line 40
+        // line 3
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("about-us"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 4
+        echo "
+";
+        // line 5
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("nase-vyrobky"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 41
+        // line 6
         echo "
-<!-- Nastrojarna -->
-
-<section class=\"gradient\">
-    <div class=\"container py-5\">
-        <div class=\"row\">
-            <div class=\"col-12 text-center\">
-                <h4>";
-        // line 48
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NAŠE SLUŽBY"]);
-        echo "</h4>
-                <h1>";
-        // line 49
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NÁSTROJÁRNA"]);
-        echo "</h1>
-                <img src=\"";
-        // line 50
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/forma_01.png");
-        echo "\" class=\"img-fluid\" alt=\"\">
-            </div>
-        </div>
-
-        ";
-        // line 54
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("nastrojarna-iconbox"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 55
-        echo "
-        <div class=\"row text-center pt-5\">
-            <div class=\"col\">
-                <a href=\"";
-        // line 58
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
-        echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["nástrojárna"]);
-        echo "</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Lisovna -->
-
-<section class=\"gradient\">
-    <div class=\"container py-5\">
-        <div class=\"row\">
-            <div class=\"col-12 text-center\">
-                <h1>";
-        // line 70
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["LISOVNA"]);
-        echo "</h1>
-                <img src=\"";
-        // line 71
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/lisovna-01.png");
-        echo "\" class=\"img-fluid pb-5\" alt=\"\">
-            </div>
-        </div>
-
-        ";
-        // line 75
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("lisovna-iconbox"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 76
-        echo "
-        <div class=\"row text-center pt-5\">
-            <div class=\"col\">
-                <a href=\"";
-        // line 79
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("molding");
-        echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["lisovna"]);
-        echo "</a>
-            </div>
-        </div>
-    </div>
- </section>
-
- <!-- Produkty -->
-    <div class=\"container py-5\">
-        <div class=\"row\">
-            <div class=\"col-12 text-center mb-5\">
-                <h1>";
-        // line 89
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["PRODUKTY"]);
-        echo "</h1>
-            </div>
-        </div>
-
-        ";
-        // line 93
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("produkty"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 94
-        echo "
-        <div class=\"row text-center pt-5\">
-            <div class=\"col\">
-                <a href=\"";
-        // line 97
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("products");
-        echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více foto"]);
-        echo "</a>
-            </div>
-        </div>
-    </div>
-
-<!-- Kvalita -->
-<section class=\"bg-success\">
-<div class=\"container py-5\">
-    <div class=\"row\">
-        <div class=\"col-12 text-center mb-5\">
-            <h1>";
-        // line 107
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KVALITA"]);
-        echo "</h1>
-        </div>
-    </div>
-
-    <div class=\"row\">
-        <div class=\"col-lg-2 col-md-12 text-center\">
-            <div class=\"blue-iconbox\">
-                <img src=\"";
-        // line 114
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-07.svg");
-        echo "\" alt=\"\">
-                    <h5 class=\"mt-3\">";
-        // line 115
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["3D MĚŘENÍ"]);
-        echo "</h5>
-                        
-            </div> 
-        </div>
-        <div class=\"col-lg-6 col-md-12 text-center\">
-            <img src=\"";
-        // line 120
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/3d-mereni.jpg");
-        echo "\" class=\"img-fluid shadow\" alt=\"\">
-        </div>
-        <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
-            ";
-        // line 123
-        $context['__cms_content_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("3d-mereni"        , $context['__cms_content_params']        );
-        unset($context['__cms_content_params']);
-        // line 124
-        echo "        </div>
-    </div>
-
-    <div class=\"row text-center pt-5\">
-        <div class=\"col\">
-            <a href=\"";
-        // line 129
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
-        echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kvalita"]);
-        echo "</a>
-        </div>
-    </div>
-</div>
-</section>
-
-
 ";
-        // line 136
+        // line 7
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("nastrojarna-uvod"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 8
+        echo "
+";
+        // line 9
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("lisovna-uvod"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 10
+        echo "
+";
+        // line 11
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("produkty-uvod"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 12
+        echo "
+";
+        // line 13
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("kontakt"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
@@ -314,145 +118,22 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  300 => 136,  288 => 129,  281 => 124,  277 => 123,  271 => 120,  263 => 115,  259 => 114,  249 => 107,  234 => 97,  229 => 94,  225 => 93,  218 => 89,  203 => 79,  198 => 76,  194 => 75,  187 => 71,  183 => 70,  166 => 58,  161 => 55,  157 => 54,  150 => 50,  146 => 49,  142 => 48,  133 => 41,  129 => 40,  112 => 28,  107 => 25,  103 => 24,  89 => 13,  85 => 11,  81 => 10,  77 => 8,  73 => 7,  66 => 2,  62 => 1,);
+        return array (  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% partial 'uvod' %}
 
-<!-- O firme -->
-<div class=\"container py-5\" id=\"uvod\">
-    <div class=\"row\">
-        <div class=\"col-md-7 mb-5\">
-            {% content 'uvod' %}
-            <div class=\"row\">
-                <div class=\"col-md-8 text-primary\">
-                    {% content 'uvod2' %}
-                </div>
-                <div class=\"col-md-4 text-center\">
-                    <img src=\"{{ 'assets/images/logo-TUV.jpg' | theme }}\" style=\"width: 100px;\" alt=\"\">
-                </div>
-            </div>
-        </div>
-        <!-- Career -->
-        <div class=\"col-md-5 mb-3 career\">
-            <div class=\"card border\">
-                <div class=\"card-body\">
-                  <h6 class=\"card-title bg-primary text-white p-2\">Volné pracovní pozice</h6>
-                    
-
-                        {% component 'builderList' %}
-
-                        <div class=\"row text-center pb-2 pt-5\">
-                            <div class=\"col\">
-                                <a href=\"{{ 'career'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'kariéra' |_ }}</a>
-                            </div>
-                        </div>
-                    
-                </div>
-              </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
+{% partial 'about-us' %}
 
 {% partial 'nase-vyrobky' %}
 
-<!-- Nastrojarna -->
+{% partial 'nastrojarna-uvod' %}
 
-<section class=\"gradient\">
-    <div class=\"container py-5\">
-        <div class=\"row\">
-            <div class=\"col-12 text-center\">
-                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
-                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
-                <img src=\"{{ 'assets/images/forma_01.png' | theme }}\" class=\"img-fluid\" alt=\"\">
-            </div>
-        </div>
+{% partial 'lisovna-uvod' %}
 
-        {% partial 'nastrojarna-iconbox' %}
-
-        <div class=\"row text-center pt-5\">
-            <div class=\"col\">
-                <a href=\"{{ 'tooling'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'nástrojárna' |_ }}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Lisovna -->
-
-<section class=\"gradient\">
-    <div class=\"container py-5\">
-        <div class=\"row\">
-            <div class=\"col-12 text-center\">
-                <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src=\"{{ 'assets/images/lisovna-01.png' | theme }}\" class=\"img-fluid pb-5\" alt=\"\">
-            </div>
-        </div>
-
-        {% partial 'lisovna-iconbox' %}
-
-        <div class=\"row text-center pt-5\">
-            <div class=\"col\">
-                <a href=\"{{ 'molding'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'lisovna' |_ }}</a>
-            </div>
-        </div>
-    </div>
- </section>
-
- <!-- Produkty -->
-    <div class=\"container py-5\">
-        <div class=\"row\">
-            <div class=\"col-12 text-center mb-5\">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
-            </div>
-        </div>
-
-        {% partial 'produkty' %}
-
-        <div class=\"row text-center pt-5\">
-            <div class=\"col\">
-                <a href=\"{{ 'products'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'více foto' |_ }}</a>
-            </div>
-        </div>
-    </div>
-
-<!-- Kvalita -->
-<section class=\"bg-success\">
-<div class=\"container py-5\">
-    <div class=\"row\">
-        <div class=\"col-12 text-center mb-5\">
-            <h1>{{ 'KVALITA'|_ }}</h1>
-        </div>
-    </div>
-
-    <div class=\"row\">
-        <div class=\"col-lg-2 col-md-12 text-center\">
-            <div class=\"blue-iconbox\">
-                <img src=\"{{ 'assets/images/icon-tool-07.svg' | theme }}\" alt=\"\">
-                    <h5 class=\"mt-3\">{{ '3D MĚŘENÍ' |_ }}</h5>
-                        
-            </div> 
-        </div>
-        <div class=\"col-lg-6 col-md-12 text-center\">
-            <img src=\"{{ 'assets/images/3d-mereni.jpg' | theme }}\" class=\"img-fluid shadow\" alt=\"\">
-        </div>
-        <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
-            {% content '3d-mereni' %}
-        </div>
-    </div>
-
-    <div class=\"row text-center pt-5\">
-        <div class=\"col\">
-            <a href=\"{{ 'quality'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'kvalita' |_ }}</a>
-        </div>
-    </div>
-</div>
-</section>
-
+{% partial 'produkty-uvod' %}
 
 {% partial 'kontakt' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
     }

@@ -1,0 +1,31 @@
+1604519908a:1:{s:17:"produkty-uvod.htm";a:6:{s:8:"fileName";s:17:"produkty-uvod.htm";s:7:"content";s:481:"[viewBag]
+==
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            </div>
+        </div>
+
+        {% partial 'produkty' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'více foto' |_ }}</a>
+            </div>
+        </div>
+    </div>";s:5:"mtime";i:1604519300;s:6:"markup";s:462:"<div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1>{{ 'PRODUKTY' |_ }}</h1>
+            </div>
+        </div>
+
+        {% partial 'produkty' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'více foto' |_ }}</a>
+            </div>
+        </div>
+    </div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

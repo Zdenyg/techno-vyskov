@@ -29,8 +29,8 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 12, "component" => 36);
-        $filters = array("page" => 4, "theme" => 5, "_" => 13);
+        $tags = array("if" => 11, "component" => 35);
+        $filters = array("page" => 3, "theme" => 4, "_" => 12);
         $functions = array();
 
         try {
@@ -59,15 +59,14 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
     {
         $macros = $this->macros;
         // line 1
-        echo "<!-- Navigation -->
-  <nav class=\"navbar navbar-expand-lg navbar-light shadow\" id=\"mainNav\">
+        echo "<nav class=\"navbar navbar-expand-lg navbar-light shadow\" id=\"mainNav\">
     <div class=\"container\">
       <a class=\"navbar-brand\" href=\"";
-        // line 4
+        // line 3
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">
 \t\t<img src=\"";
-        // line 5
+        // line 4
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Techno-Vyskov-logo.svg");
         echo "\" alt=\"Techno Vyškov logo\">
 \t  </a>
@@ -77,91 +76,91 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
       <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
         <ul class=\"navbar-nav ml-auto\" id=\"menu\">
           <li class=\"nav-item ";
-        // line 12
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 12), "id", [], "any", false, false, true, 12) == "home")) {
+        // line 11
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 11), "id", [], "any", false, false, true, 11) == "home")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 13
+        // line 12
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["úvod"]);
         echo "</a>
           </li>
           <li class=\"nav-item ";
-        // line 15
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 15), "id", [], "any", false, false, true, 15) == "tooling")) {
+        // line 14
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 14), "id", [], "any", false, false, true, 14) == "tooling")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 16
+        // line 15
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["nástrojárna"]);
         echo "</a>
           </li>
           <li class=\"nav-item ";
-        // line 18
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 18), "id", [], "any", false, false, true, 18) == "molding")) {
+        // line 17
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 17), "id", [], "any", false, false, true, 17) == "molding")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 19
+        // line 18
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("molding");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["lisovna"]);
         echo "</a>
           </li>
           <li class=\"nav-item ";
-        // line 21
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 21), "id", [], "any", false, false, true, 21) == "products")) {
+        // line 20
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 20), "id", [], "any", false, false, true, 20) == "products")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 22
+        // line 21
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("products");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["produkty"]);
         echo "</a>
           </li>
           <li class=\"nav-item ";
-        // line 24
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 24), "id", [], "any", false, false, true, 24) == "quality")) {
+        // line 23
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 23), "id", [], "any", false, false, true, 23) == "quality")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 25
+        // line 24
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kvalita"]);
         echo "</a>
           </li>
           <li class=\"nav-item ";
-        // line 27
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 27), "id", [], "any", false, false, true, 27) == "career")) {
+        // line 26
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 26), "id", [], "any", false, false, true, 26) == "career")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 28
+        // line 27
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("career");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kariéra"]);
         echo "</a>
           </li>
           <li class=\"nav-item ";
-        // line 30
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 30), "id", [], "any", false, false, true, 30) == "contact")) {
+        // line 29
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 29), "id", [], "any", false, false, true, 29) == "contact")) {
             echo "active";
         }
         echo "\">
             <a class=\"nav-link\" href=\"";
-        // line 31
+        // line 30
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("contact");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kontakt"]);
@@ -171,11 +170,11 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
         </ul>
         <div class=\"lang_switch\">
             ";
-        // line 36
+        // line 35
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("localePicker"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 37
+        // line 36
         echo "        </div>    
       </div>
     </div>
@@ -194,13 +193,12 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
 
     public function getDebugInfo()
     {
-        return array (  179 => 37,  175 => 36,  165 => 31,  159 => 30,  152 => 28,  146 => 27,  139 => 25,  133 => 24,  126 => 22,  120 => 21,  113 => 19,  107 => 18,  100 => 16,  94 => 15,  87 => 13,  81 => 12,  71 => 5,  67 => 4,  62 => 1,);
+        return array (  178 => 36,  174 => 35,  164 => 30,  158 => 29,  151 => 27,  145 => 26,  138 => 24,  132 => 23,  125 => 21,  119 => 20,  112 => 18,  106 => 17,  99 => 15,  93 => 14,  86 => 12,  80 => 11,  70 => 4,  66 => 3,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!-- Navigation -->
-  <nav class=\"navbar navbar-expand-lg navbar-light shadow\" id=\"mainNav\">
+        return new Source("<nav class=\"navbar navbar-expand-lg navbar-light shadow\" id=\"mainNav\">
     <div class=\"container\">
       <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">
 \t\t<img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg'|theme }}\" alt=\"Techno Vyškov logo\">

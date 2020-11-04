@@ -1,4 +1,4 @@
-title = "Techno - Vyškov úvod"
+title = "Techno - Vyškov | úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno - Vyškov"
@@ -6,7 +6,8 @@ meta_description = "působíme na trhu více jak 20 let, v oboru konstrukce a v�
 is_hidden = 0
 
 [viewBag]
-localeTitle[en] = "Techno - Vyškov home"
+localeTitle[en] = "Techno - Vyškov | home"
+localeUrl[en] = "/techno-vyskov-home"
 
 [builderList]
 modelClass = "Zed\Career\Models\Jobs"
@@ -21,137 +22,14 @@ pageNumber = "{{ :page }}"
 ==
 {% partial 'uvod' %}
 
-<!-- O firme -->
-<div class="container py-5" id="uvod">
-    <div class="row">
-        <div class="col-md-7 mb-5">
-            {% content 'uvod' %}
-            <div class="row">
-                <div class="col-md-8 text-primary">
-                    {% content 'uvod2' %}
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="{{ 'assets/images/logo-TUV.jpg' | theme }}" style="width: 100px;" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- Career -->
-        <div class="col-md-5 mb-3 career">
-            <div class="card border">
-                <div class="card-body">
-                  <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
-                    
-
-                        {% component 'builderList' %}
-
-                        <div class="row text-center pb-2 pt-5">
-                            <div class="col">
-                                <a href="{{ 'career'|page }}" class="btn btn-primary" role="button">{{ 'kariéra' |_ }}</a>
-                            </div>
-                        </div>
-                    
-                </div>
-              </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
+{% partial 'about-us' %}
 
 {% partial 'nase-vyrobky' %}
 
-<!-- Nastrojarna -->
+{% partial 'nastrojarna-uvod' %}
 
-<section class="gradient">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
-                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
-                <img src="{{ 'assets/images/forma_01.png' | theme }}" class="img-fluid" alt="">
-            </div>
-        </div>
+{% partial 'lisovna-uvod' %}
 
-        {% partial 'nastrojarna-iconbox' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Lisovna -->
-
-<section class="gradient">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5" alt="">
-            </div>
-        </div>
-
-        {% partial 'lisovna-iconbox' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'molding'|page }}" class="btn btn-primary" role="button">{{ 'lisovna' |_ }}</a>
-            </div>
-        </div>
-    </div>
- </section>
-
- <!-- Produkty -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h1>{{ 'PRODUKTY' |_ }}</h1>
-            </div>
-        </div>
-
-        {% partial 'produkty' %}
-
-        <div class="row text-center pt-5">
-            <div class="col">
-                <a href="{{ 'products'|page }}" class="btn btn-primary" role="button">{{ 'více foto' |_ }}</a>
-            </div>
-        </div>
-    </div>
-
-<!-- Kvalita -->
-<section class="bg-success">
-<div class="container py-5">
-    <div class="row">
-        <div class="col-12 text-center mb-5">
-            <h1>{{ 'KVALITA'|_ }}</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-2 col-md-12 text-center">
-            <div class="blue-iconbox">
-                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
-                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
-                        
-            </div> 
-        </div>
-        <div class="col-lg-6 col-md-12 text-center">
-            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
-        </div>
-        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
-            {% content '3d-mereni' %}
-        </div>
-    </div>
-
-    <div class="row text-center pt-5">
-        <div class="col">
-            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'kvalita' |_ }}</a>
-        </div>
-    </div>
-</div>
-</section>
-
+{% partial 'produkty-uvod' %}
 
 {% partial 'kontakt' %}

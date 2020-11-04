@@ -1,0 +1,39 @@
+1604519908a:1:{s:20:"nastrojarna-uvod.htm";a:6:{s:8:"fileName";s:20:"nastrojarna-uvod.htm";s:7:"content";s:680:"[viewBag]
+==
+<section class="gradient">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
+                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
+                <img src="{{ 'assets/images/forma_01.png' | theme }}" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        {% partial 'nastrojarna-iconbox' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
+            </div>
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1604519288;s:6:"markup";s:665:"<section class="gradient">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
+                <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
+                <img src="{{ 'assets/images/forma_01.png' | theme }}" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        {% partial 'nastrojarna-iconbox' %}
+
+        <div class="row text-center pt-5">
+            <div class="col">
+                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
+            </div>
+        </div>
+    </div>
+</section>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
