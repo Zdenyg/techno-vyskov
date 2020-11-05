@@ -99,7 +99,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
             // line 21
             echo "   <div class=\"row my-3\">
        <div class=\"col\">
-            <h3>";
+            <h3 class=\"text-primary\">";
             // line 23
             echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["record"], "job_name", [], "any", false, false, true, 23), 23, $this->source), "html", null, true);
             echo "</h3>
@@ -254,7 +254,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
         {% endif %}
    <div class=\"row my-3\">
        <div class=\"col\">
-            <h3>{{ record.job_name }}</h3>
+            <h3 class=\"text-primary\">{{ record.job_name }}</h3>
             <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>
        </div>
    </div>

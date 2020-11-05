@@ -8734,6 +8734,14 @@ body.hidden-scroll {
   padding-left: 3px;
 }
 
+.navbar .form-control {
+  width: 50px;
+}
+
+.navbar-light .nav-link .active {
+  color: #004f9e;
+}
+
 header {
   position: relative;
   background-color: black;

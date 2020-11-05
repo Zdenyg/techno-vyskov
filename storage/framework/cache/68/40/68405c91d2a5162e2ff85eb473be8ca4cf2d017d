@@ -1,4 +1,4 @@
-1604520114a:1:{s:10:"career.htm";a:11:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:2767:"title = "Kariéra"
+1604607164a:1:{s:10:"career.htm";a:11:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:2788:"title = "Kariéra"
 url = "/kariera"
 layout = "default"
 is_hidden = 0
@@ -41,7 +41,7 @@ pageNumber = "{{ :page }}"
         {% endif %}
    <div class="row my-3">
        <div class="col">
-            <h3>{{ record.job_name }}</h3>
+            <h3 class="text-primary">{{ record.job_name }}</h3>
             <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>
        </div>
    </div>
@@ -87,7 +87,7 @@ pageNumber = "{{ :page }}"
     </ul>
 {% endif %}
 
-</div>";s:5:"mtime";i:1604508879;s:6:"markup";s:2337:"{% set records = builderList.records %}
+</div>";s:5:"mtime";i:1604605910;s:6:"markup";s:2358:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -109,7 +109,7 @@ pageNumber = "{{ :page }}"
         {% endif %}
    <div class="row my-3">
        <div class="col">
-            <h3>{{ record.job_name }}</h3>
+            <h3 class="text-primary">{{ record.job_name }}</h3>
             <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>
        </div>
    </div>
