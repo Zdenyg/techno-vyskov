@@ -1,11 +1,14 @@
-1604690861a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:1745:"[viewBag]
+1604701788a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2324:"[viewBag]
 ==
 <footer class="footer">
 
     <div class="container text-white pt-5 pb-2">
         <div class="row">
-            <div class="col-md-6 offset-md-2 pb-5">
-                <h4>menu</h4>
+            <div class="col-md-5">
+                <iframe class="img-fluid mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.4262126083054!2d17.012163049096717!3d49.27919349665817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712fae5817973d9%3A0x79639d981365565e!2sTECHNO%20Vy%C5%A1kov%2C%20spol.%20s%20r.o.!5e0!3m2!1scs!2scz!4v1604700592417!5m2!1scs!2scz" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-md-3">
+                <h4>{{ 'navigace' |_ }}</h4>
                 <ul>
                     <li><a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a></li>
                     <li><a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a></li>
@@ -17,12 +20,12 @@
                   </ul>
             </div>
             <div class="col-md-4">
-                <h4>odkazy</h4>
+                <h4>{{ 'odkazy' |_ }}</h4>
                 <ul>
                   <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
                   <li><a href="#" class="nav-link">publicita EU</a></li>
                 </ul>
-                <h4 class="mt-5">rychlý kontakt</h4>
+                <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>
                   <li class="contact-link">Tel.:<a href="tel: +420 517 341 681">+420 517 341 681</a></li>
                   <li class="contact-link">E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
@@ -31,18 +34,21 @@
         </div>
     </div>
     <div class="date text-center text-white">
-        <p>TECHNO Vyškov spol. s r.o.</p>
+        <p>TECHNO Vyškov spol. s r.o. • &nbsp;{{"now"|date("Y") }}</p>
     </div>
 </footer>
 
 
 
-";s:5:"mtime";i:1604690258;s:6:"markup";s:1722:"<footer class="footer">
+";s:5:"mtime";i:1604701187;s:6:"markup";s:2301:"<footer class="footer">
 
     <div class="container text-white pt-5 pb-2">
         <div class="row">
-            <div class="col-md-6 offset-md-2 pb-5">
-                <h4>menu</h4>
+            <div class="col-md-5">
+                <iframe class="img-fluid mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.4262126083054!2d17.012163049096717!3d49.27919349665817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712fae5817973d9%3A0x79639d981365565e!2sTECHNO%20Vy%C5%A1kov%2C%20spol.%20s%20r.o.!5e0!3m2!1scs!2scz!4v1604700592417!5m2!1scs!2scz" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-md-3">
+                <h4>{{ 'navigace' |_ }}</h4>
                 <ul>
                     <li><a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a></li>
                     <li><a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a></li>
@@ -54,12 +60,12 @@
                   </ul>
             </div>
             <div class="col-md-4">
-                <h4>odkazy</h4>
+                <h4>{{ 'odkazy' |_ }}</h4>
                 <ul>
                   <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
                   <li><a href="#" class="nav-link">publicita EU</a></li>
                 </ul>
-                <h4 class="mt-5">rychlý kontakt</h4>
+                <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>
                   <li class="contact-link">Tel.:<a href="tel: +420 517 341 681">+420 517 341 681</a></li>
                   <li class="contact-link">E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
@@ -68,6 +74,6 @@
         </div>
     </div>
     <div class="date text-center text-white">
-        <p>TECHNO Vyškov spol. s r.o.</p>
+        <p>TECHNO Vyškov spol. s r.o. • &nbsp;{{"now"|date("Y") }}</p>
     </div>
 </footer>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

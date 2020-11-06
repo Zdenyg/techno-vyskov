@@ -50,26 +50,6 @@ hr {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#ffffff',GradientType=0 );
 }
 
-.lang_switch {
-    padding-left: 10px;
-    border-left: 2px solid $primary;
-    
-    .form-control {
-        border: 0;
-        font-size: 14px;
-        padding: 0;
-        background: none;
-       
-        :focus,.btn:active {
-            outline: none !important;
-            box-shadow: none;
-        }
-    }
-}
 
-.form-control:focus {
-    outline: 0;
-    box-shadow: none;
-}
 
 

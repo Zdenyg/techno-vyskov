@@ -41,23 +41,6 @@ header {
     }
   }
  
-  @media (min-width: 992px) { 
-    header {
-      h2 {
-        font-size: 1.4rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        line-height: 2.7rem;
-        span {
-          font-weight: 800;
-          font-size: 2rem;
-        }
-      }
-    }
-
-  }
-
   header {
     .desc {
       opacity: 0;
@@ -85,7 +68,7 @@ header {
   #uvod {
     h2 {
       color: $primary;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -114,14 +97,16 @@ header {
 
 .blue-iconbox {
   background: $primary;
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   text-align: center;
-  padding-top: 55px;
   color: white;
   z-index: 1;
-  position: relative;
+  position: absolute;
   margin-top: -40px;
+  img {
+    margin-top: 12px;
+  }
 }
 
 .gradient h2 {
@@ -163,7 +148,7 @@ header {
 
 
 
-
+// DESKTOP
 
 
 @media (min-width: 992px) { 
@@ -176,4 +161,30 @@ header {
     width: 176px;
   }
 
- }
+  header {
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 2.7rem;
+      span {
+        font-weight: 800;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .blue-iconbox {
+    background: $primary;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    margin-top: -40px;
+  }
+
+}
