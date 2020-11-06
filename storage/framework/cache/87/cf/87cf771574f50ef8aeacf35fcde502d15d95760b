@@ -1,4 +1,4 @@
-1604607105a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1305:"[viewBag]
+1604672485a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1473:"[viewBag]
 
 [contactForm]
 ==
@@ -18,11 +18,11 @@
                 <li>Czech Republic</li>
             </ul>
             <ul class="text-primary">
-                <li>Tel.: +420 517 341 681</li>
+                <li>Tel.: <a href="tel: +420 517 341 681">+420 517 341 681</a></li>
                 <li>Fax: +420 517 341 682</li>
-                <li>Výroba: +420 602 568 307</li>
-                <li>Nástrojárna: +420 721 269 930</li>
-                <li>E-mail: info@techno-vyskov.cz</li>
+                <li>Výroba: <a href="tel: +420 602 568 307">+420 602 568 307</a></li>
+                <li>Nástrojárna: <a href="tel: +420 721 269 930">+420 721 269 930</a></li>
+                <li>E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
             </ul>
             <ul>
                 <li>IČO: 25 58 51 77</li>
@@ -31,10 +31,13 @@
         </div>
         <div class="col-md-6 my-5">
             {% component 'contactForm' %}
-            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
+            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
         </div>
     </div>
-</div>";s:5:"mtime";i:1604510346;s:6:"markup";s:1273:"<div class="container py-5" id="contact">
+</div>
+
+
+";s:5:"mtime";i:1604670793;s:6:"markup";s:1435:"<div class="container py-5" id="contact">
     <div class="row">
         <div class="col-12 text-center">
             <h1>{{ 'KONTAKT' |_ }}</h1>
@@ -50,11 +53,11 @@
                 <li>Czech Republic</li>
             </ul>
             <ul class="text-primary">
-                <li>Tel.: +420 517 341 681</li>
+                <li>Tel.: <a href="tel: +420 517 341 681">+420 517 341 681</a></li>
                 <li>Fax: +420 517 341 682</li>
-                <li>Výroba: +420 602 568 307</li>
-                <li>Nástrojárna: +420 721 269 930</li>
-                <li>E-mail: info@techno-vyskov.cz</li>
+                <li>Výroba: <a href="tel: +420 602 568 307">+420 602 568 307</a></li>
+                <li>Nástrojárna: <a href="tel: +420 721 269 930">+420 721 269 930</a></li>
+                <li>E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
             </ul>
             <ul>
                 <li>IČO: 25 58 51 77</li>
@@ -63,7 +66,7 @@
         </div>
         <div class="col-md-6 my-5">
             {% component 'contactForm' %}
-            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
+            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
         </div>
     </div>
 </div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"contactForm";a:0:{}}}

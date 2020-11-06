@@ -8388,6 +8388,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  margin-top: 60px;
 }
 
 h1, h2 {
@@ -8446,6 +8447,7 @@ hr {
   border: 0;
   font-size: 14px;
   padding: 0;
+  background: none;
 }
 .lang_switch .form-control :focus, .lang_switch .form-control .btn:active {
   outline: none !important;
@@ -8742,6 +8744,22 @@ body.hidden-scroll {
   color: #004f9e;
 }
 
+.footer .nav-link {
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+}
+.footer h4 {
+  text-transform: uppercase;
+}
+.footer .date {
+  background: #161616;
+}
+.footer .date p {
+  margin: 0;
+  padding: 1.3rem 0;
+}
+
 header {
   position: relative;
   background-color: black;
@@ -8769,25 +8787,14 @@ header .container {
   z-index: 2;
 }
 
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
 header ul {
   margin-bottom: 10px;
 }
 header li {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 header .desc {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -8805,7 +8812,7 @@ header .desc {
 }
 #uvod h2 {
   color: #004f9e;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .career li {

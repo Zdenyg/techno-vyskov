@@ -59,7 +59,7 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
     {
         $macros = $this->macros;
         // line 1
-        echo "<nav class=\"navbar navbar-expand-lg navbar-light shadow\" id=\"mainNav\">
+        echo "<nav class=\"navbar navbar-expand-lg fixed-top bg-light navbar-light shadow\" id=\"mainNav\">
     <div class=\"container\">
       <a class=\"navbar-brand\" href=\"";
         // line 3
@@ -198,7 +198,7 @@ class __TwigTemplate_4526715df0c24873749718e488d7bb982e89574ed308f26382eb726a618
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"navbar navbar-expand-lg navbar-light shadow\" id=\"mainNav\">
+        return new Source("<nav class=\"navbar navbar-expand-lg fixed-top bg-light navbar-light shadow\" id=\"mainNav\">
     <div class=\"container\">
       <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">
 \t\t<img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg'|theme }}\" alt=\"Techno Vyškov logo\">

@@ -102,7 +102,28 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 ";
         // line 13
         $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("kvalita-uvod"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 14
+        echo "
+";
+        // line 15
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("publicita-uvod"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 16
+        echo "
+";
+        // line 17
+        $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("kontakt"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 18
+        echo "
+";
+        // line 19
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
     }
 
@@ -118,7 +139,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
+        return array (  125 => 19,  122 => 18,  118 => 17,  115 => 16,  111 => 15,  108 => 14,  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -135,6 +156,12 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
 {% partial 'produkty-uvod' %}
 
-{% partial 'kontakt' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
+{% partial 'kvalita-uvod' %}
+
+{% partial 'publicita-uvod' %}
+
+{% partial 'kontakt' %}
+
+{% partial 'footer' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
     }
 }

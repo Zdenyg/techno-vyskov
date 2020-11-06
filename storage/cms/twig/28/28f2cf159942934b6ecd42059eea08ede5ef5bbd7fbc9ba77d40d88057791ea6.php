@@ -81,11 +81,11 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
                 <li>Czech Republic</li>
             </ul>
             <ul class=\"text-primary\">
-                <li>Tel.: +420 517 341 681</li>
+                <li>Tel.: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
                 <li>Fax: +420 517 341 682</li>
-                <li>Výroba: +420 602 568 307</li>
-                <li>Nástrojárna: +420 721 269 930</li>
-                <li>E-mail: info@techno-vyskov.cz</li>
+                <li>Výroba: <a href=\"tel: +420 602 568 307\">+420 602 568 307</a></li>
+                <li>Nástrojárna: <a href=\"tel: +420 721 269 930\">+420 721 269 930</a></li>
+                <li>E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
             </ul>
             <ul>
                 <li>IČO: 25 58 51 77</li>
@@ -99,7 +99,9 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contactForm"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 30
-        echo "            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
+        echo "            <p>";
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů."]);
+        echo "</p>
         </div>
     </div>
 </div>";
@@ -138,11 +140,11 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
                 <li>Czech Republic</li>
             </ul>
             <ul class=\"text-primary\">
-                <li>Tel.: +420 517 341 681</li>
+                <li>Tel.: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
                 <li>Fax: +420 517 341 682</li>
-                <li>Výroba: +420 602 568 307</li>
-                <li>Nástrojárna: +420 721 269 930</li>
-                <li>E-mail: info@techno-vyskov.cz</li>
+                <li>Výroba: <a href=\"tel: +420 602 568 307\">+420 602 568 307</a></li>
+                <li>Nástrojárna: <a href=\"tel: +420 721 269 930\">+420 721 269 930</a></li>
+                <li>E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
             </ul>
             <ul>
                 <li>IČO: 25 58 51 77</li>
@@ -151,7 +153,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         </div>
         <div class=\"col-md-6 my-5\">
             {% component 'contactForm' %}
-            <p>Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.</p>
+            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
         </div>
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/kontakt.htm", "");

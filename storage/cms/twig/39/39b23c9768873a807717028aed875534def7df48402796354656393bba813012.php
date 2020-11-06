@@ -91,7 +91,7 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
         // line 15
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["nástrojárna"]);
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více informací"]);
         echo "</a>
             </div>
         </div>
@@ -130,7 +130,7 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
 
         <div class=\"row text-center pt-5\">
             <div class=\"col\">
-                <a href=\"{{ 'tooling'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'nástrojárna' |_ }}</a>
+                <a href=\"{{ 'tooling'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'více informací' |_ }}</a>
             </div>
         </div>
     </div>

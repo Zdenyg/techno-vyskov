@@ -1,4 +1,4 @@
-1604607105a:1:{s:23:"nastrojarna-iconbox.htm";a:5:{s:8:"fileName";s:23:"nastrojarna-iconbox.htm";s:7:"content";s:982:"        <div class="row bg-white shadow shortdesc">
+1604672484a:1:{s:23:"nastrojarna-iconbox.htm";a:5:{s:8:"fileName";s:23:"nastrojarna-iconbox.htm";s:7:"content";s:982:"        <div class="row bg-white shadow shortdesc">
             <div class="col text-center d-md-flex justify-content-around">
                 <div class="iconbox">
                     <img src="{{ 'assets/images/icon-tool-01.svg' | theme }}" alt="">

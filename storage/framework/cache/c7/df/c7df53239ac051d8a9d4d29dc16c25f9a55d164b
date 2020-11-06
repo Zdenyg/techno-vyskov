@@ -1,0 +1,63 @@
+1604672484a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1084:"[viewBag]
+==
+<section class="bg-success">
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1>{{ 'KVALITA'|_ }}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-12 text-center">
+            <div class="blue-iconbox">
+                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
+                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
+                        
+            </div> 
+        </div>
+        <div class="col-lg-6 col-md-12 text-center">
+            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+            {% content '3d-mereni' %}
+        </div>
+    </div>
+
+    <div class="row text-center pt-5">
+        <div class="col">
+            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'více informací' |_ }}</a>
+        </div>
+    </div>
+</div>
+</section>";s:5:"mtime";i:1604670694;s:6:"markup";s:1069:"<section class="bg-success">
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1>{{ 'KVALITA'|_ }}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-12 text-center">
+            <div class="blue-iconbox">
+                <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
+                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
+                        
+            </div> 
+        </div>
+        <div class="col-lg-6 col-md-12 text-center">
+            <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+            {% content '3d-mereni' %}
+        </div>
+    </div>
+
+    <div class="row text-center pt-5">
+        <div class="col">
+            <a href="{{ 'quality'|page }}" class="btn btn-primary" role="button">{{ 'více informací' |_ }}</a>
+        </div>
+    </div>
+</div>
+</section>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

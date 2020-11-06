@@ -1,4 +1,4 @@
-1604607012a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:892:"title = "Techno - Vyškov | úvod"
+1604672484a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:984:"title = "Techno - Vyškov | úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno - Vyškov"
@@ -32,7 +32,13 @@ pageNumber = "{{ :page }}"
 
 {% partial 'produkty-uvod' %}
 
-{% partial 'kontakt' %}";s:5:"mtime";i:1604519235;s:6:"markup";s:208:"{% partial 'uvod' %}
+{% partial 'kvalita-uvod' %}
+
+{% partial 'publicita-uvod' %}
+
+{% partial 'kontakt' %}
+
+{% partial 'footer' %}";s:5:"mtime";i:1604667362;s:6:"markup";s:300:"{% partial 'uvod' %}
 
 {% partial 'about-us' %}
 
@@ -44,4 +50,10 @@ pageNumber = "{{ :page }}"
 
 {% partial 'produkty-uvod' %}
 
-{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:39:"aktuálně není žádná pozice volná";s:11:"detailsPage";s:6:"career";s:16:"detailsKeyColumn";s:8:"job_name";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+{% partial 'kvalita-uvod' %}
+
+{% partial 'publicita-uvod' %}
+
+{% partial 'kontakt' %}
+
+{% partial 'footer' %}";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:16:"Techno - Vyškov";s:16:"meta_description";s:146:"působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:39:"aktuálně není žádná pozice volná";s:11:"detailsPage";s:6:"career";s:16:"detailsKeyColumn";s:8:"job_name";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -1,4 +1,4 @@
-1604607105a:1:{s:20:"nastrojarna-uvod.htm";a:6:{s:8:"fileName";s:20:"nastrojarna-uvod.htm";s:7:"content";s:680:"[viewBag]
+1604672484a:1:{s:20:"nastrojarna-uvod.htm";a:6:{s:8:"fileName";s:20:"nastrojarna-uvod.htm";s:7:"content";s:683:"[viewBag]
 ==
 <section class="gradient">
     <div class="container py-5">
@@ -14,11 +14,11 @@
 
         <div class="row text-center pt-5">
             <div class="col">
-                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
+                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'více informací' |_ }}</a>
             </div>
         </div>
     </div>
-</section>";s:5:"mtime";i:1604519288;s:6:"markup";s:665:"<section class="gradient">
+</section>";s:5:"mtime";i:1604670675;s:6:"markup";s:668:"<section class="gradient">
     <div class="container py-5">
         <div class="row">
             <div class="col-12 text-center">
@@ -32,7 +32,7 @@
 
         <div class="row text-center pt-5">
             <div class="col">
-                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'nástrojárna' |_ }}</a>
+                <a href="{{ 'tooling'|page }}" class="btn btn-primary" role="button">{{ 'více informací' |_ }}</a>
             </div>
         </div>
     </div>

@@ -87,7 +87,7 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
         // line 14
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("molding");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["lisovna"]);
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více informací"]);
         echo "</a>
             </div>
         </div>
@@ -125,7 +125,7 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
 
         <div class=\"row text-center pt-5\">
             <div class=\"col\">
-                <a href=\"{{ 'molding'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'lisovna' |_ }}</a>
+                <a href=\"{{ 'molding'|page }}\" class=\"btn btn-primary\" role=\"button\">{{ 'více informací' |_ }}</a>
             </div>
         </div>
     </div>

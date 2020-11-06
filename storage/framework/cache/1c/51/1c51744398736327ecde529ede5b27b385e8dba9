@@ -1,0 +1,15 @@
+1604672485a:1:{s:18:"publicita-uvod.htm";a:6:{s:8:"fileName";s:18:"publicita-uvod.htm";s:7:"content";s:245:"[viewBag]
+==
+<div class="container py-5">
+    <div class="row text-center pt-4">
+        <div class="col">
+            <img src="{{ 'assets/images/publicita-oppi.png' | theme }}" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1604670377;s:6:"markup";s:230:"<div class="container py-5">
+    <div class="row text-center pt-4">
+        <div class="col">
+            <img src="{{ 'assets/images/publicita-oppi.png' | theme }}" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
