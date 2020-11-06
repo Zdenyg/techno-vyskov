@@ -8388,7 +8388,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 h1, h2 {
@@ -8744,13 +8744,40 @@ body.hidden-scroll {
   color: #004f9e;
 }
 
+.footer {
+  background: #a4a4a4;
+}
+.footer ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
 .footer .nav-link {
   padding: 0;
-  color: white;
+  color: #292929;
   text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.footer .nav-link:hover {
+  color: #004f9e;
+}
+.footer .contact-link {
+  color: #292929;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.footer .contact-link a {
+  color: #292929;
+  padding-left: 10px;
+}
+.footer .contact-link a:hover {
+  color: #004f9e;
 }
 .footer h4 {
   text-transform: uppercase;
+  font-size: 1rem;
+  color: #004f9e;
 }
 .footer .date {
   background: #161616;
@@ -8787,14 +8814,36 @@ header .container {
   z-index: 2;
 }
 
-header ul {
-  margin-bottom: 10px;
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2rem;
 }
-header li {
-  font-size: 1.6rem;
+header h2 span {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  header h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 2.7rem;
+  }
+  header h2 span {
+    font-weight: 800;
+    font-size: 2rem;
+  }
 }
 header .desc {
-  opacity: 0.9;
+  opacity: 0;
+}
+header .fade-left {
+  opacity: 0;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -8845,6 +8894,11 @@ header .desc {
   z-index: 1;
   position: relative;
   margin-top: -40px;
+}
+
+.gradient h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .gallery {

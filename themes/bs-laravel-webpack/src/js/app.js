@@ -55,14 +55,14 @@ gallery.on('show.simplelightbox', function () {
 });
 
 
-import AOS from 'aos'
+/* import AOS from 'aos' */
 
 // AOS Animation on scroll
 
-/* AOS.init({
+/*  AOS.init({
   duration: 1200,
-})
- */
+}) */
+
 
 // LAZY loading
 
@@ -88,3 +88,13 @@ $(function() {
 			}, 1000);
 			return false;
 		});
+
+
+
+
+// fadeIn description on header
+
+$('.desc').delay(800).animate({'opacity':'1'},1200);
+$('.desc .fade-left').first().delay(500).animate({'opacity':'1'},1000);
+$('.desc .fade-left').last().delay(2000).animate({'opacity':'1'},1000);
+

@@ -1,51 +1,37 @@
-1604672484a:1:{s:8:"uvod.htm";a:6:{s:8:"fileName";s:8:"uvod.htm";s:7:"content";s:806:"==
+1604690886a:1:{s:8:"uvod.htm";a:6:{s:8:"fileName";s:8:"uvod.htm";s:7:"content";s:793:"==
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="{{ 'assets/video/Techno-video-01.mp4' | theme }}" type="video/mp4">
     </video>
-    <div class="container h-100">
-
-          
+    <div class="container-fluid h-100">
           <div class="row h-100 align-items-center justify-content-end">
-            <div class="col-md-4 col-sm-6 bg-primary text-white p-3 desc">
-              <ul>
-                <li>{{ 'konstrukce nástrojů' |_}}</li>
-                <li>{{ 'výroba forem' |_}}</li>
-                <li>{{ 'vzorování' |_}}</li>
-                <li>{{ 'měření' |_}}</li>
-                <li>{{ 'výroba sériových dílů' |_}}</li>
-              </ul>
+            <div class="col-md-4 col-sm-6 bg-primary text-white p-4 desc">
+              <div class="fade-left">  
+                <h2>{{ '<span> Vyrábíme formy</span><br>pro vstřikování plastů' |_ }}</h2>
+              </div>
+              <div class="fade-left">  
+                <h2>{{ 'a <span>plastové díly</span><br>pro různá odvětví' |_ }}</h2>
+              </div>  
             </div>
-
-
-          
-
     </div>
   </header>
 
 
-";s:5:"mtime";i:1604507841;s:6:"markup";s:796:"<header>
+";s:5:"mtime";i:1604689665;s:6:"markup";s:783:"<header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="{{ 'assets/video/Techno-video-01.mp4' | theme }}" type="video/mp4">
     </video>
-    <div class="container h-100">
-
-          
+    <div class="container-fluid h-100">
           <div class="row h-100 align-items-center justify-content-end">
-            <div class="col-md-4 col-sm-6 bg-primary text-white p-3 desc">
-              <ul>
-                <li>{{ 'konstrukce nástrojů' |_}}</li>
-                <li>{{ 'výroba forem' |_}}</li>
-                <li>{{ 'vzorování' |_}}</li>
-                <li>{{ 'měření' |_}}</li>
-                <li>{{ 'výroba sériových dílů' |_}}</li>
-              </ul>
+            <div class="col-md-4 col-sm-6 bg-primary text-white p-4 desc">
+              <div class="fade-left">  
+                <h2>{{ '<span> Vyrábíme formy</span><br>pro vstřikování plastů' |_ }}</h2>
+              </div>
+              <div class="fade-left">  
+                <h2>{{ 'a <span>plastové díly</span><br>pro různá odvětví' |_ }}</h2>
+              </div>  
             </div>
-
-
-          
-
     </div>
   </header>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

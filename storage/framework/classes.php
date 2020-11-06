@@ -113,4 +113,5 @@
   'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
   'system\\Controllers\\maillayouts' => 'modules\\system\\controllers\\maillayouts.php',
   'system\\Controllers\\mailpartials' => 'modules\\system\\controllers\\mailpartials.php',
+  'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
 );

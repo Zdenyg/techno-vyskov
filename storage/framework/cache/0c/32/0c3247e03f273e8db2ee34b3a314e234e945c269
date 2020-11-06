@@ -1,11 +1,12 @@
-1604672484a:1:{s:16:"lisovna-uvod.htm";a:6:{s:8:"fileName";s:16:"lisovna-uvod.htm";s:7:"content";s:632:"[viewBag]
+1604690886a:1:{s:16:"lisovna-uvod.htm";a:6:{s:8:"fileName";s:16:"lisovna-uvod.htm";s:7:"content";s:710:"[viewBag]
 ==
 <section class="gradient">
     <div class="container py-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5" alt="">
+                <h2>Výroba vysoce kvalitních plastových dílů </h2>
+                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5 pt-3" alt="">
             </div>
         </div>
 
@@ -17,12 +18,13 @@
             </div>
         </div>
     </div>
- </section>";s:5:"mtime";i:1604670688;s:6:"markup";s:617:"<section class="gradient">
+ </section>";s:5:"mtime";i:1604675961;s:6:"markup";s:695:"<section class="gradient">
     <div class="container py-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5" alt="">
+                <h2>Výroba vysoce kvalitních plastových dílů </h2>
+                <img src="{{ 'assets/images/lisovna-01.png' | theme }}" class="img-fluid pb-5 pt-3" alt="">
             </div>
         </div>
 

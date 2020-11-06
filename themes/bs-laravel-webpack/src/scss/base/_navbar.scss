@@ -34,24 +34,3 @@
     color: $primary;
 }
 
-
-//* BOTTOM  NAV
-
-.footer {
-   .nav-link {
-      padding: 0;
-      color: white;
-      text-transform: uppercase;
-   }
-   h4 {
-      text-transform: uppercase;
-   }
-
-   .date {
-      background: rgb(22, 22, 22);
-      p {
-         margin: 0;
-         padding: 1.3rem 0;
-      }
-   }
-}

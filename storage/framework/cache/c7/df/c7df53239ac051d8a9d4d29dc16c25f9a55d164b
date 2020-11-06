@@ -1,10 +1,11 @@
-1604672484a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1084:"[viewBag]
+1604690886a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1145:"[viewBag]
 ==
-<section class="bg-success">
+<section class="gradient">
 <div class="container py-5">
     <div class="row">
         <div class="col-12 text-center mb-5">
             <h1>{{ 'KVALITA'|_ }}</h1>
+            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
         </div>
     </div>
 
@@ -30,11 +31,12 @@
         </div>
     </div>
 </div>
-</section>";s:5:"mtime";i:1604670694;s:6:"markup";s:1069:"<section class="bg-success">
+</section>";s:5:"mtime";i:1604679539;s:6:"markup";s:1130:"<section class="gradient">
 <div class="container py-5">
     <div class="row">
         <div class="col-12 text-center mb-5">
             <h1>{{ 'KVALITA'|_ }}</h1>
+            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
         </div>
     </div>
 

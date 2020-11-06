@@ -29,8 +29,8 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("partial" => 11);
-        $filters = array("_" => 5, "theme" => 7, "page" => 15);
+        $tags = array("partial" => 12);
+        $filters = array("_" => 5, "theme" => 8, "page" => 16);
         $functions = array();
 
         try {
@@ -63,7 +63,7 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
     <div class=\"container py-5\">
         <div class=\"row\">
             <div class=\"col-12 text-center\">
-                <h4>";
+                <h4 class=\"pb-3\">";
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NAŠE SLUŽBY"]);
         echo "</h4>
@@ -71,24 +71,25 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
         // line 6
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NÁSTROJÁRNA"]);
         echo "</h1>
+                <h2>Vyrábíme vstřikovací i přímolisovací formy od prototypů po sériovou výrobu. </h2>  
                 <img src=\"";
-        // line 7
+        // line 8
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/forma_01.png");
-        echo "\" class=\"img-fluid\" alt=\"\">
+        echo "\" class=\"img-fluid pt-3\" alt=\"\">
             </div>
         </div>
 
         ";
-        // line 11
+        // line 12
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("nastrojarna-iconbox"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 12
+        // line 13
         echo "
         <div class=\"row text-center pt-5\">
             <div class=\"col\">
                 <a href=\"";
-        // line 15
+        // line 16
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více informací"]);
@@ -111,7 +112,7 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
 
     public function getDebugInfo()
     {
-        return array (  92 => 15,  87 => 12,  83 => 11,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  93 => 16,  88 => 13,  84 => 12,  77 => 8,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -120,9 +121,10 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
     <div class=\"container py-5\">
         <div class=\"row\">
             <div class=\"col-12 text-center\">
-                <h4>{{ 'NAŠE SLUŽBY' |_}}</h4>
+                <h4 class=\"pb-3\">{{ 'NAŠE SLUŽBY' |_}}</h4>
                 <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
-                <img src=\"{{ 'assets/images/forma_01.png' | theme }}\" class=\"img-fluid\" alt=\"\">
+                <h2>Vyrábíme vstřikovací i přímolisovací formy od prototypů po sériovou výrobu. </h2>  
+                <img src=\"{{ 'assets/images/forma_01.png' | theme }}\" class=\"img-fluid pt-3\" alt=\"\">
             </div>
         </div>
 

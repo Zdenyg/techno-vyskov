@@ -1,4 +1,4 @@
-1604672484a:1:{s:10:"career.htm";a:11:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:2788:"title = "Kariéra"
+1604690885a:1:{s:10:"career.htm";a:12:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:3359:"title = "Kariéra"
 url = "/kariera"
 layout = "default"
 is_hidden = 0
@@ -16,9 +16,9 @@ noRecordsMessage = "v tuto chvíli nehledáme zaměstnace na žádnou pozici."
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[contactForm]
 ==
-
-
 {% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
@@ -87,7 +87,20 @@ pageNumber = "{{ :page }}"
     </ul>
 {% endif %}
 
-</div>";s:5:"mtime";i:1604605910;s:6:"markup";s:2358:"{% set records = builderList.records %}
+
+    <h3 class="pb-2 font-weight-bolder">Zaujala vás některá z nabízených pozic?</h3>
+    <h5>Kontaktujte nás</h5>
+    <ul class="my-4 list-unstyled">
+        <li>Ing. Helena Hálová</li>
+        <li><strong>Tel: <a href="tel: +420 517 341 681">+420 517 341 681</a></strong></li>
+        <li><strong> E-mail: <a href="mailto: h.halova@techno-vyskov.cz">h.halova@techno-vyskov.cz</a></strong></li>
+    </ul>
+    <p>Nebo pomocí kontaktního formuláře</p>
+  
+    <div class="col-md-6">   
+        {% component 'contactForm' %}
+    </div>
+</div>";s:5:"mtime";i:1604684063;s:6:"markup";s:2916:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -155,4 +168,17 @@ pageNumber = "{{ :page }}"
     </ul>
 {% endif %}
 
-</div>";s:4:"code";N;s:5:"title";s:8:"Kariéra";s:3:"url";s:8:"/kariera";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:6:"Career";}s:9:"localeUrl";a:1:{s:2:"en";s:7:"/career";}}s:11:"builderList";a:8:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:57:"v tuto chvíli nehledáme zaměstnace na žádnou pozici.";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+
+    <h3 class="pb-2 font-weight-bolder">Zaujala vás některá z nabízených pozic?</h3>
+    <h5>Kontaktujte nás</h5>
+    <ul class="my-4 list-unstyled">
+        <li>Ing. Helena Hálová</li>
+        <li><strong>Tel: <a href="tel: +420 517 341 681">+420 517 341 681</a></strong></li>
+        <li><strong> E-mail: <a href="mailto: h.halova@techno-vyskov.cz">h.halova@techno-vyskov.cz</a></strong></li>
+    </ul>
+    <p>Nebo pomocí kontaktního formuláře</p>
+  
+    <div class="col-md-6">   
+        {% component 'contactForm' %}
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:8:"Kariéra";s:3:"url";s:8:"/kariera";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:6:"Career";}s:9:"localeUrl";a:1:{s:2:"en";s:7:"/career";}}s:11:"builderList";a:8:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:57:"v tuto chvíli nehledáme zaměstnace na žádnou pozici.";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:11:"contactForm";a:0:{}}}

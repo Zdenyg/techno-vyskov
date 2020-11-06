@@ -29,13 +29,13 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("set" => 1, "for" => 17, "if" => 18);
+        $tags = array("set" => 1, "for" => 17, "if" => 18, "component" => 80);
         $filters = array("page" => 19, "escape" => 23, "date" => 24, "raw" => 30);
         $functions = array("range" => 57);
 
         try {
             $this->sandbox->checkSecurity(
-                ['set', 'for', 'if'],
+                ['set', 'for', 'if', 'component'],
                 ['page', 'escape', 'date', 'raw'],
                 ['range']
             );
@@ -212,6 +212,24 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
         }
         // line 68
         echo "
+
+    <h3 class=\"pb-2 font-weight-bolder\">Zaujala vás některá z nabízených pozic?</h3>
+    <h5>Kontaktujte nás</h5>
+    <ul class=\"my-4 list-unstyled\">
+        <li>Ing. Helena Hálová</li>
+        <li><strong>Tel: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></strong></li>
+        <li><strong> E-mail: <a href=\"mailto: h.halova@techno-vyskov.cz\">h.halova@techno-vyskov.cz</a></strong></li>
+    </ul>
+    <p>Nebo pomocí kontaktního formuláře</p>
+  
+    <div class=\"col-md-6\">   
+        ";
+        // line 80
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contactForm"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 81
+        echo "    </div>
 </div>";
     }
 
@@ -227,7 +245,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
 
     public function getDebugInfo()
     {
-        return array (  214 => 68,  210 => 66,  204 => 64,  202 => 63,  199 => 62,  188 => 59,  183 => 58,  179 => 57,  176 => 56,  170 => 54,  168 => 53,  165 => 52,  163 => 51,  160 => 50,  151 => 48,  145 => 46,  141 => 44,  139 => 43,  131 => 38,  124 => 34,  117 => 30,  108 => 24,  104 => 23,  100 => 21,  94 => 19,  91 => 18,  86 => 17,  74 => 7,  72 => 6,  70 => 5,  68 => 4,  66 => 3,  64 => 2,  62 => 1,);
+        return array (  232 => 81,  228 => 80,  214 => 68,  210 => 66,  204 => 64,  202 => 63,  199 => 62,  188 => 59,  183 => 58,  179 => 57,  176 => 56,  170 => 54,  168 => 53,  165 => 52,  163 => 51,  160 => 50,  151 => 48,  145 => 46,  141 => 44,  139 => 43,  131 => 38,  124 => 34,  117 => 30,  108 => 24,  104 => 23,  100 => 21,  94 => 19,  91 => 18,  86 => 17,  74 => 7,  72 => 6,  70 => 5,  68 => 4,  66 => 3,  64 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -300,6 +318,19 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
     </ul>
 {% endif %}
 
+
+    <h3 class=\"pb-2 font-weight-bolder\">Zaujala vás některá z nabízených pozic?</h3>
+    <h5>Kontaktujte nás</h5>
+    <ul class=\"my-4 list-unstyled\">
+        <li>Ing. Helena Hálová</li>
+        <li><strong>Tel: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></strong></li>
+        <li><strong> E-mail: <a href=\"mailto: h.halova@techno-vyskov.cz\">h.halova@techno-vyskov.cz</a></strong></li>
+    </ul>
+    <p>Nebo pomocí kontaktního formuláře</p>
+  
+    <div class=\"col-md-6\">   
+        {% component 'contactForm' %}
+    </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/career.htm", "");
     }
 }

@@ -16,9 +16,9 @@ noRecordsMessage = "v tuto chvíli nehledáme zaměstnace na žádnou pozici."
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[contactForm]
 ==
-
-
 {% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
@@ -87,4 +87,17 @@ pageNumber = "{{ :page }}"
     </ul>
 {% endif %}
 
+
+    <h3 class="pb-2 font-weight-bolder">Zaujala vás některá z nabízených pozic?</h3>
+    <h5>Kontaktujte nás</h5>
+    <ul class="my-4 list-unstyled">
+        <li>Ing. Helena Hálová</li>
+        <li><strong>Tel: <a href="tel: +420 517 341 681">+420 517 341 681</a></strong></li>
+        <li><strong> E-mail: <a href="mailto: h.halova@techno-vyskov.cz">h.halova@techno-vyskov.cz</a></strong></li>
+    </ul>
+    <p>Nebo pomocí kontaktního formuláře</p>
+  
+    <div class="col-md-6">   
+        {% component 'contactForm' %}
+    </div>
 </div>

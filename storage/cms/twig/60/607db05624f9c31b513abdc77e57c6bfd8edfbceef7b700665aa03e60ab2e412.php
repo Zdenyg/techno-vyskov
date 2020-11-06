@@ -29,13 +29,13 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 8);
-        $filters = array("page" => 9, "_" => 9);
+        $tags = array();
+        $filters = array("page" => 8, "_" => 8);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['if'],
+                [],
                 ['page', '_'],
                 []
             );
@@ -59,108 +59,68 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
     {
         $macros = $this->macros;
         // line 1
-        echo "<footer class=\"footer bg-dark\">
+        echo "<footer class=\"footer\">
 
-    <div class=\"container text-white py-5\">
+    <div class=\"container text-white pt-5 pb-2\">
         <div class=\"row\">
-            <div class=\"col-md-6\">
+            <div class=\"col-md-6 offset-md-2 pb-5\">
                 <h4>menu</h4>
-                <ul class=\"nav d-flex align-items-start flex-column\">
-                    <li class=\"nav-item ";
+                <ul>
+                    <li><a class=\"nav-link\" href=\"";
         // line 8
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 8), "id", [], "any", false, false, true, 8) == "home")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 9
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["úvod"]);
-        echo "</a>
-                    </li>
-                    <li class=\"nav-item ";
-        // line 11
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 11), "id", [], "any", false, false, true, 11) == "tooling")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 12
+        echo "</a></li>
+                    <li><a class=\"nav-link\" href=\"";
+        // line 9
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["nástrojárna"]);
-        echo "</a>
-                    </li>
-                    <li class=\"nav-item ";
-        // line 14
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 14), "id", [], "any", false, false, true, 14) == "molding")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 15
+        echo "</a></li>
+                    <li><a class=\"nav-link\" href=\"";
+        // line 10
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("molding");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["lisovna"]);
-        echo "</a>
-                    </li>
-                    <li class=\"nav-item ";
-        // line 17
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 17), "id", [], "any", false, false, true, 17) == "products")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 18
+        echo "</a></li>
+                    <li><a class=\"nav-link\" href=\"";
+        // line 11
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("products");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["produkty"]);
-        echo "</a>
-                    </li>
-                    <li class=\"nav-item ";
-        // line 20
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 20), "id", [], "any", false, false, true, 20) == "quality")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 21
+        echo "</a></li>
+                    <li><a class=\"nav-link\" href=\"";
+        // line 12
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kvalita"]);
-        echo "</a>
-                    </li>
-                    <li class=\"nav-item ";
-        // line 23
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 23), "id", [], "any", false, false, true, 23) == "career")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 24
+        echo "</a></li>
+                    <li><a class=\"nav-link\" href=\"";
+        // line 13
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("career");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kariéra"]);
-        echo "</a>
-                    </li>
-                    <li class=\"nav-item ";
-        // line 26
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 26), "id", [], "any", false, false, true, 26) == "contact")) {
-            echo "active";
-        }
-        echo "\">
-                      <a class=\"nav-link\" href=\"";
-        // line 27
+        echo "</a></li>
+                    <li><a class=\"nav-link\" href=\"";
+        // line 14
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("contact");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kontakt"]);
-        echo "</a>
-                    </li>
+        echo "</a></li>
                   </ul>
             </div>
-            <div class=\"col-md-6\">
+            <div class=\"col-md-4\">
                 <h4>odkazy</h4>
+                <ul>
+                  <li><a href=\"#\" class=\"nav-link\">ochrana osobních údajů</a></li>
+                  <li><a href=\"#\" class=\"nav-link\">publicita EU</a></li>
+                </ul>
+                <h4 class=\"mt-5\">rychlý kontakt</h4>
+                <ul>
+                  <li class=\"contact-link\">Tel.:<a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
+                  <li class=\"contact-link\">E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -182,43 +142,38 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     public function getDebugInfo()
     {
-        return array (  155 => 27,  149 => 26,  142 => 24,  136 => 23,  129 => 21,  123 => 20,  116 => 18,  110 => 17,  103 => 15,  97 => 14,  90 => 12,  84 => 11,  77 => 9,  71 => 8,  62 => 1,);
+        return array (  107 => 14,  101 => 13,  95 => 12,  89 => 11,  83 => 10,  77 => 9,  71 => 8,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<footer class=\"footer bg-dark\">
+        return new Source("<footer class=\"footer\">
 
-    <div class=\"container text-white py-5\">
+    <div class=\"container text-white pt-5 pb-2\">
         <div class=\"row\">
-            <div class=\"col-md-6\">
+            <div class=\"col-md-6 offset-md-2 pb-5\">
                 <h4>menu</h4>
-                <ul class=\"nav d-flex align-items-start flex-column\">
-                    <li class=\"nav-item {% if this.page.id == 'home' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'home'|page }}\">{{ 'úvod'|_ }}</a>
-                    </li>
-                    <li class=\"nav-item {% if this.page.id == 'tooling' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'tooling'|page }}\">{{ 'nástrojárna'|_ }}</a>
-                    </li>
-                    <li class=\"nav-item {% if this.page.id == 'molding' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'molding'|page }}\">{{ 'lisovna'|_ }}</a>
-                    </li>
-                    <li class=\"nav-item {% if this.page.id == 'products' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'products'|page }}\">{{ 'produkty'|_ }}</a>
-                    </li>
-                    <li class=\"nav-item {% if this.page.id == 'quality' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'quality'|page }}\">{{ 'kvalita'|_ }}</a>
-                    </li>
-                    <li class=\"nav-item {% if this.page.id == 'career' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'career'|page }}\">{{ 'kariéra'|_ }}</a>
-                    </li>
-                    <li class=\"nav-item {% if this.page.id == 'contact' %}active{% endif %}\">
-                      <a class=\"nav-link\" href=\"{{ 'contact'|page }}\">{{ 'kontakt'|_ }}</a>
-                    </li>
+                <ul>
+                    <li><a class=\"nav-link\" href=\"{{ 'home'|page }}\">{{ 'úvod'|_ }}</a></li>
+                    <li><a class=\"nav-link\" href=\"{{ 'tooling'|page }}\">{{ 'nástrojárna'|_ }}</a></li>
+                    <li><a class=\"nav-link\" href=\"{{ 'molding'|page }}\">{{ 'lisovna'|_ }}</a></li>
+                    <li><a class=\"nav-link\" href=\"{{ 'products'|page }}\">{{ 'produkty'|_ }}</a></li>
+                    <li><a class=\"nav-link\" href=\"{{ 'quality'|page }}\">{{ 'kvalita'|_ }}</a></li>
+                    <li><a class=\"nav-link\" href=\"{{ 'career'|page }}\">{{ 'kariéra'|_ }}</a></li>
+                    <li><a class=\"nav-link\" href=\"{{ 'contact'|page }}\">{{ 'kontakt'|_ }}</a></li>
                   </ul>
             </div>
-            <div class=\"col-md-6\">
+            <div class=\"col-md-4\">
                 <h4>odkazy</h4>
+                <ul>
+                  <li><a href=\"#\" class=\"nav-link\">ochrana osobních údajů</a></li>
+                  <li><a href=\"#\" class=\"nav-link\">publicita EU</a></li>
+                </ul>
+                <h4 class=\"mt-5\">rychlý kontakt</h4>
+                <ul>
+                  <li class=\"contact-link\">Tel.:<a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
+                  <li class=\"contact-link\">E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
+                </ul>
             </div>
         </div>
     </div>

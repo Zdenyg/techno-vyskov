@@ -1,37 +1,32 @@
-1604672485a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2047:"[viewBag]
+1604690861a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:1745:"[viewBag]
 ==
-<footer class="footer bg-dark">
+<footer class="footer">
 
-    <div class="container text-white py-5">
+    <div class="container text-white pt-5 pb-2">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 offset-md-2 pb-5">
                 <h4>menu</h4>
-                <ul class="nav d-flex align-items-start flex-column">
-                    <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'tooling' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'molding' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'molding'|page }}">{{ 'lisovna'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'products' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'products'|page }}">{{ 'produkty'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'quality' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'quality'|page }}">{{ 'kvalita'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'career' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'career'|page }}">{{ 'kariéra'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'contact' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'contact'|page }}">{{ 'kontakt'|_ }}</a>
-                    </li>
+                <ul>
+                    <li><a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'molding'|page }}">{{ 'lisovna'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'products'|page }}">{{ 'produkty'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'quality'|page }}">{{ 'kvalita'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'career'|page }}">{{ 'kariéra'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'contact'|page }}">{{ 'kontakt'|_ }}</a></li>
                   </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <h4>odkazy</h4>
+                <ul>
+                  <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
+                  <li><a href="#" class="nav-link">publicita EU</a></li>
+                </ul>
+                <h4 class="mt-5">rychlý kontakt</h4>
+                <ul>
+                  <li class="contact-link">Tel.:<a href="tel: +420 517 341 681">+420 517 341 681</a></li>
+                  <li class="contact-link">E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -42,38 +37,33 @@
 
 
 
-";s:5:"mtime";i:1604670012;s:6:"markup";s:2024:"<footer class="footer bg-dark">
+";s:5:"mtime";i:1604690258;s:6:"markup";s:1722:"<footer class="footer">
 
-    <div class="container text-white py-5">
+    <div class="container text-white pt-5 pb-2">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 offset-md-2 pb-5">
                 <h4>menu</h4>
-                <ul class="nav d-flex align-items-start flex-column">
-                    <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'tooling' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'molding' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'molding'|page }}">{{ 'lisovna'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'products' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'products'|page }}">{{ 'produkty'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'quality' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'quality'|page }}">{{ 'kvalita'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'career' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'career'|page }}">{{ 'kariéra'|_ }}</a>
-                    </li>
-                    <li class="nav-item {% if this.page.id == 'contact' %}active{% endif %}">
-                      <a class="nav-link" href="{{ 'contact'|page }}">{{ 'kontakt'|_ }}</a>
-                    </li>
+                <ul>
+                    <li><a class="nav-link" href="{{ 'home'|page }}">{{ 'úvod'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'tooling'|page }}">{{ 'nástrojárna'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'molding'|page }}">{{ 'lisovna'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'products'|page }}">{{ 'produkty'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'quality'|page }}">{{ 'kvalita'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'career'|page }}">{{ 'kariéra'|_ }}</a></li>
+                    <li><a class="nav-link" href="{{ 'contact'|page }}">{{ 'kontakt'|_ }}</a></li>
                   </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <h4>odkazy</h4>
+                <ul>
+                  <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
+                  <li><a href="#" class="nav-link">publicita EU</a></li>
+                </ul>
+                <h4 class="mt-5">rychlý kontakt</h4>
+                <ul>
+                  <li class="contact-link">Tel.:<a href="tel: +420 517 341 681">+420 517 341 681</a></li>
+                  <li class="contact-link">E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
+                </ul>
             </div>
         </div>
     </div>

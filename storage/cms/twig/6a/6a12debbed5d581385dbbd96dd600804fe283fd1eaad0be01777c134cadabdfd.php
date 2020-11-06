@@ -29,8 +29,8 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("content" => 21);
-        $filters = array("_" => 5, "theme" => 12, "page" => 27);
+        $tags = array("content" => 22);
+        $filters = array("_" => 5, "theme" => 13, "page" => 28);
         $functions = array();
 
         try {
@@ -59,7 +59,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
     {
         $macros = $this->macros;
         // line 1
-        echo "<section class=\"bg-success\">
+        echo "<section class=\"gradient\">
 <div class=\"container py-5\">
     <div class=\"row\">
         <div class=\"col-12 text-center mb-5\">
@@ -67,6 +67,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KVALITA"]);
         echo "</h1>
+            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
         </div>
     </div>
 
@@ -74,11 +75,11 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         <div class=\"col-lg-2 col-md-12 text-center\">
             <div class=\"blue-iconbox\">
                 <img src=\"";
-        // line 12
+        // line 13
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icon-tool-07.svg");
         echo "\" alt=\"\">
                     <h5 class=\"mt-3\">";
-        // line 13
+        // line 14
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["3D MĚŘENÍ"]);
         echo "</h5>
                         
@@ -86,24 +87,24 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         </div>
         <div class=\"col-lg-6 col-md-12 text-center\">
             <img src=\"";
-        // line 18
+        // line 19
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/3d-mereni.jpg");
         echo "\" class=\"img-fluid shadow\" alt=\"\">
         </div>
         <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
             ";
-        // line 21
+        // line 22
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("3d-mereni"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 22
+        // line 23
         echo "        </div>
     </div>
 
     <div class=\"row text-center pt-5\">
         <div class=\"col\">
             <a href=\"";
-        // line 27
+        // line 28
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více informací"]);
@@ -126,16 +127,17 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
 
     public function getDebugInfo()
     {
-        return array (  107 => 27,  100 => 22,  96 => 21,  90 => 18,  82 => 13,  78 => 12,  68 => 5,  62 => 1,);
+        return array (  108 => 28,  101 => 23,  97 => 22,  91 => 19,  83 => 14,  79 => 13,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<section class=\"bg-success\">
+        return new Source("<section class=\"gradient\">
 <div class=\"container py-5\">
     <div class=\"row\">
         <div class=\"col-12 text-center mb-5\">
             <h1>{{ 'KVALITA'|_ }}</h1>
+            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
         </div>
     </div>
 

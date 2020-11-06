@@ -29,8 +29,8 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("partial" => 10);
-        $filters = array("_" => 5, "theme" => 6, "page" => 14);
+        $tags = array("partial" => 11);
+        $filters = array("_" => 5, "theme" => 7, "page" => 15);
         $functions = array();
 
         try {
@@ -67,24 +67,25 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["LISOVNA"]);
         echo "</h1>
+                <h2>Výroba vysoce kvalitních plastových dílů </h2>
                 <img src=\"";
-        // line 6
+        // line 7
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/lisovna-01.png");
-        echo "\" class=\"img-fluid pb-5\" alt=\"\">
+        echo "\" class=\"img-fluid pb-5 pt-3\" alt=\"\">
             </div>
         </div>
 
         ";
-        // line 10
+        // line 11
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("lisovna-iconbox"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 11
+        // line 12
         echo "
         <div class=\"row text-center pt-5\">
             <div class=\"col\">
                 <a href=\"";
-        // line 14
+        // line 15
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("molding");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["více informací"]);
@@ -107,7 +108,7 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
 
     public function getDebugInfo()
     {
-        return array (  88 => 14,  83 => 11,  79 => 10,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  89 => 15,  84 => 12,  80 => 11,  73 => 7,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -117,7 +118,8 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
         <div class=\"row\">
             <div class=\"col-12 text-center\">
                 <h1>{{ 'LISOVNA' |_ }}</h1>
-                <img src=\"{{ 'assets/images/lisovna-01.png' | theme }}\" class=\"img-fluid pb-5\" alt=\"\">
+                <h2>Výroba vysoce kvalitních plastových dílů </h2>
+                <img src=\"{{ 'assets/images/lisovna-01.png' | theme }}\" class=\"img-fluid pb-5 pt-3\" alt=\"\">
             </div>
         </div>
 
