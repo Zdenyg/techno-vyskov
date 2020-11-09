@@ -1,4 +1,4 @@
-1604701464a:1:{s:12:"products.htm";a:10:{s:8:"fileName";s:12:"products.htm";s:7:"content";s:331:"title = "Produkty"
+1604957037a:1:{s:12:"products.htm";a:10:{s:8:"fileName";s:12:"products.htm";s:7:"content";s:1221:"title = "Produkty"
 url = "/produkty"
 layout = "default"
 is_hidden = 0
@@ -8,17 +8,74 @@ localeTitle[en] = "Products"
 localeUrl[en] = "/products"
 ==
 <div class="container py-5">
-    <div class="row">
+    <div class="row py-5">
         <div class="col-md-6">
             <h1>{{ 'Produkty' |_}}</h1>
-               
         </div>    
     </div>
-</div>";s:5:"mtime";i:1604513879;s:6:"markup";s:181:"<div class="container py-5">
     <div class="row">
+        <div class="col text-center">
+            <h4>nástrojárna</h4>
+        </div>
+    </div>
+    <div class="gallery text-center">
+        {% for image in this.theme.tooling_images %}
+        <div class="image-wrapper img-hover-zoom">
+            <a href="{{ image.path }}">
+                <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col text-center pt-5">
+            <h4>lisovna</h4>
+        </div>
+    </div>
+    <div class="gallery text-center">
+    {% for image in this.theme.product_images %} 
+    <div class="image-wrapper img-hover-zoom">
+        <a href="{{ image.path }}">
+            <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+        </a>
+    </div>
+    {% endfor %}
+    </div>
+</div>
+
+
+";s:5:"mtime";i:1604946089;s:6:"markup";s:1065:"<div class="container py-5">
+    <div class="row py-5">
         <div class="col-md-6">
             <h1>{{ 'Produkty' |_}}</h1>
-               
         </div>    
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h4>nástrojárna</h4>
+        </div>
+    </div>
+    <div class="gallery text-center">
+        {% for image in this.theme.tooling_images %}
+        <div class="image-wrapper img-hover-zoom">
+            <a href="{{ image.path }}">
+                <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col text-center pt-5">
+            <h4>lisovna</h4>
+        </div>
+    </div>
+    <div class="gallery text-center">
+    {% for image in this.theme.product_images %} 
+    <div class="image-wrapper img-hover-zoom">
+        <a href="{{ image.path }}">
+            <img src="{{ image.thumb(300, 200, {'mode':'crop' }) }}" alt="">
+        </a>
+    </div>
+    {% endfor %}
     </div>
 </div>";s:4:"code";N;s:5:"title";s:8:"Produkty";s:3:"url";s:9:"/produkty";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:8:"Products";}s:9:"localeUrl";a:1:{s:2:"en";s:9:"/products";}}}}

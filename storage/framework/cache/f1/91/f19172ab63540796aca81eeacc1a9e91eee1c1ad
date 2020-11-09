@@ -1,4 +1,4 @@
-1604701788a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2324:"[viewBag]
+1604957037a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2433:"[viewBag]
 ==
 <footer class="footer">
 
@@ -24,10 +24,12 @@
                 <ul>
                   <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
                   <li><a href="#" class="nav-link">publicita EU</a></li>
+                  <li><a href="#" class="nav-link">všeobecné obchodní podmínky</a></li>
+                  
                 </ul>
                 <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>
-                  <li class="contact-link">Tel.:<a href="tel: +420 517 341 681">+420 517 341 681</a></li>
+                  <li class="contact-link">Tel.:<a href="tel:+420517341681">+420 517 341 681</a></li>
                   <li class="contact-link">E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
                 </ul>
             </div>
@@ -40,7 +42,7 @@
 
 
 
-";s:5:"mtime";i:1604701187;s:6:"markup";s:2301:"<footer class="footer">
+";s:5:"mtime";i:1604940825;s:6:"markup";s:2410:"<footer class="footer">
 
     <div class="container text-white pt-5 pb-2">
         <div class="row">
@@ -64,10 +66,12 @@
                 <ul>
                   <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
                   <li><a href="#" class="nav-link">publicita EU</a></li>
+                  <li><a href="#" class="nav-link">všeobecné obchodní podmínky</a></li>
+                  
                 </ul>
                 <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>
-                  <li class="contact-link">Tel.:<a href="tel: +420 517 341 681">+420 517 341 681</a></li>
+                  <li class="contact-link">Tel.:<a href="tel:+420517341681">+420 517 341 681</a></li>
                   <li class="contact-link">E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
                 </ul>
             </div>

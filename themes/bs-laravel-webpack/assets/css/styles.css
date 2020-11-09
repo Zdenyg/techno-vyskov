@@ -8965,6 +8965,13 @@ header .fade-left {
     margin-top: -40px;
   }
 }
+#nastrojarna h1, #lisovna h1, #kvalita h1 {
+  margin-bottom: 3rem;
+}
+#nastrojarna h3, #lisovna h3, #kvalita h3 {
+  color: #004f9e;
+}
+
 #contact ul {
   list-style-type: none;
   padding-left: 10px;

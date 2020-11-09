@@ -29,7 +29,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 29);
+        $tags = array("component" => 30);
         $filters = array("_" => 4, "theme" => 9);
         $functions = array();
 
@@ -73,7 +73,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
             <img src=\"";
         // line 9
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Techno-Vyskov-logo.svg");
-        echo "\" width=\"230px\" class=\"mb-3\" alt=\"\">
+        echo "\" width=\"230\" class=\"mb-3\" alt=\"\">
             <h3 class=\"text-primary\">TECHNO Vyškov <small> spol. s r. o.</small></h3>
             <ul>
                 <li>Joklova 9</li>
@@ -81,10 +81,10 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
                 <li>Czech Republic</li>
             </ul>
             <ul class=\"text-primary\">
-                <li>Tel.: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
+                <li>Tel.: <a href=\"tel:+420517341681\">+420 517 341 681</a></li>
                 <li>Fax: +420 517 341 682</li>
-                <li>Výroba: <a href=\"tel: +420 602 568 307\">+420 602 568 307</a></li>
-                <li>Nástrojárna: <a href=\"tel: +420 721 269 930\">+420 721 269 930</a></li>
+                <li>Výroba: <a href=\"tel:+420602568307\">+420 602 568 307</a></li>
+                <li>Nástrojárna: <a href=\"tel:+420721269930\">+420 721 269 930</a></li>
                 <li>E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
             </ul>
             <ul>
@@ -93,12 +93,16 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
             </ul>
         </div>
         <div class=\"col-md-6 my-5\">
-            ";
+            <h5>";
         // line 29
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Kontaktní formulář"]);
+        echo "</h5>
+            ";
+        // line 30
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contactForm"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 30
+        // line 31
         echo "            <p>";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů."]);
         echo "</p>
@@ -119,7 +123,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
 
     public function getDebugInfo()
     {
-        return array (  102 => 30,  98 => 29,  75 => 9,  67 => 4,  62 => 1,);
+        return array (  106 => 31,  102 => 30,  98 => 29,  75 => 9,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -132,7 +136,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
     </div>
     <div class=\"row\">
         <div class=\"col-md-6 my-5\">
-            <img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}\" width=\"230px\" class=\"mb-3\" alt=\"\">
+            <img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}\" width=\"230\" class=\"mb-3\" alt=\"\">
             <h3 class=\"text-primary\">TECHNO Vyškov <small> spol. s r. o.</small></h3>
             <ul>
                 <li>Joklova 9</li>
@@ -140,10 +144,10 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
                 <li>Czech Republic</li>
             </ul>
             <ul class=\"text-primary\">
-                <li>Tel.: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
+                <li>Tel.: <a href=\"tel:+420517341681\">+420 517 341 681</a></li>
                 <li>Fax: +420 517 341 682</li>
-                <li>Výroba: <a href=\"tel: +420 602 568 307\">+420 602 568 307</a></li>
-                <li>Nástrojárna: <a href=\"tel: +420 721 269 930\">+420 721 269 930</a></li>
+                <li>Výroba: <a href=\"tel:+420602568307\">+420 602 568 307</a></li>
+                <li>Nástrojárna: <a href=\"tel:+420721269930\">+420 721 269 930</a></li>
                 <li>E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
             </ul>
             <ul>
@@ -152,6 +156,7 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
             </ul>
         </div>
         <div class=\"col-md-6 my-5\">
+            <h5>{{ 'Kontaktní formulář' |_ }}</h5>
             {% component 'contactForm' %}
             <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
         </div>

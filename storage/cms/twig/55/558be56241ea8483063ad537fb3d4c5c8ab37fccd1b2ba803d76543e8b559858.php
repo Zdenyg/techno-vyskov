@@ -67,7 +67,10 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["LISOVNA"]);
         echo "</h1>
-                <h2>Výroba vysoce kvalitních plastových dílů </h2>
+                <h2>";
+        // line 6
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Výroba vysoce kvalitních plastových dílů"]);
+        echo "</h2>
                 <img src=\"";
         // line 7
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/lisovna-01.png");
@@ -108,7 +111,7 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
 
     public function getDebugInfo()
     {
-        return array (  89 => 15,  84 => 12,  80 => 11,  73 => 7,  68 => 5,  62 => 1,);
+        return array (  92 => 15,  87 => 12,  83 => 11,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -118,7 +121,7 @@ class __TwigTemplate_31f5347e1236896aa48f03b3d27a351b5260d498556a344c41df7f5bb44
         <div class=\"row\">
             <div class=\"col-12 text-center\">
                 <h1>{{ 'LISOVNA' |_ }}</h1>
-                <h2>Výroba vysoce kvalitních plastových dílů </h2>
+                <h2>{{ 'Výroba vysoce kvalitních plastových dílů' |_ }}</h2>
                 <img src=\"{{ 'assets/images/lisovna-01.png' | theme }}\" class=\"img-fluid pb-5 pt-3\" alt=\"\">
             </div>
         </div>

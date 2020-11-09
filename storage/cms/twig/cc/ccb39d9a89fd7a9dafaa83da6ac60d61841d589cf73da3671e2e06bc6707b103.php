@@ -217,7 +217,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
     <h5>Kontaktujte nás</h5>
     <ul class=\"my-4 list-unstyled\">
         <li>Ing. Helena Hálová</li>
-        <li><strong>Tel: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></strong></li>
+        <li><strong>Tel: <a href=\"tel:+420517341681\">+420 517 341 681</a></strong></li>
         <li><strong> E-mail: <a href=\"mailto: h.halova@techno-vyskov.cz\">h.halova@techno-vyskov.cz</a></strong></li>
     </ul>
     <p>Nebo pomocí kontaktního formuláře</p>
@@ -323,7 +323,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
     <h5>Kontaktujte nás</h5>
     <ul class=\"my-4 list-unstyled\">
         <li>Ing. Helena Hálová</li>
-        <li><strong>Tel: <a href=\"tel: +420 517 341 681\">+420 517 341 681</a></strong></li>
+        <li><strong>Tel: <a href=\"tel:+420517341681\">+420 517 341 681</a></strong></li>
         <li><strong> E-mail: <a href=\"mailto: h.halova@techno-vyskov.cz\">h.halova@techno-vyskov.cz</a></strong></li>
     </ul>
     <p>Nebo pomocí kontaktního formuláře</p>

@@ -1,6 +1,16 @@
 [viewBag]
-==
 
+[builderList]
+modelClass = "Zed\Career\Models\Jobs"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "job_name"
+noRecordsMessage = "No records found"
+detailsPage = "career"
+detailsKeyColumn = "job_name"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
 <div class="container py-5" id="uvod">
     <div class="row">
         <div class="col-md-7 mb-5">
@@ -10,7 +20,7 @@
                     {% content 'uvod2' %}
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="{{ 'assets/images/logoTUV.jpg' | theme }}" style="width: 125px;" alt="">
+                    <img src="{{ 'assets/images/Logo_TUV.jpg' | theme }}" style="width: 125px;" alt="">
                 </div>
             </div>
         </div>
@@ -33,4 +43,3 @@
             </div>
         </div>
     </div>
-</div>

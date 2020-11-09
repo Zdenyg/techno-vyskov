@@ -30,13 +30,13 @@ class __TwigTemplate_87574ef73a8c9b5dbb0d299657772a46e3e77cdfe390c9b46efea6a64fd
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array("content" => 5);
-        $filters = array("_" => 4);
+        $filters = array("_" => 4, "theme" => 8);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['content'],
-                ['_'],
+                ['_', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,8 +59,8 @@ class __TwigTemplate_87574ef73a8c9b5dbb0d299657772a46e3e77cdfe390c9b46efea6a64fd
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"container py-5\">
-    <div class=\"row\">
+        echo "<div class=\"container py-5\" id=\"nastrojarna\">
+    <div class=\"row py-5\">
         <div class=\"col-md-6\">
             <h1>";
         // line 4
@@ -72,7 +72,13 @@ class __TwigTemplate_87574ef73a8c9b5dbb0d299657772a46e3e77cdfe390c9b46efea6a64fd
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("nastrojarna-text"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
         // line 6
-        echo "        </div>    
+        echo "        </div>   
+        <div class=\"col-md-6\">
+            <img src=\"";
+        // line 8
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/forma_02.png");
+        echo "\" class=\"img-fluid\" alt=\"\">
+        </div> 
     </div>
 </div>";
     }
@@ -89,17 +95,20 @@ class __TwigTemplate_87574ef73a8c9b5dbb0d299657772a46e3e77cdfe390c9b46efea6a64fd
 
     public function getDebugInfo()
     {
-        return array (  75 => 6,  71 => 5,  67 => 4,  62 => 1,);
+        return array (  79 => 8,  75 => 6,  71 => 5,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"container py-5\">
-    <div class=\"row\">
+        return new Source("<div class=\"container py-5\" id=\"nastrojarna\">
+    <div class=\"row py-5\">
         <div class=\"col-md-6\">
             <h1>{{ 'Nástrojárna' |_}}</h1>
                 {% content 'nastrojarna-text' %}
-        </div>    
+        </div>   
+        <div class=\"col-md-6\">
+            <img src=\"{{ 'assets/images/forma_02.png' | theme }}\" class=\"img-fluid\" alt=\"\">
+        </div> 
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/tooling.htm", "");
     }

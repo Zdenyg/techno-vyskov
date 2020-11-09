@@ -30,7 +30,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("_" => 9, "page" => 11, "escape" => 35, "date" => 35);
+        $filters = array("_" => 9, "page" => 11, "escape" => 37, "date" => 37);
         $functions = array();
 
         try {
@@ -124,13 +124,15 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
                 <ul>
                   <li><a href=\"#\" class=\"nav-link\">ochrana osobních údajů</a></li>
                   <li><a href=\"#\" class=\"nav-link\">publicita EU</a></li>
+                  <li><a href=\"#\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
+                  
                 </ul>
                 <h4 class=\"mt-5\">";
-        // line 26
+        // line 28
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["rychlý kontakt"]);
         echo "</h4>
                 <ul>
-                  <li class=\"contact-link\">Tel.:<a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
+                  <li class=\"contact-link\">Tel.:<a href=\"tel:+420517341681\">+420 517 341 681</a></li>
                   <li class=\"contact-link\">E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
                 </ul>
             </div>
@@ -138,7 +140,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
     </div>
     <div class=\"date text-center text-white\">
         <p>TECHNO Vyškov spol. s r.o. • &nbsp;";
-        // line 35
+        // line 37
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</p>
     </div>
@@ -157,7 +159,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     public function getDebugInfo()
     {
-        return array (  142 => 35,  130 => 26,  122 => 21,  113 => 17,  107 => 16,  101 => 15,  95 => 14,  89 => 13,  83 => 12,  77 => 11,  72 => 9,  62 => 1,);
+        return array (  144 => 37,  132 => 28,  122 => 21,  113 => 17,  107 => 16,  101 => 15,  95 => 14,  89 => 13,  83 => 12,  77 => 11,  72 => 9,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -186,10 +188,12 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
                 <ul>
                   <li><a href=\"#\" class=\"nav-link\">ochrana osobních údajů</a></li>
                   <li><a href=\"#\" class=\"nav-link\">publicita EU</a></li>
+                  <li><a href=\"#\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
+                  
                 </ul>
                 <h4 class=\"mt-5\">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>
-                  <li class=\"contact-link\">Tel.:<a href=\"tel: +420 517 341 681\">+420 517 341 681</a></li>
+                  <li class=\"contact-link\">Tel.:<a href=\"tel:+420517341681\">+420 517 341 681</a></li>
                   <li class=\"contact-link\">E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
                 </ul>
             </div>

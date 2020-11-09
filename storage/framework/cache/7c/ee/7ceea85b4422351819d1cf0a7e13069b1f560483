@@ -1,8 +1,8 @@
-1604701301a:1:{s:8:"uvod.htm";a:6:{s:8:"fileName";s:8:"uvod.htm";s:7:"content";s:793:"==
+1604957037a:1:{s:8:"uvod.htm";a:6:{s:8:"fileName";s:8:"uvod.htm";s:7:"content";s:811:"==
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="{{ 'assets/video/Techno-video-01.mp4' | theme }}" type="video/mp4">
+      <source src="{{ 'assets/video/Techno-video-00.mp4' | theme }}" type="video/mp4">
     </video>
     <div class="container-fluid h-100">
           <div class="row h-100 align-items-center justify-content-end">
@@ -14,14 +14,15 @@
                 <h2>{{ 'a <span>plastové díly</span><br>pro různá odvětví' |_ }}</h2>
               </div>  
             </div>
+          </div>
     </div>
   </header>
 
 
-";s:5:"mtime";i:1604689665;s:6:"markup";s:783:"<header>
+";s:5:"mtime";i:1604937933;s:6:"markup";s:801:"<header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="{{ 'assets/video/Techno-video-01.mp4' | theme }}" type="video/mp4">
+      <source src="{{ 'assets/video/Techno-video-00.mp4' | theme }}" type="video/mp4">
     </video>
     <div class="container-fluid h-100">
           <div class="row h-100 align-items-center justify-content-end">
@@ -33,5 +34,6 @@
                 <h2>{{ 'a <span>plastové díly</span><br>pro různá odvětví' |_ }}</h2>
               </div>  
             </div>
+          </div>
     </div>
   </header>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

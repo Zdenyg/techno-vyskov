@@ -71,7 +71,10 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
         // line 6
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["NÁSTROJÁRNA"]);
         echo "</h1>
-                <h2>Vyrábíme vstřikovací i přímolisovací formy od prototypů po sériovou výrobu. </h2>  
+                <h2>";
+        // line 7
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Vyrábíme vstřikovací i přímolisovací formy od prototypů po sériovou výrobu"]);
+        echo " </h2>  
                 <img src=\"";
         // line 8
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/forma_01.png");
@@ -112,7 +115,7 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
 
     public function getDebugInfo()
     {
-        return array (  93 => 16,  88 => 13,  84 => 12,  77 => 8,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  96 => 16,  91 => 13,  87 => 12,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -123,7 +126,7 @@ class __TwigTemplate_0ed7130af768c7e2e88e50bf83c7af003495efdece616006b2a23d49b19
             <div class=\"col-12 text-center\">
                 <h4 class=\"pb-3\">{{ 'NAŠE SLUŽBY' |_}}</h4>
                 <h1>{{ 'NÁSTROJÁRNA' |_}}</h1>
-                <h2>Vyrábíme vstřikovací i přímolisovací formy od prototypů po sériovou výrobu. </h2>  
+                <h2>{{ 'Vyrábíme vstřikovací i přímolisovací formy od prototypů po sériovou výrobu' |_ }} </h2>  
                 <img src=\"{{ 'assets/images/forma_01.png' | theme }}\" class=\"img-fluid pt-3\" alt=\"\">
             </div>
         </div>

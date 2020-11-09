@@ -64,7 +64,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
     <video playsinline=\"playsinline\" autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\">
       <source src=\"";
         // line 4
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/video/Techno-video-01.mp4");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/video/Techno-video-00.mp4");
         echo "\" type=\"video/mp4\">
     </video>
     <div class=\"container-fluid h-100\">
@@ -83,6 +83,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
         echo "</h2>
               </div>  
             </div>
+          </div>
     </div>
   </header>";
     }
@@ -107,7 +108,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
         return new Source("<header>
     <div class=\"overlay\"></div>
     <video playsinline=\"playsinline\" autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\">
-      <source src=\"{{ 'assets/video/Techno-video-01.mp4' | theme }}\" type=\"video/mp4\">
+      <source src=\"{{ 'assets/video/Techno-video-00.mp4' | theme }}\" type=\"video/mp4\">
     </video>
     <div class=\"container-fluid h-100\">
           <div class=\"row h-100 align-items-center justify-content-end\">
@@ -119,6 +120,7 @@ class __TwigTemplate_0fb9b2b155830e651110e8d2f4a1b709539f2054dfc0b2e073468c9aaab
                 <h2>{{ 'a <span>plastové díly</span><br>pro různá odvětví' |_ }}</h2>
               </div>  
             </div>
+          </div>
     </div>
   </header>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/uvod.htm", "");
     }

@@ -1,6 +1,16 @@
-1604701464a:1:{s:12:"about-us.htm";a:6:{s:8:"fileName";s:12:"about-us.htm";s:7:"content";s:1227:"[viewBag]
-==
+1604957037a:1:{s:12:"about-us.htm";a:7:{s:8:"fileName";s:12:"about-us.htm";s:7:"content";s:1494:"[viewBag]
 
+[builderList]
+modelClass = "Zed\Career\Models\Jobs"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "job_name"
+noRecordsMessage = "No records found"
+detailsPage = "career"
+detailsKeyColumn = "job_name"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
 <div class="container py-5" id="uvod">
     <div class="row">
         <div class="col-md-7 mb-5">
@@ -10,7 +20,7 @@
                     {% content 'uvod2' %}
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="{{ 'assets/images/logoTUV.jpg' | theme }}" style="width: 125px;" alt="">
+                    <img src="{{ 'assets/images/Logo_TUV.jpg' | theme }}" style="width: 125px;" alt="">
                 </div>
             </div>
         </div>
@@ -32,8 +42,7 @@
               </div>
             </div>
         </div>
-    </div>
-</div>";s:5:"mtime";i:1604698573;s:6:"markup";s:1210:"<div class="container py-5" id="uvod">
+    </div>";s:5:"mtime";i:1604939941;s:6:"markup";s:1203:"<div class="container py-5" id="uvod">
     <div class="row">
         <div class="col-md-7 mb-5">
             {% content 'uvod' %}
@@ -42,7 +51,7 @@
                     {% content 'uvod2' %}
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="{{ 'assets/images/logoTUV.jpg' | theme }}" style="width: 125px;" alt="">
+                    <img src="{{ 'assets/images/Logo_TUV.jpg' | theme }}" style="width: 125px;" alt="">
                 </div>
             </div>
         </div>
@@ -64,5 +73,4 @@
               </div>
             </div>
         </div>
-    </div>
-</div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
+    </div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:6:"career";s:16:"detailsKeyColumn";s:8:"job_name";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

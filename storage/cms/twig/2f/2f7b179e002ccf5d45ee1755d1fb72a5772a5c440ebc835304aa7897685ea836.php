@@ -29,14 +29,14 @@ class __TwigTemplate_f0d6bb49bfaa850cb2d18cc6fee9a79f55125df3e1df4bc37e7c0e581e4
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array();
-        $filters = array("_" => 4);
+        $tags = array("content" => 5);
+        $filters = array("_" => 4, "theme" => 8);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
-                ['_'],
+                ['content'],
+                ['_', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,15 +59,26 @@ class __TwigTemplate_f0d6bb49bfaa850cb2d18cc6fee9a79f55125df3e1df4bc37e7c0e581e4
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"container py-5\">
-    <div class=\"row\">
+        echo "<div class=\"container py-5\" id=\"kvalita\">
+    <div class=\"row py-5\">
         <div class=\"col-md-6\">
             <h1>";
         // line 4
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Kvalita"]);
         echo "</h1>
-               
-        </div>    
+            ";
+        // line 5
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("kvalita-text"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo " 
+        </div>  
+        <div class=\"col-md-6\">
+            <img src=\"";
+        // line 8
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/3d-mereni.jpg");
+        echo "\" class=\"img-fluid\" alt=\"\">
+        </div>  
     </div>
 </div>";
     }
@@ -84,17 +95,20 @@ class __TwigTemplate_f0d6bb49bfaa850cb2d18cc6fee9a79f55125df3e1df4bc37e7c0e581e4
 
     public function getDebugInfo()
     {
-        return array (  67 => 4,  62 => 1,);
+        return array (  79 => 8,  71 => 5,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"container py-5\">
-    <div class=\"row\">
+        return new Source("<div class=\"container py-5\" id=\"kvalita\">
+    <div class=\"row py-5\">
         <div class=\"col-md-6\">
             <h1>{{ 'Kvalita' |_}}</h1>
-               
-        </div>    
+            {% content 'kvalita-text' %} 
+        </div>  
+        <div class=\"col-md-6\">
+            <img src=\"{{ 'assets/images/3d-mereni.jpg' | theme }}\" class=\"img-fluid\" alt=\"\">
+        </div>  
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/quality.htm", "");
     }

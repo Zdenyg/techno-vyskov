@@ -80,7 +80,7 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
                 <div class=\"col-md-4 text-center\">
                     <img src=\"";
         // line 10
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logoTUV.jpg");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Logo_TUV.jpg");
         echo "\" style=\"width: 125px;\" alt=\"\">
                 </div>
             </div>
@@ -113,8 +113,7 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
               </div>
             </div>
         </div>
-    </div>
-</div>";
+    </div>";
     }
 
     public function getTemplateName()
@@ -143,7 +142,7 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
                     {% content 'uvod2' %}
                 </div>
                 <div class=\"col-md-4 text-center\">
-                    <img src=\"{{ 'assets/images/logoTUV.jpg' | theme }}\" style=\"width: 125px;\" alt=\"\">
+                    <img src=\"{{ 'assets/images/Logo_TUV.jpg' | theme }}\" style=\"width: 125px;\" alt=\"\">
                 </div>
             </div>
         </div>
@@ -165,7 +164,6 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
               </div>
             </div>
         </div>
-    </div>
-</div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/about-us.htm", "");
+    </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/about-us.htm", "");
     }
 }
