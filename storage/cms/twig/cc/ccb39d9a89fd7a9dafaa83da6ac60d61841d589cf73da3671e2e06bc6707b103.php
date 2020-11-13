@@ -30,7 +30,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array("set" => 1, "for" => 17, "if" => 18, "component" => 80);
-        $filters = array("page" => 19, "escape" => 23, "date" => 24, "raw" => 30);
+        $filters = array("page" => 19, "escape" => 21, "date" => 24, "raw" => 30);
         $functions = array("range" => 57);
 
         try {
@@ -97,7 +97,9 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
         ";
             }
             // line 21
-            echo "   <div class=\"row my-3\">
+            echo "   <div class=\"row my-3\" id=\"";
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["record"], "id", [], "any", false, false, true, 21), 21, $this->source), "html", null, true);
+            echo "\">
        <div class=\"col\">
             <h3 class=\"text-primary\">";
             // line 23
@@ -245,7 +247,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
 
     public function getDebugInfo()
     {
-        return array (  232 => 81,  228 => 80,  214 => 68,  210 => 66,  204 => 64,  202 => 63,  199 => 62,  188 => 59,  183 => 58,  179 => 57,  176 => 56,  170 => 54,  168 => 53,  165 => 52,  163 => 51,  160 => 50,  151 => 48,  145 => 46,  141 => 44,  139 => 43,  131 => 38,  124 => 34,  117 => 30,  108 => 24,  104 => 23,  100 => 21,  94 => 19,  91 => 18,  86 => 17,  74 => 7,  72 => 6,  70 => 5,  68 => 4,  66 => 3,  64 => 2,  62 => 1,);
+        return array (  234 => 81,  230 => 80,  216 => 68,  212 => 66,  206 => 64,  204 => 63,  201 => 62,  190 => 59,  185 => 58,  181 => 57,  178 => 56,  172 => 54,  170 => 53,  167 => 52,  165 => 51,  162 => 50,  153 => 48,  147 => 46,  143 => 44,  141 => 43,  133 => 38,  126 => 34,  119 => 30,  110 => 24,  106 => 23,  100 => 21,  94 => 19,  91 => 18,  86 => 17,  74 => 7,  72 => 6,  70 => 5,  68 => 4,  66 => 3,  64 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -270,7 +272,7 @@ class __TwigTemplate_d86987228a07fada96ce2a0d3351b78ce4923125cad9366e103f61e517a
         {% if detailsPage %}
             <a href=\"{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}\">
         {% endif %}
-   <div class=\"row my-3\">
+   <div class=\"row my-3\" id=\"{{ record.id }}\">
        <div class=\"col\">
             <h3 class=\"text-primary\">{{ record.job_name }}</h3>
             <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>

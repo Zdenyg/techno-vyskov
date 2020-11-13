@@ -1,4 +1,4 @@
-1605042761a:1:{s:19:"lisovna-iconbox.htm";a:5:{s:8:"fileName";s:19:"lisovna-iconbox.htm";s:7:"content";s:674:"<div class="row bg-white shadow">
+1605102379a:1:{s:19:"lisovna-iconbox.htm";a:5:{s:8:"fileName";s:19:"lisovna-iconbox.htm";s:7:"content";s:674:"<div class="row bg-white shadow">
     <div class="col text-center d-md-flex justify-content-around">
         <div class="iconbox">
             <img src="{{ 'assets/images/icon-tool-04.svg' | theme }}" alt="">

@@ -1,4 +1,4 @@
-1605042761a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:609:" <div class="gallery text-center">
+1605102379a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:609:" <div class="gallery text-center">
     
     {% for image in this.theme.product_images  | slice(7,3) %} 
     <div class="image-wrapper img-hover-zoom">

@@ -29,13 +29,13 @@ class __TwigTemplate_57fc8b67a40e23389396ae52ef9ab869d69d84f5c88e963f2a9c38c7fc8
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("partial" => 1);
+        $tags = array("component" => 1);
         $filters = array();
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['partial'],
+                ['component'],
                 [],
                 []
             );
@@ -59,9 +59,9 @@ class __TwigTemplate_57fc8b67a40e23389396ae52ef9ab869d69d84f5c88e963f2a9c38c7fc8
     {
         $macros = $this->macros;
         // line 1
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("typo"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("builderDetails"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
     }
 
     public function getTemplateName()
@@ -81,6 +81,6 @@ class __TwigTemplate_57fc8b67a40e23389396ae52ef9ab869d69d84f5c88e963f2a9c38c7fc8
 
     public function getSourceContext()
     {
-        return new Source("{% partial 'typo' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/testy.htm", "");
+        return new Source("{% component 'builderDetails' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/testy.htm", "");
     }
 }

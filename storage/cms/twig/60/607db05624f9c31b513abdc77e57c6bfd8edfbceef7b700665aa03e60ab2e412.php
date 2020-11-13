@@ -30,13 +30,13 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("_" => 9, "page" => 11, "escape" => 37, "date" => 37);
+        $filters = array("theme" => 7, "_" => 11, "page" => 13, "escape" => 39, "date" => 39);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['_', 'page', 'escape', 'date'],
+                ['theme', '_', 'page', 'escape', 'date'],
                 []
             );
         } catch (SecurityError $e) {
@@ -64,52 +64,57 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
     <div class=\"container text-white pt-5 pb-2\">
         <div class=\"row\">
             <div class=\"col-md-5\">
-                <iframe class=\"img-fluid mb-4\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.4262126083054!2d17.012163049096717!3d49.27919349665817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712fae5817973d9%3A0x79639d981365565e!2sTECHNO%20Vy%C5%A1kov%2C%20spol.%20s%20r.o.!5e0!3m2!1scs!2scz!4v1604700592417!5m2!1scs!2scz\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+                <a href=\"https://www.google.com/maps/place/TECHNO+Vy%C5%A1kov,+spol.+s+r.o./@49.2791175,17.0104993,17z/data=!3m1!4b1!4m5!3m4!1s0x4712fae5817973d9:0x79639d981365565e!8m2!3d49.2791175!4d17.012688\" target=\"_blank\">
+                    <img src=\"";
+        // line 7
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/mapa-1.jpg");
+        echo "\" class=\"img-fluid\" alt=\"\">
+                </a>
             </div>
             <div class=\"col-md-3\">
                 <h4>";
-        // line 9
+        // line 11
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["navigace"]);
         echo "</h4>
                 <ul>
                     <li><a class=\"nav-link\" href=\"";
-        // line 11
+        // line 13
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["úvod"]);
         echo "</a></li>
                     <li><a class=\"nav-link\" href=\"";
-        // line 12
+        // line 14
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("tooling");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["nástrojárna"]);
         echo "</a></li>
                     <li><a class=\"nav-link\" href=\"";
-        // line 13
+        // line 15
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("molding");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["lisovna"]);
         echo "</a></li>
                     <li><a class=\"nav-link\" href=\"";
-        // line 14
+        // line 16
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("products");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["produkty"]);
         echo "</a></li>
                     <li><a class=\"nav-link\" href=\"";
-        // line 15
+        // line 17
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kvalita"]);
         echo "</a></li>
                     <li><a class=\"nav-link\" href=\"";
-        // line 16
+        // line 18
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("career");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kariéra"]);
         echo "</a></li>
                     <li><a class=\"nav-link\" href=\"";
-        // line 17
+        // line 19
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("contact");
         echo "\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kontakt"]);
@@ -118,7 +123,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
             </div>
             <div class=\"col-md-4\">
                 <h4>";
-        // line 21
+        // line 23
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["odkazy"]);
         echo "</h4>
                 <ul>
@@ -128,7 +133,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
                   
                 </ul>
                 <h4 class=\"mt-5\">";
-        // line 28
+        // line 30
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["rychlý kontakt"]);
         echo "</h4>
                 <ul>
@@ -140,7 +145,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
     </div>
     <div class=\"date text-center text-white\">
         <p>TECHNO Vyškov spol. s r.o. • &nbsp;";
-        // line 37
+        // line 39
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</p>
     </div>
@@ -159,7 +164,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     public function getDebugInfo()
     {
-        return array (  144 => 37,  132 => 28,  122 => 21,  113 => 17,  107 => 16,  101 => 15,  95 => 14,  89 => 13,  83 => 12,  77 => 11,  72 => 9,  62 => 1,);
+        return array (  149 => 39,  137 => 30,  127 => 23,  118 => 19,  112 => 18,  106 => 17,  100 => 16,  94 => 15,  88 => 14,  82 => 13,  77 => 11,  70 => 7,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -169,7 +174,9 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
     <div class=\"container text-white pt-5 pb-2\">
         <div class=\"row\">
             <div class=\"col-md-5\">
-                <iframe class=\"img-fluid mb-4\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.4262126083054!2d17.012163049096717!3d49.27919349665817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712fae5817973d9%3A0x79639d981365565e!2sTECHNO%20Vy%C5%A1kov%2C%20spol.%20s%20r.o.!5e0!3m2!1scs!2scz!4v1604700592417!5m2!1scs!2scz\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+                <a href=\"https://www.google.com/maps/place/TECHNO+Vy%C5%A1kov,+spol.+s+r.o./@49.2791175,17.0104993,17z/data=!3m1!4b1!4m5!3m4!1s0x4712fae5817973d9:0x79639d981365565e!8m2!3d49.2791175!4d17.012688\" target=\"_blank\">
+                    <img src=\"{{ 'assets/images/mapa-1.jpg' | theme }}\" class=\"img-fluid\" alt=\"\">
+                </a>
             </div>
             <div class=\"col-md-3\">
                 <h4>{{ 'navigace' |_ }}</h4>

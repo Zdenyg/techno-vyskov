@@ -8,17 +8,6 @@ is_hidden = 0
 [viewBag]
 localeTitle[en] = "Techno - Vyškov | home"
 localeUrl[en] = "/techno-vyskov-home"
-
-[builderList]
-modelClass = "Zed\Career\Models\Jobs"
-scope = "-"
-scopeValue = "{{ :scope }}"
-displayColumn = "job_name"
-noRecordsMessage = "aktuálně není žádná pozice volná"
-detailsPage = "career"
-detailsKeyColumn = "job_name"
-detailsUrlParameter = "id"
-pageNumber = "{{ :page }}"
 ==
 {% partial 'uvod' %}
 
@@ -37,4 +26,3 @@ pageNumber = "{{ :page }}"
 {% partial 'publicita-uvod' %}
 
 {% partial 'kontakt' %}
-

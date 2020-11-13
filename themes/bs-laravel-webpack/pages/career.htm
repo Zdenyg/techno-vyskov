@@ -14,6 +14,7 @@ scopeValue = "{{ :scope }}"
 displayColumn = "job_name"
 noRecordsMessage = "v tuto chvíli nehledáme zaměstnace na žádnou pozici."
 detailsPage = "-"
+detailsKeyColumn = "id"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 
@@ -39,7 +40,7 @@ pageNumber = "{{ :page }}"
         {% if detailsPage %}
             <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
         {% endif %}
-   <div class="row my-3">
+   <div class="row my-3" id="{{ record.id }}">
        <div class="col">
             <h3 class="text-primary">{{ record.job_name }}</h3>
             <p><small>publikováno:  {{ record.created_at | date('d. m. Y')}}</small></p>
@@ -101,3 +102,5 @@ pageNumber = "{{ :page }}"
         {% component 'contactForm' %}
     </div>
 </div>
+
+
