@@ -63,7 +63,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     <div class=\"container text-white pt-5 pb-2\">
         <div class=\"row\">
-            <div class=\"col-md-5\">
+            <div class=\"col-md-5 pb-5\">
                 <a href=\"https://www.google.com/maps/place/TECHNO+Vy%C5%A1kov,+spol.+s+r.o./@49.2791175,17.0104993,17z/data=!3m1!4b1!4m5!3m4!1s0x4712fae5817973d9:0x79639d981365565e!8m2!3d49.2791175!4d17.012688\" target=\"_blank\">
                     <img src=\"";
         // line 7
@@ -127,9 +127,18 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["odkazy"]);
         echo "</h4>
                 <ul>
-                  <li><a href=\"#\" class=\"nav-link\">ochrana osobních údajů</a></li>
-                  <li><a href=\"#\" class=\"nav-link\">publicita EU</a></li>
-                  <li><a href=\"#\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
+                  <li><a href=\"";
+        // line 25
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("ochrana-osobnich-udaju");
+        echo "\" class=\"nav-link\">ochrana osobních údajů</a></li>
+                  <li><a href=\"";
+        // line 26
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("publicita");
+        echo "\" class=\"nav-link\">publicita EU</a></li>
+                  <li><a href=\"";
+        // line 27
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("obchodni-podminky");
+        echo "\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
                   
                 </ul>
                 <h4 class=\"mt-5\">";
@@ -164,7 +173,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     public function getDebugInfo()
     {
-        return array (  149 => 39,  137 => 30,  127 => 23,  118 => 19,  112 => 18,  106 => 17,  100 => 16,  94 => 15,  88 => 14,  82 => 13,  77 => 11,  70 => 7,  62 => 1,);
+        return array (  158 => 39,  146 => 30,  140 => 27,  136 => 26,  132 => 25,  127 => 23,  118 => 19,  112 => 18,  106 => 17,  100 => 16,  94 => 15,  88 => 14,  82 => 13,  77 => 11,  70 => 7,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -173,7 +182,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     <div class=\"container text-white pt-5 pb-2\">
         <div class=\"row\">
-            <div class=\"col-md-5\">
+            <div class=\"col-md-5 pb-5\">
                 <a href=\"https://www.google.com/maps/place/TECHNO+Vy%C5%A1kov,+spol.+s+r.o./@49.2791175,17.0104993,17z/data=!3m1!4b1!4m5!3m4!1s0x4712fae5817973d9:0x79639d981365565e!8m2!3d49.2791175!4d17.012688\" target=\"_blank\">
                     <img src=\"{{ 'assets/images/mapa-1.jpg' | theme }}\" class=\"img-fluid\" alt=\"\">
                 </a>
@@ -193,9 +202,9 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
             <div class=\"col-md-4\">
                 <h4>{{ 'odkazy' |_ }}</h4>
                 <ul>
-                  <li><a href=\"#\" class=\"nav-link\">ochrana osobních údajů</a></li>
-                  <li><a href=\"#\" class=\"nav-link\">publicita EU</a></li>
-                  <li><a href=\"#\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
+                  <li><a href=\"{{ 'ochrana-osobnich-udaju'|page }}\" class=\"nav-link\">ochrana osobních údajů</a></li>
+                  <li><a href=\"{{ 'publicita'|page }}\" class=\"nav-link\">publicita EU</a></li>
+                  <li><a href=\"{{ 'obchodni-podminky'|page }}\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
                   
                 </ul>
                 <h4 class=\"mt-5\">{{ 'rychlý kontakt' |_ }}</h4>

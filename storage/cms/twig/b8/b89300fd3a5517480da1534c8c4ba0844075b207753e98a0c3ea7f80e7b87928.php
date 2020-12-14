@@ -30,13 +30,13 @@ class __TwigTemplate_e8d207e51e56e19459211b4fc3cfa555150b86c23cf6dfbd502ce1d9361
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 4);
+        $filters = array("page" => 5, "theme" => 6);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['theme'],
+                ['page', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -60,13 +60,31 @@ class __TwigTemplate_e8d207e51e56e19459211b4fc3cfa555150b86c23cf6dfbd502ce1d9361
         $macros = $this->macros;
         // line 1
         echo "<div class=\"container py-5\">
-    <div class=\"row text-center pt-4\">
-        <div class=\"col\">
-            <img src=\"";
-        // line 4
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/publicita-oppi.png");
+    <div class=\"row\">
+        
+        <div class=\"col-md-6 col-sm-12 py-3\">
+            <a href=\"";
+        // line 5
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("publicita");
+        echo "\">
+                <img src=\"";
+        // line 6
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/OPP-01.png");
         echo "\" class=\"img-fluid\" alt=\"\">
+            </a>
         </div>
+        <div class=\"col-md-6 col-sm-12 py-3\">
+            <a href=\"";
+        // line 10
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("publicita");
+        echo "\">
+                <img src=\"";
+        // line 11
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/OPP-02.png");
+        echo "\" class=\"img-fluid\" alt=\"\">
+            </a>
+        </div>
+        </a>
     </div>
 </div>";
     }
@@ -83,16 +101,25 @@ class __TwigTemplate_e8d207e51e56e19459211b4fc3cfa555150b86c23cf6dfbd502ce1d9361
 
     public function getDebugInfo()
     {
-        return array (  67 => 4,  62 => 1,);
+        return array (  83 => 11,  79 => 10,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"container py-5\">
-    <div class=\"row text-center pt-4\">
-        <div class=\"col\">
-            <img src=\"{{ 'assets/images/publicita-oppi.png' | theme }}\" class=\"img-fluid\" alt=\"\">
+    <div class=\"row\">
+        
+        <div class=\"col-md-6 col-sm-12 py-3\">
+            <a href=\"{{ 'publicita'|page }}\">
+                <img src=\"{{ 'assets/images/OPP-01.png' | theme }}\" class=\"img-fluid\" alt=\"\">
+            </a>
         </div>
+        <div class=\"col-md-6 col-sm-12 py-3\">
+            <a href=\"{{ 'publicita'|page }}\">
+                <img src=\"{{ 'assets/images/OPP-02.png' | theme }}\" class=\"img-fluid\" alt=\"\">
+            </a>
+        </div>
+        </a>
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/publicita-uvod.htm", "");
     }

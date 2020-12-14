@@ -1,0 +1,40 @@
+1607986065a:1:{s:13:"publicita.htm";a:9:{s:8:"fileName";s:13:"publicita.htm";s:7:"content";s:894:"title = "Publicita"
+url = "/publicita"
+layout = "default"
+is_hidden = 0
+==
+<div class="container py-5" id="publicita">
+    <div class="row py-5">
+        <div class="col">
+            <h1>{{ 'Publicita' |_}}</h1>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col d-flex">
+            <img src="{{ 'assets/images/pdf.svg' |theme }}" style="width: 60px;" class="pb-3 mr-4" alt="">
+            <ul class="list-unstyled">
+                <li><a href="{{ 'assets/images/energeticke-technologie.pdf' | theme }}">Energetické úsporné technologie</a></li>
+                <li><a href="{{ 'assets/images/rozsireni-vav-kapacit.pdf' | theme }}">Rozšíření VAV kapacit</a></li>
+                <li><a href="{{ 'assets/images/vymena-vstrikolisu.pdf' | theme }}">Výměna vstřikolisů</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>";s:5:"mtime";i:1607984238;s:6:"markup";s:814:"<div class="container py-5" id="publicita">
+    <div class="row py-5">
+        <div class="col">
+            <h1>{{ 'Publicita' |_}}</h1>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col d-flex">
+            <img src="{{ 'assets/images/pdf.svg' |theme }}" style="width: 60px;" class="pb-3 mr-4" alt="">
+            <ul class="list-unstyled">
+                <li><a href="{{ 'assets/images/energeticke-technologie.pdf' | theme }}">Energetické úsporné technologie</a></li>
+                <li><a href="{{ 'assets/images/rozsireni-vav-kapacit.pdf' | theme }}">Rozšíření VAV kapacit</a></li>
+                <li><a href="{{ 'assets/images/vymena-vstrikolisu.pdf' | theme }}">Výměna vstřikolisů</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:9:"Publicita";s:3:"url";s:10:"/publicita";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

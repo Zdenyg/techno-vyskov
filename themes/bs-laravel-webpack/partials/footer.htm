@@ -4,7 +4,7 @@
 
     <div class="container text-white pt-5 pb-2">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 pb-5">
                 <a href="https://www.google.com/maps/place/TECHNO+Vy%C5%A1kov,+spol.+s+r.o./@49.2791175,17.0104993,17z/data=!3m1!4b1!4m5!3m4!1s0x4712fae5817973d9:0x79639d981365565e!8m2!3d49.2791175!4d17.012688" target="_blank">
                     <img src="{{ 'assets/images/mapa-1.jpg' | theme }}" class="img-fluid" alt="">
                 </a>
@@ -24,9 +24,9 @@
             <div class="col-md-4">
                 <h4>{{ 'odkazy' |_ }}</h4>
                 <ul>
-                  <li><a href="#" class="nav-link">ochrana osobních údajů</a></li>
-                  <li><a href="#" class="nav-link">publicita EU</a></li>
-                  <li><a href="#" class="nav-link">všeobecné obchodní podmínky</a></li>
+                  <li><a href="{{ 'ochrana-osobnich-udaju'|page }}" class="nav-link">ochrana osobních údajů</a></li>
+                  <li><a href="{{ 'publicita'|page }}" class="nav-link">publicita EU</a></li>
+                  <li><a href="{{ 'obchodni-podminky'|page }}" class="nav-link">všeobecné obchodní podmínky</a></li>
                   
                 </ul>
                 <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
@@ -41,6 +41,3 @@
         <p>TECHNO Vyškov spol. s r.o. • &nbsp;{{"now"|date("Y") }}</p>
     </div>
 </footer>
-
-
-
