@@ -1,4 +1,4 @@
-1607985770a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1145:"[viewBag]
+1608156779a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1138:"[viewBag]
 ==
 <section class="gradient">
 <div class="container py-5">
@@ -20,7 +20,7 @@
         <div class="col-lg-6 col-md-12 text-center">
             <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
         </div>
-        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+        <div class="col-lg-4 col-md-12 my-5 align-self-center">
             {% content '3d-mereni' %}
         </div>
     </div>
@@ -31,7 +31,7 @@
         </div>
     </div>
 </div>
-</section>";s:5:"mtime";i:1604679539;s:6:"markup";s:1130:"<section class="gradient">
+</section>";s:5:"mtime";i:1608156017;s:6:"markup";s:1123:"<section class="gradient">
 <div class="container py-5">
     <div class="row">
         <div class="col-12 text-center mb-5">
@@ -51,7 +51,7 @@
         <div class="col-lg-6 col-md-12 text-center">
             <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid shadow" alt="">
         </div>
-        <div class="col-lg-4 col-md-12 my-5 d-flex align-self-center">
+        <div class="col-lg-4 col-md-12 my-5 align-self-center">
             {% content '3d-mereni' %}
         </div>
     </div>

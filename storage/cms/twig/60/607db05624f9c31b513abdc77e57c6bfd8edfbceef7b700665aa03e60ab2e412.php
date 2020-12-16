@@ -139,7 +139,10 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
         // line 27
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("obchodni-podminky");
         echo "\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
-                  
+                  <li><a href=\"";
+        // line 28
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("certifikaty");
+        echo "\" class=\"nav-link\">certifikáty</a></li>
                 </ul>
                 <h4 class=\"mt-5\">";
         // line 30
@@ -173,7 +176,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
 
     public function getDebugInfo()
     {
-        return array (  158 => 39,  146 => 30,  140 => 27,  136 => 26,  132 => 25,  127 => 23,  118 => 19,  112 => 18,  106 => 17,  100 => 16,  94 => 15,  88 => 14,  82 => 13,  77 => 11,  70 => 7,  62 => 1,);
+        return array (  161 => 39,  149 => 30,  144 => 28,  140 => 27,  136 => 26,  132 => 25,  127 => 23,  118 => 19,  112 => 18,  106 => 17,  100 => 16,  94 => 15,  88 => 14,  82 => 13,  77 => 11,  70 => 7,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -205,7 +208,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
                   <li><a href=\"{{ 'ochrana-osobnich-udaju'|page }}\" class=\"nav-link\">ochrana osobních údajů</a></li>
                   <li><a href=\"{{ 'publicita'|page }}\" class=\"nav-link\">publicita EU</a></li>
                   <li><a href=\"{{ 'obchodni-podminky'|page }}\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
-                  
+                  <li><a href=\"{{ 'certifikaty'|page }}\" class=\"nav-link\">certifikáty</a></li>
                 </ul>
                 <h4 class=\"mt-5\">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>

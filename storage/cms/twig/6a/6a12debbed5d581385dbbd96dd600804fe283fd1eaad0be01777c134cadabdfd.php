@@ -91,7 +91,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/3d-mereni.jpg");
         echo "\" class=\"img-fluid shadow\" alt=\"\">
         </div>
-        <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
+        <div class=\"col-lg-4 col-md-12 my-5 align-self-center\">
             ";
         // line 22
         $context['__cms_content_params'] = [];
@@ -152,7 +152,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         <div class=\"col-lg-6 col-md-12 text-center\">
             <img src=\"{{ 'assets/images/3d-mereni.jpg' | theme }}\" class=\"img-fluid shadow\" alt=\"\">
         </div>
-        <div class=\"col-lg-4 col-md-12 my-5 d-flex align-self-center\">
+        <div class=\"col-lg-4 col-md-12 my-5 align-self-center\">
             {% content '3d-mereni' %}
         </div>
     </div>

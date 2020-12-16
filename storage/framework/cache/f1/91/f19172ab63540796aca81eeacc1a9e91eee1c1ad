@@ -1,4 +1,4 @@
-1607986001a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2392:"[viewBag]
+1608157782a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2469:"[viewBag]
 ==
 <footer class="footer">
 
@@ -27,7 +27,7 @@
                   <li><a href="{{ 'ochrana-osobnich-udaju'|page }}" class="nav-link">ochrana osobních údajů</a></li>
                   <li><a href="{{ 'publicita'|page }}" class="nav-link">publicita EU</a></li>
                   <li><a href="{{ 'obchodni-podminky'|page }}" class="nav-link">všeobecné obchodní podmínky</a></li>
-                  
+                  <li><a href="{{ 'certifikaty'|page }}" class="nav-link">certifikáty</a></li>
                 </ul>
                 <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>
@@ -40,7 +40,7 @@
     <div class="date text-center text-white">
         <p>TECHNO Vyškov spol. s r.o. • &nbsp;{{"now"|date("Y") }}</p>
     </div>
-</footer>";s:5:"mtime";i:1607984014;s:6:"markup";s:2377:"<footer class="footer">
+</footer>";s:5:"mtime";i:1608153593;s:6:"markup";s:2454:"<footer class="footer">
 
     <div class="container text-white pt-5 pb-2">
         <div class="row">
@@ -67,7 +67,7 @@
                   <li><a href="{{ 'ochrana-osobnich-udaju'|page }}" class="nav-link">ochrana osobních údajů</a></li>
                   <li><a href="{{ 'publicita'|page }}" class="nav-link">publicita EU</a></li>
                   <li><a href="{{ 'obchodni-podminky'|page }}" class="nav-link">všeobecné obchodní podmínky</a></li>
-                  
+                  <li><a href="{{ 'certifikaty'|page }}" class="nav-link">certifikáty</a></li>
                 </ul>
                 <h4 class="mt-5">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>

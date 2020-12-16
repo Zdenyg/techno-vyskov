@@ -34,4 +34,11 @@ form:
             imageWidth: '100'
             span: auto
             type: fileupload  
+        certificate:
+            tab: Galleries
+            label: Certifikáty
+            mode: image-multi
+            imageWidth: '100'
+            span: auto
+            type: fileupload              
 
