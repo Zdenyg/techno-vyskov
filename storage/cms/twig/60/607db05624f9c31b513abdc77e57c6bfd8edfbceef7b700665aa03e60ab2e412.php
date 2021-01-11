@@ -141,7 +141,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
         echo "\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
                   <li><a href=\"";
         // line 28
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("certifikaty");
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("quality");
         echo "\" class=\"nav-link\">certifikáty</a></li>
                 </ul>
                 <h4 class=\"mt-5\">";
@@ -208,7 +208,7 @@ class __TwigTemplate_399a496afc2cf9805abae7e18ffad9da518af9dca21b6c78ee7e43fe4a6
                   <li><a href=\"{{ 'ochrana-osobnich-udaju'|page }}\" class=\"nav-link\">ochrana osobních údajů</a></li>
                   <li><a href=\"{{ 'publicita'|page }}\" class=\"nav-link\">publicita EU</a></li>
                   <li><a href=\"{{ 'obchodni-podminky'|page }}\" class=\"nav-link\">všeobecné obchodní podmínky</a></li>
-                  <li><a href=\"{{ 'certifikaty'|page }}\" class=\"nav-link\">certifikáty</a></li>
+                  <li><a href=\"{{ 'quality'|page }}\" class=\"nav-link\">certifikáty</a></li>
                 </ul>
                 <h4 class=\"mt-5\">{{ 'rychlý kontakt' |_ }}</h4>
                 <ul>

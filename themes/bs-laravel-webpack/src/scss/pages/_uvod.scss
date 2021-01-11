@@ -51,7 +51,7 @@ header {
 
 
   }
-  @media (pointer: coarse) and (hover: none) {
+  @media (max-width: 767.98px) { 
     header {
       background: url('../images/Techno-mobile-header.jpg') black no-repeat center center;
       background-size: cover;

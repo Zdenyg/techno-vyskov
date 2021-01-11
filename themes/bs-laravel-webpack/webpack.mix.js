@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+require('laravel-mix-purgecss');
 
 mix.options({
         processCssUrls: false,
@@ -14,7 +15,10 @@ mix.options({
     .setPublicPath('/')
     .sass('src/scss/app.scss', 'assets/css/styles.css')
     .js('src/js/app.js', 'assets/js/scripts.js')
-    .version()
+    .purgeCss({
+        content: ['**/*.htm'],
+        css: ['**/*.css'],
+    });
  
 
 // Full API

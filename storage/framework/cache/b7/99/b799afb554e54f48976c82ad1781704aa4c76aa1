@@ -1,4 +1,4 @@
-1608157782a:1:{s:11:"quality.htm";a:10:{s:8:"fileName";s:11:"quality.htm";s:7:"content";s:514:"title = "Kvalita"
+1610387408a:1:{s:11:"quality.htm";a:10:{s:8:"fileName";s:11:"quality.htm";s:7:"content";s:1254:"title = "Kvalita"
 url = "/kvalita"
 layout = "default"
 is_hidden = 0
@@ -7,25 +7,50 @@ is_hidden = 0
 localeTitle[en] = "Quality"
 localeUrl[en] = "/quality"
 ==
-
 <div class="container py-5" id="kvalita">
     <div class="row py-5">
-        <div class="col-md-6">
-            <h1>{{ 'Kvalita' |_}}</h1>
+        <div class="col-md-12">
+             <h1>{{ 'Kvalita' |_}}</h1>
+        </div>
+        <div class="col-md-8">
             {% content 'kvalita-text' %} 
-        </div>  
-        <div class="col-md-6">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ 'assets/images/Logo_TUV.jpg' | theme }}" style="width: 90px;" alt="">
+        </div>
+        <div class="col-md-8">
             <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid" alt="">
         </div>  
+        <div class="col-md-4">
+            <h4>Certifikáty</h4>
+            
+            <ul class="list-unstyled">
+                <li><img src="{{ 'assets/images/pdf.svg' |theme }}" style="width: 30px;" class="pb-3 mr-4" alt=""><a href="{{ 'assets/images/28091msIATF_cz.pdf' | theme }}">IATF 16949 CZ</a></li>
+                <li><img src="{{ 'assets/images/pdf.svg' |theme }}" style="width: 30px;" class="pb-3 mr-4" alt=""><a href="{{ 'assets/images/28091msIATF_en.pdf' | theme }}">IATF 16949 EN</a></li>
+            </ul>
+        </div>
     </div>
-</div>";s:5:"mtime";i:1604947363;s:6:"markup";s:366:"<div class="container py-5" id="kvalita">
+</div>";s:5:"mtime";i:1608296196;s:6:"markup";s:1108:"<div class="container py-5" id="kvalita">
     <div class="row py-5">
-        <div class="col-md-6">
-            <h1>{{ 'Kvalita' |_}}</h1>
+        <div class="col-md-12">
+             <h1>{{ 'Kvalita' |_}}</h1>
+        </div>
+        <div class="col-md-8">
             {% content 'kvalita-text' %} 
-        </div>  
-        <div class="col-md-6">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ 'assets/images/Logo_TUV.jpg' | theme }}" style="width: 90px;" alt="">
+        </div>
+        <div class="col-md-8">
             <img src="{{ 'assets/images/3d-mereni.jpg' | theme }}" class="img-fluid" alt="">
         </div>  
+        <div class="col-md-4">
+            <h4>Certifikáty</h4>
+            
+            <ul class="list-unstyled">
+                <li><img src="{{ 'assets/images/pdf.svg' |theme }}" style="width: 30px;" class="pb-3 mr-4" alt=""><a href="{{ 'assets/images/28091msIATF_cz.pdf' | theme }}">IATF 16949 CZ</a></li>
+                <li><img src="{{ 'assets/images/pdf.svg' |theme }}" style="width: 30px;" class="pb-3 mr-4" alt=""><a href="{{ 'assets/images/28091msIATF_en.pdf' | theme }}">IATF 16949 EN</a></li>
+            </ul>
+        </div>
     </div>
 </div>";s:4:"code";N;s:5:"title";s:7:"Kvalita";s:3:"url";s:8:"/kvalita";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:7:"Quality";}s:9:"localeUrl";a:1:{s:2:"en";s:8:"/quality";}}}}
