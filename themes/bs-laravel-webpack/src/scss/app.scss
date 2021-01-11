@@ -43,7 +43,7 @@
  @import "bootstrap/scss/_functions"; // Required
  @import "bootstrap/scss/_variables"; // Required
  @import "bootstrap/scss/_mixins"; // Required
-// @import "bootstrap/scss/_root";
+ @import "bootstrap/scss/_root";
  @import "bootstrap/scss/_reboot"; // Required
  @import "bootstrap/scss/_type";
  @import "bootstrap/scss/_images";
@@ -63,7 +63,7 @@
 // @import "bootstrap/scss/_breadcrumb";
 // @import "bootstrap/scss/_pagination";
 // @import "bootstrap/scss/_badge";
- @import "bootstrap/scss/_jumbotron";
+// @import "bootstrap/scss/_jumbotron";
 // @import "bootstrap/scss/_alert";
 // @import "bootstrap/scss/_progress";
 //@import "bootstrap/scss/_media";
@@ -89,6 +89,7 @@
 
 @import "pages/uvod";
 @import "pages/nastrojarna";
+@import "pages/kariera";
 @import "pages/contact";
 
 

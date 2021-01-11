@@ -30,13 +30,13 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array("partial" => 1);
-        $filters = array();
+        $filters = array("_" => 20);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['partial'],
-                [],
+                ['_'],
                 []
             );
         } catch (SecurityError $e) {
@@ -113,11 +113,22 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         unset($context['__cms_partial_params']);
         // line 16
         echo "
-";
-        // line 17
+<div class=\"container py-5\" id=\"contact\">
+    <div class=\"row\">
+        <div class=\"col-12\">
+            <h1 class=\"text-center\">";
+        // line 20
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KONTAKT"]);
+        echo "</h1>
+            ";
+        // line 21
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("kontakt"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
+        // line 22
+        echo "        </div>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -132,7 +143,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  118 => 17,  115 => 16,  111 => 15,  108 => 14,  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
+        return array (  129 => 22,  125 => 21,  121 => 20,  115 => 16,  111 => 15,  108 => 14,  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -153,6 +164,13 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
 {% partial 'publicita-uvod' %}
 
-{% partial 'kontakt' %}", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
+<div class=\"container py-5\" id=\"contact\">
+    <div class=\"row\">
+        <div class=\"col-12\">
+            <h1 class=\"text-center\">{{ 'KONTAKT' |_ }}</h1>
+            {% partial 'kontakt' %}
+        </div>
+    </div>
+</div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");
     }
 }

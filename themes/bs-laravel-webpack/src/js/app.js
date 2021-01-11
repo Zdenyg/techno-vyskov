@@ -4,7 +4,7 @@ try {
     //require('bootstrap');
  
     require('jquery.easing');
-    require('jquery-lazy')
+ 
 
 } catch (e) {}
 
@@ -66,10 +66,10 @@ gallery.on('show.simplelightbox', function () {
 
 // LAZY loading
 
-$(function() {
+/* $(function() {
   $('.lazy').Lazy();
   
-});
+}); */
 
 // Scroll on top button
 

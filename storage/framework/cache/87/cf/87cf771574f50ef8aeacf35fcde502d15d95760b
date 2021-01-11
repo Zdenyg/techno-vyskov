@@ -1,13 +1,9 @@
-1610387409a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1514:"[viewBag]
+1610402331a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1329:"[viewBag]
 
 [contactForm]
 ==
-<div class="container py-5" id="contact">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h1>{{ 'KONTAKT' |_ }}</h1>
-        </div>
-    </div>
+
+
     <div class="row">
         <div class="col-md-6 my-5">
             <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230" class="mb-3" alt="">
@@ -35,16 +31,7 @@
             <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
         </div>
     </div>
-</div>
-
-
-";s:5:"mtime";i:1604946372;s:6:"markup";s:1476:"<div class="container py-5" id="contact">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h1>{{ 'KONTAKT' |_ }}</h1>
-        </div>
-    </div>
-    <div class="row">
+";s:5:"mtime";i:1610401728;s:6:"markup";s:1287:"<div class="row">
         <div class="col-md-6 my-5">
             <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230" class="mb-3" alt="">
             <h3 class="text-primary">TECHNO Vyškov <small> spol. s r. o.</small></h3>
@@ -70,5 +57,4 @@
             {% component 'contactForm' %}
             <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
         </div>
-    </div>
-</div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"contactForm";a:0:{}}}
+    </div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"contactForm";a:0:{}}}

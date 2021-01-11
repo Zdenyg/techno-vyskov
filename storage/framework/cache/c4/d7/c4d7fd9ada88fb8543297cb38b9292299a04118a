@@ -1,4 +1,4 @@
-1610387408a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:671:"title = "Techno - Vyškov | úvod"
+1610402460a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:882:"title = "Techno - Vyškov | úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno-Vyškov spol. s r.o."
@@ -25,7 +25,15 @@ localeUrl[en] = "/techno-vyskov-home"
 
 {% partial 'publicita-uvod' %}
 
-{% partial 'kontakt' %}";s:5:"mtime";i:1610382786;s:6:"markup";s:274:"{% partial 'uvod' %}
+<div class="container py-5" id="contact">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">{{ 'KONTAKT' |_ }}</h1>
+            {% partial 'kontakt' %}
+        </div>
+    </div>
+</div>    
+";s:5:"mtime";i:1610401858;s:6:"markup";s:479:"{% partial 'uvod' %}
 
 {% partial 'about-us' %}
 
@@ -41,4 +49,11 @@ localeUrl[en] = "/techno-vyskov-home"
 
 {% partial 'publicita-uvod' %}
 
-{% partial 'kontakt' %}";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:27:"Techno-Vyškov spol. s r.o.";s:16:"meta_description";s:147:"Působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby.";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}}}
+<div class="container py-5" id="contact">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">{{ 'KONTAKT' |_ }}</h1>
+            {% partial 'kontakt' %}
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:27:"Techno-Vyškov spol. s r.o.";s:16:"meta_description";s:147:"Působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby.";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}}}
