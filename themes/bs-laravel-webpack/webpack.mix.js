@@ -14,11 +14,7 @@ mix.options({
     })
     .setPublicPath('/')
     .sass('src/scss/app.scss', 'assets/css/styles.css')
-    .js('src/js/app.js', 'assets/js/scripts.js')
-    .purgeCss({
-        content: ['**/*.htm'],
-        css: ['**/*.css'],
-    });
+    .js('src/js/app.js', 'assets/js/scripts.js');
  
 
 // Full API

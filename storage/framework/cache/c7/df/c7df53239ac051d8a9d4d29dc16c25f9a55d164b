@@ -1,11 +1,11 @@
-1610402004a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1138:"[viewBag]
+1610919688a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1146:"[viewBag]
 ==
 <section class="gradient">
 <div class="container py-5">
     <div class="row">
         <div class="col-12 text-center mb-5">
             <h1>{{ 'KVALITA'|_ }}</h1>
-            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
+            <h2>{{ 'Splňujeme vysoké požadavky na kvalitu'|_}}</h2>
         </div>
     </div>
 
@@ -13,7 +13,7 @@
         <div class="col-lg-2 col-md-12 text-center">
             <div class="blue-iconbox">
                 <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
-                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
+                    <h5 class="mt-3">{{ '3D MĚŘENÍ'|_ }}</h5>
                         
             </div> 
         </div>
@@ -31,12 +31,12 @@
         </div>
     </div>
 </div>
-</section>";s:5:"mtime";i:1608156017;s:6:"markup";s:1123:"<section class="gradient">
+</section>";s:5:"mtime";i:1610402382;s:6:"markup";s:1131:"<section class="gradient">
 <div class="container py-5">
     <div class="row">
         <div class="col-12 text-center mb-5">
             <h1>{{ 'KVALITA'|_ }}</h1>
-            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
+            <h2>{{ 'Splňujeme vysoké požadavky na kvalitu'|_}}</h2>
         </div>
     </div>
 
@@ -44,7 +44,7 @@
         <div class="col-lg-2 col-md-12 text-center">
             <div class="blue-iconbox">
                 <img src="{{ 'assets/images/icon-tool-07.svg' | theme }}" alt="">
-                    <h5 class="mt-3">{{ '3D MĚŘENÍ' |_ }}</h5>
+                    <h5 class="mt-3">{{ '3D MĚŘENÍ'|_ }}</h5>
                         
             </div> 
         </div>

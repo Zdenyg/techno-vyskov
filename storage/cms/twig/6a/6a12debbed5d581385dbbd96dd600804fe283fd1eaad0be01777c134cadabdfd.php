@@ -67,7 +67,10 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         // line 5
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KVALITA"]);
         echo "</h1>
-            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
+            <h2>";
+        // line 6
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Splňujeme vysoké požadavky na kvalitu"]);
+        echo "</h2>
         </div>
     </div>
 
@@ -127,7 +130,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
 
     public function getDebugInfo()
     {
-        return array (  108 => 28,  101 => 23,  97 => 22,  91 => 19,  83 => 14,  79 => 13,  68 => 5,  62 => 1,);
+        return array (  111 => 28,  104 => 23,  100 => 22,  94 => 19,  86 => 14,  82 => 13,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -137,7 +140,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
     <div class=\"row\">
         <div class=\"col-12 text-center mb-5\">
             <h1>{{ 'KVALITA'|_ }}</h1>
-            <h2>Splňujeme vysoké požadavky na kvalitu</h2>
+            <h2>{{ 'Splňujeme vysoké požadavky na kvalitu'|_}}</h2>
         </div>
     </div>
 
@@ -145,7 +148,7 @@ class __TwigTemplate_33e5ebfc0289123681174bf6e0c862333c6ccad275b3304eb8534b5ff25
         <div class=\"col-lg-2 col-md-12 text-center\">
             <div class=\"blue-iconbox\">
                 <img src=\"{{ 'assets/images/icon-tool-07.svg' | theme }}\" alt=\"\">
-                    <h5 class=\"mt-3\">{{ '3D MĚŘENÍ' |_ }}</h5>
+                    <h5 class=\"mt-3\">{{ '3D MĚŘENÍ'|_ }}</h5>
                         
             </div> 
         </div>
