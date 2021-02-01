@@ -123,7 +123,7 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
     
     
   </head>
-  <body>
+  <body id=\"page-top\">
   ";
         // line 27
         $context['__cms_partial_params'] = [];
@@ -219,7 +219,7 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
     
     
   </head>
-  <body>
+  <body id=\"page-top\">
   {% partial 'navbar' %}
     
   {% page %}

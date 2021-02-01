@@ -1,4 +1,4 @@
-1612020802a:1:{s:21:"obchodni-podminky.htm";a:9:{s:8:"fileName";s:21:"obchodni-podminky.htm";s:7:"content";s:1149:"title = "Obchodní podmínky"
+1612208810a:1:{s:21:"obchodni-podminky.htm";a:9:{s:8:"fileName";s:21:"obchodni-podminky.htm";s:7:"content";s:1149:"title = "Obchodní podmínky"
 url = "/obchodni-podminky"
 layout = "default"
 is_hidden = 0
@@ -15,7 +15,7 @@ is_hidden = 0
         </div>
     </div>
     </div>
-</div>";s:5:"mtime";i:1611770547;s:6:"markup";s:1051:"<div class="container py-5" id="publicita">
+</div>";s:5:"mtime";i:1612207829;s:6:"markup";s:1051:"<div class="container py-5" id="publicita">
     <div class="row py-5">
         <div class="col">
             <h1>{{ 'Obchodní podmínky' |_}}</h1>

@@ -1,4 +1,4 @@
-1612020806a:1:{s:11:"kontakt.htm";a:6:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1009:"[viewBag]
+1612208810a:1:{s:11:"kontakt.htm";a:6:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1009:"[viewBag]
 ==
 <div class="col-md-6">
             <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230" class="mb-3" alt="">

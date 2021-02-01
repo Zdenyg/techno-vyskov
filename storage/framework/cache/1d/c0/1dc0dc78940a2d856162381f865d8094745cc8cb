@@ -1,6 +1,8 @@
-1612020802a:1:{s:11:"molding.htm";a:10:{s:8:"fileName";s:11:"molding.htm";s:7:"content";s:514:"title = "lisovna"
+1612208810a:1:{s:11:"molding.htm";a:12:{s:8:"fileName";s:11:"molding.htm";s:7:"content";s:691:"title = "lisovna"
 url = "/lisovna"
 layout = "default"
+meta_title = "Výroba přesných plastových dílů"
+meta_description = "Plastové díly pro automobilový průmysl, telekomunikace, tepelná regulace, stavebnictví, hračky pro děti"
 is_hidden = 0
 
 [viewBag]
@@ -17,7 +19,7 @@ localeTitle[en] = "Molding"
             <img src="{{ 'assets/images/Lisovna.jpg' | theme }}" class="img-fluid" alt="">
         </div>     
     </div>
-</div>";s:5:"mtime";i:1611770546;s:6:"markup";s:368:"<div class="container py-5" id="lisovna">
+</div>";s:5:"mtime";i:1612207829;s:6:"markup";s:368:"<div class="container py-5" id="lisovna">
     <div class="row py-5">
         <div class="col-md-6">
             <h1>{{ 'Lisovna' |_}}</h1>
@@ -27,4 +29,4 @@ localeTitle[en] = "Molding"
             <img src="{{ 'assets/images/Lisovna.jpg' | theme }}" class="img-fluid" alt="">
         </div>     
     </div>
-</div>";s:4:"code";N;s:5:"title";s:7:"lisovna";s:3:"url";s:8:"/lisovna";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:9:"localeUrl";a:1:{s:2:"en";s:8:"/molding";}s:11:"localeTitle";a:1:{s:2:"en";s:7:"Molding";}}}}
+</div>";s:4:"code";N;s:5:"title";s:7:"lisovna";s:3:"url";s:8:"/lisovna";s:6:"layout";s:7:"default";s:10:"meta_title";s:37:"Výroba přesných plastových dílů";s:16:"meta_description";s:111:"Plastové díly pro automobilový průmysl, telekomunikace, tepelná regulace, stavebnictví, hračky pro děti";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:9:"localeUrl";a:1:{s:2:"en";s:8:"/molding";}s:11:"localeTitle";a:1:{s:2:"en";s:7:"Molding";}}}}

@@ -175,7 +175,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
        
     </div>
 
-    <button id=\"simpleContactSubmitButton\" type=\"submit\" class=\"btn btn-default\">";
+    <button id=\"simpleContactSubmitButton\" type=\"submit\" class=\"btn btn-default mb-3\">";
         // line 53
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["odeslat"]);
         echo "</button>
@@ -263,7 +263,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
        
     </div>
 
-    <button id=\"simpleContactSubmitButton\" type=\"submit\" class=\"btn btn-default\">{{ 'odeslat'|_ }}</button>
+    <button id=\"simpleContactSubmitButton\" type=\"submit\" class=\"btn btn-default mb-3\">{{ 'odeslat'|_ }}</button>
 
 </form>
      

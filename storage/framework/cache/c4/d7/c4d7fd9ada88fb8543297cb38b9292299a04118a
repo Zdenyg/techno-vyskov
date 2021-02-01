@@ -1,4 +1,4 @@
-1612020802a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:2446:"title = "Techno - Vyškov | úvod"
+1612208810a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:2571:"title = "Techno - Vyškov | úvod"
 url = "/"
 layout = "default"
 meta_title = "Techno-Vyškov spol. s r.o."
@@ -10,11 +10,15 @@ localeTitle[en] = "Techno - Vyškov | home"
 localeUrl[en] = "/techno-vyskov-home"
 
 [genericForm homeForm]
-messages_success = "Your form was successfully submitted"
-messages_errors = "There were errors with your submission"
+rules[name] = "required"
+rules[email] = "required|email"
+rules_messages[name.required] = "jméno je vyžadováno"
+rules_messages[email.required] = "email je vyžadován"
+messages_success = "Zpráva byla odeslána"
+messages_errors = "Chyba"
 mail_enabled = 1
-mail_subject = "CF homepage"
-mail_recipients[] = "zdenek.spisar@gmail.com"
+mail_subject = "Kontaktní formulář z webu Techno"
+mail_recipients[] = "info@techno-vyskov.cz"
 inline_errors = "disabled"
 sanitize_data = "disabled"
 anonymize_ip = "disabled"
@@ -75,7 +79,7 @@ emails_date_format = "Y-m-d"
        
     </div>
 
-    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">{{ 'odeslat'|_ }}</button>
+    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default mb-3">{{ 'odeslat'|_ }}</button>
 
 </form>
      
@@ -85,7 +89,7 @@ emails_date_format = "Y-m-d"
         </div>            
         </div>
     </div>
-</div>";s:5:"mtime";i:1611771913;s:6:"markup";s:1616:"{% partial 'uvod' %}
+</div>";s:5:"mtime";i:1612207829;s:6:"markup";s:1621:"{% partial 'uvod' %}
 
 {% partial 'about-us' %}
 
@@ -137,7 +141,7 @@ emails_date_format = "Y-m-d"
        
     </div>
 
-    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">{{ 'odeslat'|_ }}</button>
+    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default mb-3">{{ 'odeslat'|_ }}</button>
 
 </form>
      
@@ -147,4 +151,4 @@ emails_date_format = "Y-m-d"
         </div>            
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:27:"Techno-Vyškov spol. s r.o.";s:16:"meta_description";s:147:"Působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby.";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}s:20:"genericForm homeForm";a:12:{s:16:"messages_success";s:36:"Your form was successfully submitted";s:15:"messages_errors";s:38:"There were errors with your submission";s:12:"mail_enabled";s:1:"1";s:12:"mail_subject";s:11:"CF homepage";s:15:"mail_recipients";a:1:{i:0;s:23:"zdenek.spisar@gmail.com";}s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:18:"emails_date_format";s:5:"Y-m-d";}}}
+</div>";s:4:"code";N;s:5:"title";s:24:"Techno - Vyškov | úvod";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:27:"Techno-Vyškov spol. s r.o.";s:16:"meta_description";s:147:"Působíme na trhu více jak 20 let, v oboru konstrukce a výroby forem pro vstřikování plastových dílu a jejich následné sériové výroby.";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:23:"Techno - Vyškov | home";}s:9:"localeUrl";a:1:{s:2:"en";s:19:"/techno-vyskov-home";}}s:20:"genericForm homeForm";a:14:{s:5:"rules";a:2:{s:4:"name";s:8:"required";s:5:"email";s:14:"required|email";}s:14:"rules_messages";a:2:{s:13:"name.required";s:22:"jméno je vyžadováno";s:14:"email.required";s:20:"email je vyžadován";}s:16:"messages_success";s:22:"Zpráva byla odeslána";s:15:"messages_errors";s:5:"Chyba";s:12:"mail_enabled";s:1:"1";s:12:"mail_subject";s:35:"Kontaktní formulář z webu Techno";s:15:"mail_recipients";a:1:{i:0;s:21:"info@techno-vyskov.cz";}s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:18:"emails_date_format";s:5:"Y-m-d";}}}
