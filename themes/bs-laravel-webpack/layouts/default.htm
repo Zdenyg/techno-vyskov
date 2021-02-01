@@ -11,10 +11,11 @@ forceUrl = 0
     <meta name="description" content="{{ this.page.meta_description }}">
     <meta name="title" content="{{ this.page.meta_title }}">
     
+    <link rel="icon" href="{{ 'assets/images/favicon.ico'|theme }}">
     <link rel="icon" href="{{ 'assets/images/favicon-16x16.png'|theme }}">
     <link rel="icon" href="{{ 'assets/images/favicon-32x32.png'|theme }}">
     <link rel="icon" href="{{ 'assets/images/apple-touch-icon.png'|theme }}">
-    <link rel="icon" href="{{ 'assets/images/android-chrome-72x72.png'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/android-chrome-192x192.png'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/css/styles.css' | theme }}">
     
     <title>{{ this.page.title }}</title>
@@ -24,10 +25,10 @@ forceUrl = 0
     <meta property="og:url" content="{{ url_current() }}" />
     <meta property="og:image" content="{{ 'assets/images/theme-preview.png'|theme }}"/>
     
-    <meta name=“robots“ content=“noindex, nofollow“>
+    
     
   </head>
-  <body>
+  <body id="page-top">
   {% partial 'navbar' %}
     
   {% page %}

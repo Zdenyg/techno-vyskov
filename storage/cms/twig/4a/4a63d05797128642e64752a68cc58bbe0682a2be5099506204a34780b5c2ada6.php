@@ -30,14 +30,14 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array("partial" => 1);
-        $filters = array("_" => 20);
-        $functions = array();
+        $filters = array("_" => 20, "escape" => 28);
+        $functions = array("form_token" => 30);
 
         try {
             $this->sandbox->checkSecurity(
                 ['partial'],
-                ['_'],
-                []
+                ['_', 'escape'],
+                ['form_token']
             );
         } catch (SecurityError $e) {
             $e->setSourceContext($this->source);
@@ -115,18 +115,81 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
         echo "
 <div class=\"container py-5\" id=\"contact\">
     <div class=\"row\">
-        <div class=\"col-12\">
+        <div class=\"col-12 mb-5\">
             <h1 class=\"text-center\">";
         // line 20
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["KONTAKT"]);
         echo "</h1>
+        </div>    
+            
             ";
-        // line 21
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("kontakt"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 22
-        echo "        </div>
+        // line 24
+        echo "           
+        <div class=\"col-md-6\">
+        <h5>";
+        // line 26
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Kontaktní formulář"]);
+        echo "</h5>
+            
+         <form data-request=\"";
+        // line 28
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["homeForm"] ?? null), 28, $this->source), "html", null, true);
+        echo "::onFormSubmit\">
+
+    ";
+        // line 30
+        echo call_user_func_array($this->env->getFunction('form_token')->getCallable(), ["token"]);
+        echo "
+
+    <div id=\"";
+        // line 32
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["homeForm"] ?? null), 32, $this->source), "html", null, true);
+        echo "_forms_flash\"></div>
+
+    <div class=\"form-group\">
+        <label for=\"name\">";
+        // line 35
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Jméno:"]);
+        echo "</label>
+        <input type=\"text\" id=\"name\" name=\"name\" class=\"form-control\">
+    </div>
+
+    <div class=\"form-group\">
+        <label for=\"email\">Email:</label>
+        <input type=\"text\" id=\"email\" name=\"email\" class=\"form-control\">
+    </div>
+
+    <div class=\"form-group\">
+        <label for=\"comments\">";
+        // line 45
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Zpráva:"]);
+        echo "</label>
+        <textarea id=\"comments\" name=\"comments\" rows=\"8\" cols=\"80\"></textarea>
+    </div>
+
+    <div class=\"form-group\">
+       
+    </div>
+
+    <button id=\"simpleContactSubmitButton\" type=\"submit\" class=\"btn btn-default\">";
+        // line 53
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["odeslat"]);
+        echo "</button>
+
+</form>
+     
+        <p>";
+        // line 57
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů."]);
+        echo "</p>
+       
+        
+        </div>            
+        </div>
     </div>
 </div>";
     }
@@ -143,7 +206,7 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
     public function getDebugInfo()
     {
-        return array (  129 => 22,  125 => 21,  121 => 20,  115 => 16,  111 => 15,  108 => 14,  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
+        return array (  187 => 57,  180 => 53,  169 => 45,  156 => 35,  150 => 32,  145 => 30,  140 => 28,  135 => 26,  131 => 24,  127 => 23,  121 => 20,  115 => 16,  111 => 15,  108 => 14,  104 => 13,  101 => 12,  97 => 11,  94 => 10,  90 => 9,  87 => 8,  83 => 7,  80 => 6,  76 => 5,  73 => 4,  69 => 3,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -166,9 +229,48 @@ class __TwigTemplate_8b016c3f8654d111ff504b07d489b297fc114ec43170e49ecd6cf9a6ce9
 
 <div class=\"container py-5\" id=\"contact\">
     <div class=\"row\">
-        <div class=\"col-12\">
+        <div class=\"col-12 mb-5\">
             <h1 class=\"text-center\">{{ 'KONTAKT' |_ }}</h1>
+        </div>    
+            
             {% partial 'kontakt' %}
+           
+        <div class=\"col-md-6\">
+        <h5>{{ 'Kontaktní formulář' |_ }}</h5>
+            
+         <form data-request=\"{{ homeForm }}::onFormSubmit\">
+
+    {{ form_token() }}
+
+    <div id=\"{{ homeForm }}_forms_flash\"></div>
+
+    <div class=\"form-group\">
+        <label for=\"name\">{{ 'Jméno:'|_}}</label>
+        <input type=\"text\" id=\"name\" name=\"name\" class=\"form-control\">
+    </div>
+
+    <div class=\"form-group\">
+        <label for=\"email\">Email:</label>
+        <input type=\"text\" id=\"email\" name=\"email\" class=\"form-control\">
+    </div>
+
+    <div class=\"form-group\">
+        <label for=\"comments\">{{ 'Zpráva:' |_ }}</label>
+        <textarea id=\"comments\" name=\"comments\" rows=\"8\" cols=\"80\"></textarea>
+    </div>
+
+    <div class=\"form-group\">
+       
+    </div>
+
+    <button id=\"simpleContactSubmitButton\" type=\"submit\" class=\"btn btn-default\">{{ 'odeslat'|_ }}</button>
+
+</form>
+     
+        <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
+       
+        
+        </div>            
         </div>
     </div>
 </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/pages/home.htm", "");

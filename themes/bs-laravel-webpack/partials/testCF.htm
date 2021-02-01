@@ -1,0 +1,18 @@
+[genericForm testovaciCF]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "partial CF"
+mail_recipients[] = "zdenek.spisar@gmail.com"
+mail_recipients[] = "zdenal.mail@seznam.cz"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+
+[viewBag]
+==
+{% component 'testovaciCF' %}

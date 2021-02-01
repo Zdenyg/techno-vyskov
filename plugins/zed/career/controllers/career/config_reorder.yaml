@@ -1,4 +1,5 @@
 title: Career
 modelClass: Zed\Career\Models\Jobs
+nameFrom: job_name
 toolbar:
     buttons: reorder_toolbar

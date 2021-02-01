@@ -1,5 +1,38 @@
 title = "testy"
 url = "/testy"
+layout = "default"
 is_hidden = 0
+
+[genericForm testForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "Test FORM"
+mail_recipients[] = "zdenek.spisar@gmail.com"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
 ==
-{% content 'testovanie' %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            {% component 'testForm' %}        
+        
+        </div>
+        
+        <div class="col-md-6">
+            <h3>from partials</h3>
+       
+                {% partial 'testCF' %}
+        
+        </div>
+        
+        
+        
+    </div>
+</div>

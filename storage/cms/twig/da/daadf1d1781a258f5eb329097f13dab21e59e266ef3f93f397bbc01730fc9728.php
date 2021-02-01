@@ -29,9 +29,9 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("partial" => 26, "page" => 28, "framework" => 40, "scripts" => 41);
+        $tags = array("partial" => 27, "page" => 29, "framework" => 41, "scripts" => 42);
         $filters = array("escape" => 6, "theme" => 9);
-        $functions = array("url_current" => 19);
+        $functions = array("url_current" => 20);
 
         try {
             $this->sandbox->checkSecurity(
@@ -75,69 +75,73 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
     
     <link rel=\"icon\" href=\"";
         // line 9
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon-16x16.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon.ico");
         echo "\">
     <link rel=\"icon\" href=\"";
         // line 10
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon-32x32.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon-16x16.png");
         echo "\">
     <link rel=\"icon\" href=\"";
         // line 11
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/apple-touch-icon.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon-32x32.png");
         echo "\">
     <link rel=\"icon\" href=\"";
         // line 12
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/android-chrome-72x72.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/apple-touch-icon.png");
+        echo "\">
+    <link rel=\"icon\" href=\"";
+        // line 13
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/android-chrome-192x192.png");
         echo "\">
     <link rel=\"stylesheet\" href=\"";
-        // line 13
+        // line 14
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/styles.css");
         echo "\">
     
     <title>";
-        // line 15
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 15), "title", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+        // line 16
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 16), "title", [], "any", false, false, true, 16), 16, $this->source), "html", null, true);
         echo "</title>
 
     <meta property=\"og:title\" content=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 17), "meta_title", [], "any", false, false, true, 17), 17, $this->source), "html", null, true);
+        // line 18
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 18), "meta_title", [], "any", false, false, true, 18), 18, $this->source), "html", null, true);
         echo "\" />
     <meta property=\"og:description\" content=\"";
-        // line 18
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 18), "meta_description", [], "any", false, false, true, 18), 18, $this->source), "html", null, true);
+        // line 19
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 19), "meta_description", [], "any", false, false, true, 19), 19, $this->source), "html", null, true);
         echo "\" />
     <meta property=\"og:url\" content=\"";
-        // line 19
+        // line 20
         echo call_user_func_array($this->env->getFunction('url_current')->getCallable(), ["current"]);
         echo "\" />
     <meta property=\"og:image\" content=\"";
-        // line 20
+        // line 21
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/theme-preview.png");
         echo "\"/>
     
-    <meta name=“robots“ content=“noindex, nofollow“>
+    
     
   </head>
   <body>
   ";
-        // line 26
+        // line 27
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("navbar"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 27
-        echo "    
-  ";
         // line 28
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 29
         echo "    
   ";
+        // line 29
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 30
+        echo "    
+  ";
+        // line 31
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 31
+        // line 32
         echo "
   <a id=\"back-to-top\" href=\"#\" class=\"btn btn-primary back-to-top\" role=\"button\">
     <svg width=\"2em\" height=\"2em\" viewBox=\"0 0 16 16\" class=\"bi bi-chevron-up\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">
@@ -146,12 +150,12 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
   </a>
 
   <script src=\"";
-        // line 38
+        // line 39
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/scripts.js");
         echo "\"></script>
 
   ";
-        // line 40
+        // line 41
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -162,11 +166,11 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 41
+        // line 42
         echo "  ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 42
+        // line 43
         echo "
     
   </body>
@@ -185,7 +189,7 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
 
     public function getDebugInfo()
     {
-        return array (  170 => 42,  166 => 41,  155 => 40,  150 => 38,  141 => 31,  137 => 30,  134 => 29,  132 => 28,  129 => 27,  125 => 26,  116 => 20,  112 => 19,  108 => 18,  104 => 17,  99 => 15,  94 => 13,  90 => 12,  86 => 11,  82 => 10,  78 => 9,  73 => 7,  69 => 6,  62 => 1,);
+        return array (  174 => 43,  170 => 42,  159 => 41,  154 => 39,  145 => 32,  141 => 31,  138 => 30,  136 => 29,  133 => 28,  129 => 27,  120 => 21,  116 => 20,  112 => 19,  108 => 18,  103 => 16,  98 => 14,  94 => 13,  90 => 12,  86 => 11,  82 => 10,  78 => 9,  73 => 7,  69 => 6,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -198,10 +202,11 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
     <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
     <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
     
+    <link rel=\"icon\" href=\"{{ 'assets/images/favicon.ico'|theme }}\">
     <link rel=\"icon\" href=\"{{ 'assets/images/favicon-16x16.png'|theme }}\">
     <link rel=\"icon\" href=\"{{ 'assets/images/favicon-32x32.png'|theme }}\">
     <link rel=\"icon\" href=\"{{ 'assets/images/apple-touch-icon.png'|theme }}\">
-    <link rel=\"icon\" href=\"{{ 'assets/images/android-chrome-72x72.png'|theme }}\">
+    <link rel=\"icon\" href=\"{{ 'assets/images/android-chrome-192x192.png'|theme }}\">
     <link rel=\"stylesheet\" href=\"{{ 'assets/css/styles.css' | theme }}\">
     
     <title>{{ this.page.title }}</title>
@@ -211,7 +216,7 @@ class __TwigTemplate_8375a66f0908ad9038ba332e0a9f5b02715939a363ff676c7d7a2934b94
     <meta property=\"og:url\" content=\"{{ url_current() }}\" />
     <meta property=\"og:image\" content=\"{{ 'assets/images/theme-preview.png'|theme }}\"/>
     
-    <meta name=“robots“ content=“noindex, nofollow“>
+    
     
   </head>
   <body>

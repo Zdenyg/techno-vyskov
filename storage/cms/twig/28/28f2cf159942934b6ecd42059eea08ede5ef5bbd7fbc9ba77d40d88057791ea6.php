@@ -29,14 +29,14 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 24);
-        $filters = array("theme" => 3, "_" => 23);
+        $tags = array();
+        $filters = array("theme" => 2);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['component'],
-                ['theme', '_'],
+                [],
+                ['theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,46 +59,28 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"row\">
-        <div class=\"col-md-6 my-5\">
+        echo "<div class=\"col-md-6\">
             <img src=\"";
-        // line 3
+        // line 2
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Techno-Vyskov-logo.svg");
         echo "\" width=\"230\" class=\"mb-3\" alt=\"\">
             <h3 class=\"text-primary\">TECHNO Vyškov <small> spol. s r. o.</small></h3>
-            <ul>
-                <li>Joklova 9</li>
+            <ul class=\"list-unstyled\">
+                <li>Joklova 282/9a</li>
                 <li>682 01 Vyškov</li>
                 <li>Czech Republic</li>
             </ul>
-            <ul class=\"text-primary\">
+            <ul class=\"text-primary list-unstyled\">
                 <li>Tel.: <a href=\"tel:+420517341681\">+420 517 341 681</a></li>
-                <li>Fax: +420 517 341 682</li>
                 <li>Výroba: <a href=\"tel:+420602568307\">+420 602 568 307</a></li>
                 <li>Nástrojárna: <a href=\"tel:+420721269930\">+420 721 269 930</a></li>
                 <li>E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
             </ul>
-            <ul>
+            <ul class=\"list-unstyled\">
                 <li>IČO: 25 58 51 77</li>
                 <li>DIČ: CZ 25 58 51 77</li>
             </ul>
-        </div>
-        <div class=\"col-md-6 my-5\">
-            <h5>";
-        // line 23
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Kontaktní formulář"]);
-        echo "</h5>
-            ";
-        // line 24
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contactForm"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 25
-        echo "            <p>";
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů."]);
-        echo "</p>
-        </div>
-    </div>";
+        </div>";
     }
 
     public function getTemplateName()
@@ -113,37 +95,29 @@ class __TwigTemplate_683b4d48af50ccd9365c2599fe51f6270d5bbd09fa01d735bba4b00ff60
 
     public function getDebugInfo()
     {
-        return array (  97 => 25,  93 => 24,  89 => 23,  66 => 3,  62 => 1,);
+        return array (  65 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"row\">
-        <div class=\"col-md-6 my-5\">
+        return new Source("<div class=\"col-md-6\">
             <img src=\"{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}\" width=\"230\" class=\"mb-3\" alt=\"\">
             <h3 class=\"text-primary\">TECHNO Vyškov <small> spol. s r. o.</small></h3>
-            <ul>
-                <li>Joklova 9</li>
+            <ul class=\"list-unstyled\">
+                <li>Joklova 282/9a</li>
                 <li>682 01 Vyškov</li>
                 <li>Czech Republic</li>
             </ul>
-            <ul class=\"text-primary\">
+            <ul class=\"text-primary list-unstyled\">
                 <li>Tel.: <a href=\"tel:+420517341681\">+420 517 341 681</a></li>
-                <li>Fax: +420 517 341 682</li>
                 <li>Výroba: <a href=\"tel:+420602568307\">+420 602 568 307</a></li>
                 <li>Nástrojárna: <a href=\"tel:+420721269930\">+420 721 269 930</a></li>
                 <li>E-mail: <a href=\"mailto:info@techno-vyskov.cz\">info@techno-vyskov.cz</a></li>
             </ul>
-            <ul>
+            <ul class=\"list-unstyled\">
                 <li>IČO: 25 58 51 77</li>
                 <li>DIČ: CZ 25 58 51 77</li>
             </ul>
-        </div>
-        <div class=\"col-md-6 my-5\">
-            <h5>{{ 'Kontaktní formulář' |_ }}</h5>
-            {% component 'contactForm' %}
-            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
-        </div>
-    </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/kontakt.htm", "");
+        </div>", "C:\\wamp64\\www\\techno-vyskov/themes/bs-laravel-webpack/partials/kontakt.htm", "");
     }
 }

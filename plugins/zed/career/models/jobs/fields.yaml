@@ -24,3 +24,7 @@ fields:
         format: Y-d-m
         span: auto
         type: datepicker
+    published:
+        label: Publikovat
+        span: auto
+        type: switch

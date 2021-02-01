@@ -1,4 +1,4 @@
-1610919688a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:609:" <div class="gallery text-center">
+1612020805a:1:{s:12:"produkty.htm";a:5:{s:8:"fileName";s:12:"produkty.htm";s:7:"content";s:609:" <div class="gallery text-center">
     
     {% for image in this.theme.product_images  | slice(7,3) %} 
     <div class="image-wrapper img-hover-zoom">
@@ -17,7 +17,7 @@
     </div>
     {% endfor %}
     
- </div>";s:5:"mtime";i:1608153586;s:6:"markup";s:608:"<div class="gallery text-center">
+ </div>";s:5:"mtime";i:1611770548;s:6:"markup";s:608:"<div class="gallery text-center">
     
     {% for image in this.theme.product_images  | slice(7,3) %} 
     <div class="image-wrapper img-hover-zoom">

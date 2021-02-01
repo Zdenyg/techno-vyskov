@@ -1,33 +1,21 @@
 [viewBag]
-
-[contactForm]
 ==
-
-
-    <div class="row">
-        <div class="col-md-6 my-5">
+<div class="col-md-6">
             <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230" class="mb-3" alt="">
             <h3 class="text-primary">TECHNO Vyškov <small> spol. s r. o.</small></h3>
-            <ul>
-                <li>Joklova 9</li>
+            <ul class="list-unstyled">
+                <li>Joklova 282/9a</li>
                 <li>682 01 Vyškov</li>
                 <li>Czech Republic</li>
             </ul>
-            <ul class="text-primary">
+            <ul class="text-primary list-unstyled">
                 <li>Tel.: <a href="tel:+420517341681">+420 517 341 681</a></li>
-                <li>Fax: +420 517 341 682</li>
                 <li>Výroba: <a href="tel:+420602568307">+420 602 568 307</a></li>
                 <li>Nástrojárna: <a href="tel:+420721269930">+420 721 269 930</a></li>
                 <li>E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
             </ul>
-            <ul>
+            <ul class="list-unstyled">
                 <li>IČO: 25 58 51 77</li>
                 <li>DIČ: CZ 25 58 51 77</li>
             </ul>
         </div>
-        <div class="col-md-6 my-5">
-            <h5>{{ 'Kontaktní formulář' |_ }}</h5>
-            {% component 'contactForm' %}
-            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
-        </div>
-    </div>

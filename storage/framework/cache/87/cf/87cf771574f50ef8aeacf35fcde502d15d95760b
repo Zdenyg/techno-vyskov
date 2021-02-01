@@ -1,60 +1,39 @@
-1610920953a:1:{s:11:"kontakt.htm";a:7:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1329:"[viewBag]
-
-[contactForm]
+1612020806a:1:{s:11:"kontakt.htm";a:6:{s:8:"fileName";s:11:"kontakt.htm";s:7:"content";s:1009:"[viewBag]
 ==
-
-
-    <div class="row">
-        <div class="col-md-6 my-5">
+<div class="col-md-6">
             <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230" class="mb-3" alt="">
             <h3 class="text-primary">TECHNO Vyškov <small> spol. s r. o.</small></h3>
-            <ul>
-                <li>Joklova 9</li>
+            <ul class="list-unstyled">
+                <li>Joklova 282/9a</li>
                 <li>682 01 Vyškov</li>
                 <li>Czech Republic</li>
             </ul>
-            <ul class="text-primary">
+            <ul class="text-primary list-unstyled">
                 <li>Tel.: <a href="tel:+420517341681">+420 517 341 681</a></li>
-                <li>Fax: +420 517 341 682</li>
                 <li>Výroba: <a href="tel:+420602568307">+420 602 568 307</a></li>
                 <li>Nástrojárna: <a href="tel:+420721269930">+420 721 269 930</a></li>
                 <li>E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
             </ul>
-            <ul>
+            <ul class="list-unstyled">
                 <li>IČO: 25 58 51 77</li>
                 <li>DIČ: CZ 25 58 51 77</li>
             </ul>
-        </div>
-        <div class="col-md-6 my-5">
-            <h5>{{ 'Kontaktní formulář' |_ }}</h5>
-            {% component 'contactForm' %}
-            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
-        </div>
-    </div>
-";s:5:"mtime";i:1610401728;s:6:"markup";s:1287:"<div class="row">
-        <div class="col-md-6 my-5">
+        </div>";s:5:"mtime";i:1611858486;s:6:"markup";s:994:"<div class="col-md-6">
             <img src="{{ 'assets/images/Techno-Vyskov-logo.svg' | theme }}" width="230" class="mb-3" alt="">
             <h3 class="text-primary">TECHNO Vyškov <small> spol. s r. o.</small></h3>
-            <ul>
-                <li>Joklova 9</li>
+            <ul class="list-unstyled">
+                <li>Joklova 282/9a</li>
                 <li>682 01 Vyškov</li>
                 <li>Czech Republic</li>
             </ul>
-            <ul class="text-primary">
+            <ul class="text-primary list-unstyled">
                 <li>Tel.: <a href="tel:+420517341681">+420 517 341 681</a></li>
-                <li>Fax: +420 517 341 682</li>
                 <li>Výroba: <a href="tel:+420602568307">+420 602 568 307</a></li>
                 <li>Nástrojárna: <a href="tel:+420721269930">+420 721 269 930</a></li>
                 <li>E-mail: <a href="mailto:info@techno-vyskov.cz">info@techno-vyskov.cz</a></li>
             </ul>
-            <ul>
+            <ul class="list-unstyled">
                 <li>IČO: 25 58 51 77</li>
                 <li>DIČ: CZ 25 58 51 77</li>
             </ul>
-        </div>
-        <div class="col-md-6 my-5">
-            <h5>{{ 'Kontaktní formulář' |_ }}</h5>
-            {% component 'contactForm' %}
-            <p>{{ 'Vaše osobní údaje budou zpracovány dle pravidel o ochraně osobních údajů.' |_ }}</p>
-        </div>
-    </div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"contactForm";a:0:{}}}
+        </div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

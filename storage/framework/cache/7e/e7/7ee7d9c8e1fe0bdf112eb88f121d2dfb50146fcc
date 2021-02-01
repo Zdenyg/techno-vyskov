@@ -1,5 +1,56 @@
-1610920953a:1:{s:9:"testy.htm";a:8:{s:8:"fileName";s:9:"testy.htm";s:7:"content";s:78:"title = "testy"
+1612020803a:1:{s:9:"testy.htm";a:10:{s:8:"fileName";s:9:"testy.htm";s:7:"content";s:841:"title = "testy"
 url = "/testy"
+layout = "default"
 is_hidden = 0
+
+[genericForm testForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "Test FORM"
+mail_recipients[] = "zdenek.spisar@gmail.com"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
 ==
-{% content 'testovanie' %}";s:5:"mtime";i:1608322788;s:6:"markup";s:26:"{% content 'testovanie' %}";s:4:"code";N;s:5:"title";s:5:"testy";s:3:"url";s:6:"/testy";s:9:"is_hidden";s:1:"0";}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            {% component 'testForm' %}        
+        
+        </div>
+        
+        <div class="col-md-6">
+            <h3>from partials</h3>
+       
+                {% partial 'testCF' %}
+        
+        </div>
+        
+        
+        
+    </div>
+</div>";s:5:"mtime";i:1611770547;s:6:"markup";s:357:"<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            {% component 'testForm' %}        
+        
+        </div>
+        
+        <div class="col-md-6">
+            <h3>from partials</h3>
+       
+                {% partial 'testCF' %}
+        
+        </div>
+        
+        
+        
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:5:"testy";s:3:"url";s:6:"/testy";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:20:"genericForm testForm";a:12:{s:16:"messages_success";s:36:"Your form was successfully submitted";s:15:"messages_errors";s:38:"There were errors with your submission";s:12:"mail_enabled";s:1:"1";s:12:"mail_subject";s:9:"Test FORM";s:15:"mail_recipients";a:1:{i:0;s:23:"zdenek.spisar@gmail.com";}s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:18:"emails_date_format";s:5:"Y-m-d";}}}

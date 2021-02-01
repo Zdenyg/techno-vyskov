@@ -1,4 +1,4 @@
-1610920953a:1:{s:10:"career.htm";a:12:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:2687:"title = "Kariéra"
+1612020802a:1:{s:10:"career.htm";a:12:{s:8:"fileName";s:10:"career.htm";s:7:"content";s:3842:"title = "Kariéra"
 url = "/kariera"
 layout = "default"
 is_hidden = 0
@@ -18,7 +18,18 @@ detailsKeyColumn = "id"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 
-[contactForm]
+[genericForm ContactKariera]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_subject = "Kariera z webu Techno"
+mail_recipients[] = "chaumes.bardado@yahoo.com"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
 ==
 {% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
@@ -37,9 +48,9 @@ pageNumber = "{{ :page }}"
    </div>
 
    {% for record in records %}
-        {% if detailsPage %}
-            <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
-        {% endif %}
+
+   {% if record.published %}
+
    <div class="row my-3" id="{{ record.id }}">
        <div class="col">
             <h3 class="text-primary">{{ record.job_name }}</h3>
@@ -61,7 +72,7 @@ pageNumber = "{{ :page }}"
         </div>
    </div> 
     <hr class="mb-5">
-               
+    {% endif %}               
     {% if detailsPage %}
         </a>
     {% endif %}
@@ -87,9 +98,43 @@ pageNumber = "{{ :page }}"
     <p>Nebo pomocí kontaktního formuláře</p>
   
     <div class="col-md-6">   
-        {% component 'contactForm' %}
+       
+
+       
+       
+       <form data-request="{{ ContactKariera }}::onFormSubmit">
+
+    {{ form_token() }}
+
+    <div id="{{ ContactKariera }}_forms_flash"></div>
+
+    <div class="form-group">
+        <label for="name">{{ 'Jméno:'|_}}</label>
+        <input type="text" id="name" name="name" class="form-control">
     </div>
-</div>";s:5:"mtime";i:1610400690;s:6:"markup";s:2220:"{% set records = builderList.records %}
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="comments">{{ 'Zpráva:' |_ }}</label>
+        <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
+    </div>
+
+    <div class="form-group">
+       
+    </div>
+
+    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">{{ 'odeslat'|_ }}</button>
+
+</form>
+       
+       
+       
+    </div>
+</div>";s:5:"mtime";i:1611857470;s:6:"markup";s:2959:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -106,9 +151,9 @@ pageNumber = "{{ :page }}"
    </div>
 
    {% for record in records %}
-        {% if detailsPage %}
-            <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
-        {% endif %}
+
+   {% if record.published %}
+
    <div class="row my-3" id="{{ record.id }}">
        <div class="col">
             <h3 class="text-primary">{{ record.job_name }}</h3>
@@ -130,7 +175,7 @@ pageNumber = "{{ :page }}"
         </div>
    </div> 
     <hr class="mb-5">
-               
+    {% endif %}               
     {% if detailsPage %}
         </a>
     {% endif %}
@@ -156,6 +201,40 @@ pageNumber = "{{ :page }}"
     <p>Nebo pomocí kontaktního formuláře</p>
   
     <div class="col-md-6">   
-        {% component 'contactForm' %}
+       
+
+       
+       
+       <form data-request="{{ ContactKariera }}::onFormSubmit">
+
+    {{ form_token() }}
+
+    <div id="{{ ContactKariera }}_forms_flash"></div>
+
+    <div class="form-group">
+        <label for="name">{{ 'Jméno:'|_}}</label>
+        <input type="text" id="name" name="name" class="form-control">
     </div>
-</div>";s:4:"code";N;s:5:"title";s:8:"Kariéra";s:3:"url";s:8:"/kariera";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:6:"Career";}s:9:"localeUrl";a:1:{s:2:"en";s:7:"/career";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:56:"v tuto chvíli nehledáme zaměstnace na žádnou pozici";s:11:"detailsPage";s:1:"-";s:16:"detailsKeyColumn";s:2:"id";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:11:"contactForm";a:0:{}}}
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="comments">{{ 'Zpráva:' |_ }}</label>
+        <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
+    </div>
+
+    <div class="form-group">
+       
+    </div>
+
+    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">{{ 'odeslat'|_ }}</button>
+
+</form>
+       
+       
+       
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:8:"Kariéra";s:3:"url";s:8:"/kariera";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"en";s:6:"Career";}s:9:"localeUrl";a:1:{s:2:"en";s:7:"/career";}}s:11:"builderList";a:9:{s:10:"modelClass";s:22:"Zed\Career\Models\Jobs";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:8:"job_name";s:16:"noRecordsMessage";s:56:"v tuto chvíli nehledáme zaměstnace na žádnou pozici";s:11:"detailsPage";s:1:"-";s:16:"detailsKeyColumn";s:2:"id";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:26:"genericForm ContactKariera";a:11:{s:16:"messages_success";s:36:"Your form was successfully submitted";s:15:"messages_errors";s:38:"There were errors with your submission";s:12:"mail_subject";s:21:"Kariera z webu Techno";s:15:"mail_recipients";a:1:{i:0;s:25:"chaumes.bardado@yahoo.com";}s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:18:"emails_date_format";s:5:"Y-m-d";}}}

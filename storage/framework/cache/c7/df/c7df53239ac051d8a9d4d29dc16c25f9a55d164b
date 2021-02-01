@@ -1,4 +1,4 @@
-1610919688a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1146:"[viewBag]
+1612020806a:1:{s:16:"kvalita-uvod.htm";a:6:{s:8:"fileName";s:16:"kvalita-uvod.htm";s:7:"content";s:1146:"[viewBag]
 ==
 <section class="gradient">
 <div class="container py-5">
@@ -31,7 +31,7 @@
         </div>
     </div>
 </div>
-</section>";s:5:"mtime";i:1610402382;s:6:"markup";s:1131:"<section class="gradient">
+</section>";s:5:"mtime";i:1611770548;s:6:"markup";s:1131:"<section class="gradient">
 <div class="container py-5">
     <div class="row">
         <div class="col-12 text-center mb-5">

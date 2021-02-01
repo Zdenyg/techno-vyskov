@@ -1,4 +1,4 @@
-1610919687a:1:{s:12:"about-us.htm";a:7:{s:8:"fileName";s:12:"about-us.htm";s:7:"content";s:3046:"[viewBag]
+1612020804a:1:{s:12:"about-us.htm";a:7:{s:8:"fileName";s:12:"about-us.htm";s:7:"content";s:2890:"[viewBag]
 
 [builderList]
 modelClass = "Zed\Career\Models\Jobs"
@@ -31,7 +31,7 @@ pageNumber = "{{ :page }}"
                   <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
                     
 
-                        {% set records = builderList.records %}
+{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -40,18 +40,16 @@ pageNumber = "{{ :page }}"
 
 <ul class="record-list">
     {% for record in records %}
+
+    {% if record.published %}
+
         <li>
-            {# Use spaceless tag to remove spaces inside the A tag. #}
-            {% spaceless %}
- 
-
+            
                 {{ attribute(record, displayColumn) }}
-
-                {% if detailsPage %}
-                   
-                {% endif %}
-            {% endspaceless %}
+          
+            
         </li>
+    {% endif %}    
     {% else %}
         <li class="no-data">{{ noRecordsMessage }}</li>
     {% endfor %}
@@ -84,7 +82,7 @@ pageNumber = "{{ :page }}"
               </div>
             </div>
         </div>
-    </div>";s:5:"mtime";i:1610398452;s:6:"markup";s:2714:"<div class="container py-5" id="uvod">
+    </div>";s:5:"mtime";i:1611857574;s:6:"markup";s:2558:"<div class="container py-5" id="uvod">
     <div class="row">
         <div class="col-md-7 mb-5">
             {% content 'uvod' %}
@@ -104,7 +102,7 @@ pageNumber = "{{ :page }}"
                   <h6 class="card-title bg-primary text-white p-2">Volné pracovní pozice</h6>
                     
 
-                        {% set records = builderList.records %}
+{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -113,18 +111,16 @@ pageNumber = "{{ :page }}"
 
 <ul class="record-list">
     {% for record in records %}
+
+    {% if record.published %}
+
         <li>
-            {# Use spaceless tag to remove spaces inside the A tag. #}
-            {% spaceless %}
- 
-
+            
                 {{ attribute(record, displayColumn) }}
-
-                {% if detailsPage %}
-                   
-                {% endif %}
-            {% endspaceless %}
+          
+            
         </li>
+    {% endif %}    
     {% else %}
         <li class="no-data">{{ noRecordsMessage }}</li>
     {% endfor %}

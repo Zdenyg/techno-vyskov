@@ -1,0 +1,39 @@
+title = "test_publish"
+url = "/test_publish"
+is_hidden = 0
+
+[builderList]
+modelClass = "Zed\Career\Models\Jobs"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "job_name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+<ul>
+    {% for record in records %}
+
+        {% if record.published %}
+
+            <li>
+            
+                {{ record.job_name }}
+                 
+            </li>            
+        {% endif %}
+        
+
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}
+</ul>

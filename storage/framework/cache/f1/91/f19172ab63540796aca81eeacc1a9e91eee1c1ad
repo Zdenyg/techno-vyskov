@@ -1,4 +1,4 @@
-1610920953a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2465:"[viewBag]
+1612020806a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2465:"[viewBag]
 ==
 <footer class="footer">
 
@@ -40,7 +40,7 @@
     <div class="date text-center text-white">
         <p>TECHNO Vyškov spol. s r.o. • &nbsp;{{"now"|date("Y") }}</p>
     </div>
-</footer>";s:5:"mtime";i:1609839736;s:6:"markup";s:2450:"<footer class="footer">
+</footer>";s:5:"mtime";i:1611770547;s:6:"markup";s:2450:"<footer class="footer">
 
     <div class="container text-white pt-5 pb-2">
         <div class="row">

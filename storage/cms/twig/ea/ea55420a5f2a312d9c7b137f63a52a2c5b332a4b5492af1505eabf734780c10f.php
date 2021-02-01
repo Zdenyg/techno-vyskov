@@ -29,13 +29,13 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("content" => 4, "set" => 21, "for" => 29, "spaceless" => 32, "if" => 37);
-        $filters = array("theme" => 10, "escape" => 35, "page" => 50, "_" => 67);
-        $functions = array("range" => 53);
+        $tags = array("content" => 4, "set" => 21, "for" => 29, "if" => 31);
+        $filters = array("theme" => 10, "escape" => 35, "page" => 48, "_" => 65);
+        $functions = array("range" => 51);
 
         try {
             $this->sandbox->checkSecurity(
-                ['content', 'set', 'for', 'spaceless', 'if'],
+                ['content', 'set', 'for', 'if'],
                 ['theme', 'escape', 'page', '_'],
                 ['range']
             );
@@ -92,7 +92,7 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
                   <h6 class=\"card-title bg-primary text-white p-2\">Volné pracovní pozice</h6>
                     
 
-                        ";
+";
         // line 21
         $context["records"] = twig_get_attribute($this->env, $this->source, ($context["builderList"] ?? null), "records", [], "any", false, false, true, 21);
         // line 22
@@ -115,77 +115,71 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
             // line 30
-            echo "        <li>
-            ";
-            // line 32
-            echo "            ";
-            ob_start();
-            // line 33
-            echo " 
-
-                ";
-            // line 35
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["record"], ($context["displayColumn"] ?? null), [], "any", false, false, true, 35), 35, $this->source), "html", null, true);
             echo "
-
+    ";
+            // line 31
+            if (twig_get_attribute($this->env, $this->source, $context["record"], "published", [], "any", false, false, true, 31)) {
+                // line 32
+                echo "
+        <li>
+            
                 ";
-            // line 37
-            if (($context["detailsPage"] ?? null)) {
-                // line 38
-                echo "                   
-                ";
+                // line 35
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["record"], ($context["displayColumn"] ?? null), [], "any", false, false, true, 35), 35, $this->source), "html", null, true);
+                echo "
+          
+            
+        </li>
+    ";
             }
-            // line 40
-            echo "            ";
-            echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-            // line 41
-            echo "        </li>
+            // line 39
+            echo "    
     ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 43
+            // line 41
             echo "        <li class=\"no-data\">";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["noRecordsMessage"] ?? null), 43, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["noRecordsMessage"] ?? null), 41, $this->source), "html", null, true);
             echo "</li>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 45
+        // line 43
         echo "</ul>
 
 ";
-        // line 47
-        if ((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "lastPage", [], "any", false, false, true, 47) > 1)) {
-            // line 48
+        // line 45
+        if ((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "lastPage", [], "any", false, false, true, 45) > 1)) {
+            // line 46
             echo "    <ul class=\"pagination\">
         ";
-            // line 49
-            if ((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 49) > 1)) {
-                // line 50
+            // line 47
+            if ((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 47) > 1)) {
+                // line 48
                 echo "            <li><a href=\"";
-                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 50), "baseFileName", [], "any", false, false, true, 50), 50, $this->source), [($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 50) - 1)]);
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 48), "baseFileName", [], "any", false, false, true, 48), 48, $this->source), [($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 48) - 1)]);
                 echo "\">&larr; Prev</a></li>
         ";
             }
-            // line 52
+            // line 50
             echo "
         ";
-            // line 53
+            // line 51
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "lastPage", [], "any", false, false, true, 53)));
+            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "lastPage", [], "any", false, false, true, 51)));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 54
+                // line 52
                 echo "            <li class=\"";
-                echo (((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 54) == $context["page"])) ? ("active") : (null));
+                echo (((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 52) == $context["page"])) ? ("active") : (null));
                 echo "\">
                 <a href=\"";
-                // line 55
-                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 55), "baseFileName", [], "any", false, false, true, 55), 55, $this->source), [($context["pageParam"] ?? null) => $context["page"]]);
+                // line 53
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 53), "baseFileName", [], "any", false, false, true, 53), 53, $this->source), [($context["pageParam"] ?? null) => $context["page"]]);
                 echo "\">";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed($context["page"], 55, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed($context["page"], 53, $this->source), "html", null, true);
                 echo "</a>
             </li>
         ";
@@ -193,27 +187,27 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 58
+            // line 56
             echo "
         ";
-            // line 59
-            if ((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "lastPage", [], "any", false, false, true, 59) > twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 59))) {
-                // line 60
+            // line 57
+            if ((twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "lastPage", [], "any", false, false, true, 57) > twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 57))) {
+                // line 58
                 echo "            <li><a href=\"";
-                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 60), "baseFileName", [], "any", false, false, true, 60), 60, $this->source), [($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 60) + 1)]);
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 58), "baseFileName", [], "any", false, false, true, 58), 58, $this->source), [($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["records"] ?? null), "currentPage", [], "any", false, false, true, 58) + 1)]);
                 echo "\">Next &rarr;</a></li>
         ";
             }
-            // line 62
+            // line 60
             echo "    </ul>
 ";
         }
-        // line 64
+        // line 62
         echo "
                         <div class=\"row text-center pb-2 pt-5\">
                             <div class=\"col\">
                                 <a href=\"";
-        // line 67
+        // line 65
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("career");
         echo "\" class=\"btn btn-primary\" role=\"button\">";
         echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["kariéra"]);
@@ -239,7 +233,7 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
 
     public function getDebugInfo()
     {
-        return array (  217 => 67,  212 => 64,  208 => 62,  202 => 60,  200 => 59,  197 => 58,  186 => 55,  181 => 54,  177 => 53,  174 => 52,  168 => 50,  166 => 49,  163 => 48,  161 => 47,  157 => 45,  148 => 43,  142 => 41,  139 => 40,  135 => 38,  133 => 37,  128 => 35,  124 => 33,  121 => 32,  118 => 30,  113 => 29,  109 => 27,  107 => 26,  105 => 25,  103 => 24,  101 => 23,  99 => 22,  97 => 21,  83 => 10,  79 => 8,  75 => 7,  71 => 5,  67 => 4,  62 => 1,);
+        return array (  211 => 65,  206 => 62,  202 => 60,  196 => 58,  194 => 57,  191 => 56,  180 => 53,  175 => 52,  171 => 51,  168 => 50,  162 => 48,  160 => 47,  157 => 46,  155 => 45,  151 => 43,  142 => 41,  136 => 39,  128 => 35,  123 => 32,  121 => 31,  118 => 30,  113 => 29,  109 => 27,  107 => 26,  105 => 25,  103 => 24,  101 => 23,  99 => 22,  97 => 21,  83 => 10,  79 => 8,  75 => 7,  71 => 5,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -264,7 +258,7 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
                   <h6 class=\"card-title bg-primary text-white p-2\">Volné pracovní pozice</h6>
                     
 
-                        {% set records = builderList.records %}
+{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -273,18 +267,16 @@ class __TwigTemplate_85165da72b2947f6c8c9a1d7d355a8791e7f85126423078d0ba216f68c6
 
 <ul class=\"record-list\">
     {% for record in records %}
+
+    {% if record.published %}
+
         <li>
-            {# Use spaceless tag to remove spaces inside the A tag. #}
-            {% spaceless %}
- 
-
+            
                 {{ attribute(record, displayColumn) }}
-
-                {% if detailsPage %}
-                   
-                {% endif %}
-            {% endspaceless %}
+          
+            
         </li>
+    {% endif %}    
     {% else %}
         <li class=\"no-data\">{{ noRecordsMessage }}</li>
     {% endfor %}

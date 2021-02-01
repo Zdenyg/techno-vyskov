@@ -1,9 +1,12 @@
 columns:
     job_name:
-        label: job_name
+        label: Název
         type: text
         sortable: true
     created_at:
-        label: created_at
+        label: Vytvořeno
         type: datetime
         sortable: true
+    published:
+        label: Publikováno
+        type: switch
