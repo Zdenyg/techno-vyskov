@@ -17,6 +17,6 @@ selenium.php
 composer.lock
 
 
-node_modules
+/themes/bs-laravel-webpack/node_modules
 
-
+/config

@@ -55,12 +55,18 @@ header {
     header {
       background: url('../images/Techno-mobile-header.jpg') black no-repeat center center;
       background-size: cover;
+      background-position: top left;
       li {
         font-size: 1.1rem;
       }
     }
     header video {
       display: none;
+    }
+    .desc {
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }  
 
